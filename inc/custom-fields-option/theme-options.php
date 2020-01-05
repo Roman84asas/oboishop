@@ -2,25 +2,22 @@
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-// Default options page
-$basic_options_container = Container::make( 'theme_options', __( 'Basic Options' ) )
-    ->add_fields( array(
-        Field::make( 'header_scripts', 'crb_header_script', __( 'Header Script' ) ),
-        Field::make( 'footer_scripts', 'crb_footer_script', __( 'Footer Script' ) ),
+// Add second options page under 'Basic Options'
+Container::make( 'theme_options', __( 'Настройки темы' ) )
+    ->set_icon( 'dashicons-carrot' )
+    ->add_tab( __( 'Header' ), array(
+        Field::make( 'image', 'obo_logo', __( 'Логотип темы' ))
+            ->set_width( 50 ),
+        Field::make( 'text', 'obo_header_email', __( 'Ваш Email' ) ),
+        Field::make( 'text', 'obo_header_phone', __( 'Ваш номер телефона' ) ),
+    ) )
+    ->add_tab( __( 'Footer' ), array(
+        Field::make( 'text', 'obo_footer_email', __( 'Ваш Email' ) ),
+        Field::make( 'text', 'obo_footer_phone', __( 'Ваш номер телефона' ) ),
     ) );
 
-// Add second options page under 'Basic Options'
-Container::make( 'theme_options', __( 'Social Links' ) )
-    ->set_page_parent( $basic_options_container ) // reference to a top level container
+Container::make( 'theme_options', __( 'Сoциальные сети' ) )
     ->add_fields( array(
         Field::make( 'text', 'crb_facebook_link', __( 'Facebook Link' ) ),
         Field::make( 'text', 'crb_twitter_link', __( 'Twitter Link' ) ),
-    ) );
-
-// Add third options page under "Appearance"
-Container::make( 'theme_options', __( 'Customize Background' ) )
-    ->set_page_parent( 'themes.php' ) // identificator of the "Appearance" admin section
-    ->add_fields( array(
-        Field::make( 'color', 'crb_background_color', __( 'Background Color' ) ),
-        Field::make( 'image', 'crb_background_image', __( 'Background Image' ) ),
     ) );
