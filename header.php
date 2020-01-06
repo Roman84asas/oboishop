@@ -16,43 +16,73 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+    <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'oboishop' ); ?></a>
+    <div class="info-header ">
+        <div class="number-phone">
+            <?php
+            // Get all entered urls from the database
+            $phone = carbon_get_theme_option( 'obo_header_phone' );
+            if ( $phone) { ?>
+                <span class="phone">
+                    Телефон:
+                </span>
+                <span class="number">
+                    <?php echo esc_attr($phone); ?>
+                </span>
+            <?php } ?>
+        </div>
 
+        <div class="my-mail">
+            <?php
+            // Get all entered urls from the database
+            $mail = carbon_get_theme_option( 'obo_header_email' );
+            if ( $mail) { ?>
+                <span class="label-email">
+                    Email:
+                </span>
+                <a href="mailto:<?php echo esc_attr($mail); ?>">
+                    <?php echo esc_attr($mail); ?>
+                </a>
+            <?php } ?>
+        </div>
+    </div>
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$oboishop_description = get_bloginfo( 'description', 'display' );
-			if ( $oboishop_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $oboishop_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'oboishop' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+        <div class="content-header wrapper">
+            <div class="logo_sect">
+                <?php
+                the_custom_logo();
+                // Get all entered urls from the database
+                $logo = carbon_get_theme_option( 'obo_logo' );
+                if ( $logo) {
+                    echo '<a href="' . esc_attr( home_url( '/' ) ) . '" >' . esc_html( $logo ) . '</a>';
+                } else {
+                    echo '<a href="' . esc_attr( home_url( '/' ) ) . '" >SHOP</a>';
+                }
+                ?>
+            </div>
+
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'menu-1',
+                'menu_id'        => 'primary-menu',
+                'menu_class'     => 'navbar-nav',
+                'container'      => 'nav',
+                'container_class'=> 'overlayMenu',
+                'container_id'   => 'header-nav',
+            ) );
+            ?>
+
+            <a href="<?php echo esc_url( home_url( '/my-account' ) ); ?>" class="myself-cab" title="Личный кабинет">
+                <i class="fas fa-user-tie"></i>
+            </a>
+        </div>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

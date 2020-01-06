@@ -4,6 +4,7 @@
  */
 function oboishop_scripts() {
     wp_enqueue_style( 'general', get_template_directory_uri() . '/assets/css/general.css', array());
+    wp_enqueue_style( 'font-icon', get_template_directory_uri() . '/assets/css/all.min.css', array());
     wp_enqueue_style( 'oboishop-style', get_stylesheet_uri() );
 
 

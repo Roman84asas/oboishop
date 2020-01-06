@@ -18,6 +18,6 @@ Container::make( 'theme_options', __( 'Настройки темы' ) )
 
 Container::make( 'theme_options', __( 'Сoциальные сети' ) )
     ->add_fields( array(
-        Field::make( 'text', 'crb_facebook_link', __( 'Facebook Link' ) ),
-        Field::make( 'text', 'crb_twitter_link', __( 'Twitter Link' ) ),
+        Field::make( 'text', 'obo_facebook', __( 'Facebook аккаунт' ) ),
+        Field::make( 'text', 'obo_twitter', __( 'Twitter аккаунт' ) ),
     ) );

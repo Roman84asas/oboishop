@@ -584,9 +584,66 @@ html[xmlns] .slides {
   max-width: 960px;
   margin: 0 auto;
 }
-header.site-header .site-branding .site-title a {
+.info-header {
+  height: 30px;
+  background: #191e23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-header .number-phone span {
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.info-header .my-mail {
+  margin-left: 30px;
+}
+.info-header .my-mail span,
+.info-header .my-mail a {
+  margin-right: 10px;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+header.site-header {
+  background: #0408e2;
+  height: 80px;
+}
+header.site-header .content-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+}
+header.site-header .content-header .logo_sect {
+  height: auto;
+  width: 33.3%;
+}
+header.site-header .content-header .logo_sect a {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+header.site-header .content-header .overlayMenu {
+  width: 80%;
+  padding-left: 15%;
+}
+header.site-header .content-header .overlayMenu .navbar-nav {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+header.site-header .content-header .overlayMenu .navbar-nav li {
+  margin-right: 25px;
+}
+header.site-header .content-header .overlayMenu .navbar-nav li a {
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  color: red;
-  font-size: 50px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+header.site-header .content-header .myself-cab {
+  width: 5%;
+  font-size: 14px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=general.css.map */

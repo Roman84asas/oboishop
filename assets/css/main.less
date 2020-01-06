@@ -3,7 +3,8 @@
 @font-merri: 'Merriweather', serif;;
 @font-robo: 'Roboto', sans-serif;
 
-@dark_color:#262626;
+@bagr_color: #0408e2;
+@text_color: #ff0fa0;
 
 /* Your Custom code here */
 
@@ -13,14 +14,77 @@
   margin: 0 auto;
 }
 
-header.site-header {
-  .site-branding {
-    .site-title {
-      a {
-        text-decoration: none;
-        color: red;
-        font-size: 50px;
-      }
+//Header style
+.info-header {
+  height: 30px;
+  background: #191e23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .number-phone {
+    span {
+      color: #FFFFFF;
+      font-size: 12px;
+      margin-right: 10px;
     }
   }
+
+  .my-mail {
+    margin-left: 30px;
+    span, a {
+      margin-right: 10px;
+      color: #FFFFFF;
+      font-size: 12px;
+    }
+  }
+}
+header.site-header {
+  background: @bagr_color;
+  height: 80px;
+
+  .content-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+
+    .logo_sect {
+      height: auto;
+      width: 33.3%;
+      a {
+        color: #FFFFFF;
+        font-size: 20px;
+      }
+    }
+
+    .overlayMenu {
+      width: 80%;
+      padding-left: 15%;
+
+      .navbar-nav {
+        display: flex;
+        margin-right: 10px;
+        align-items: center;
+
+        li {
+          margin-right: 25px;
+          a {
+            font-family: @font-robo;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .myself-cab {
+      width: 5%;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+  }
+
+
 }
