@@ -25,6 +25,17 @@
                 echo '<a href="' . esc_attr( home_url( '/' ) ) . '" >SHOP</a>';
             }
             ?>
+            <div class="social-link">
+                <a href="#" class="ok">
+                    <i class="fab fa-odnoklassniki"></i>
+                </a>
+                <a href="#" class="fb">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
         </div>
 
         <div class="bottom-nav">
@@ -38,8 +49,44 @@
                 'container_id'   => 'header-nav',
             ) );
             ?>
+            <div class="vacations">
+                <a href="#" class="vacat">
+                    Вакансии
+                </a>
+            </div>
         </div>
+        <div class="stations">
+            Сатьи
+        </div>
+        <div class="footer-info">
+            <div class="number-phone">
+                <?php
+                // Get all entered urls from the database
+                $phone = carbon_get_theme_option( 'obo_header_phone' );
+                if ( $phone) { ?>
+                    <span class="phone">
+                    Телефон:
+                </span>
+                    <span class="number">
+                    <?php echo esc_attr($phone); ?>
+                </span>
+                <?php } ?>
+            </div>
 
+            <div class="my-mail">
+                <?php
+                // Get all entered urls from the database
+                $mail = carbon_get_theme_option( 'obo_header_email' );
+                if ( $mail) { ?>
+                    <span class="label-email">
+                    Email:
+                </span>
+                    <a href="mailto:<?php echo esc_attr($mail); ?>">
+                        <?php echo esc_attr($mail); ?>
+                    </a>
+                <?php } ?>
+            </div>
+        </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
