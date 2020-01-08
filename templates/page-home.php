@@ -2,6 +2,8 @@
 /*
   * Template name: Home
   * */
+
+
 get_header(); ?>
 
     <section class="home_slider">
@@ -31,4 +33,5 @@ get_header(); ?>
     <section class="all-show-info">
         Статьи с информацией и фото
     </section>
+
 <?php get_footer();
