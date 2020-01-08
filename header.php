@@ -60,7 +60,7 @@
                 // Get all entered urls from the database
                 $logo = carbon_get_theme_option( 'obo_logo' );
                 if ( $logo) {
-                    echo '<a href="' . esc_attr( home_url( '/' ) ) . '" >' . esc_html( $logo ) . '</a>';
+                    echo '<a href="' . esc_attr( home_url( '/' ) ) . '" >' . esc_attr( $logo ) . '</a>';
                 } else {
                     echo '<a href="' . esc_attr( home_url( '/' ) ) . '" >SHOP</a>';
                 }
@@ -79,7 +79,9 @@
             ?>
 
             <a href="<?php echo esc_url( home_url( '/my-account' ) ); ?>" class="myself-cab" title="Личный кабинет">
-                <i class="fas fa-user-tie"></i>
+                <div class="myself">
+                    <i class="fas fa-user-tie"></i>
+                </div>
             </a>
         </div>
 

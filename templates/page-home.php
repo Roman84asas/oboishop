@@ -5,7 +5,12 @@
 get_header(); ?>
 
     <section class="home_slider">
-        Здесь будет слайдер
+        <div class="slider_1">
+            Slider №1
+        </div>
+        <div class="slider_2">
+            Slider №2
+        </div>
     </section>
 
     <section class="sect-info wrapper">
