@@ -64,6 +64,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
     require get_template_directory() . '/woocommerce/includes/wc-functions-remove.php';
     require get_template_directory() . '/woocommerce/includes/wc-functions.php';
+    require get_template_directory() . '/woocommerce/includes/wc_function_cart.php';
 }
 
 

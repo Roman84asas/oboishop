@@ -15,15 +15,19 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="sect-info wrapper">
-        <div class="search-sect">
-            Поиск по сайту
-        </div>
-        <div class="stations">
-            Сатьи
-        </div>
-        <div class="basket">
-            Корзина
+    <section class="sect-info">
+        <div class="sections-otd wrapper">
+            <div class="search-sect">
+                <?php  echo esc_attr(get_search_form()); ?>
+            </div>
+            <div class="stations">
+                <div class="sect-art">
+                    Статьи
+                </div>
+            </div>
+            <div class="basket">
+                <?php oboishop_woocommerce_cart_link() ?>
+            </div>
         </div>
     </section>
 

@@ -6,7 +6,8 @@
 @bagr_color: #0408e2;
 @text_color: #ff0fa0;
 @active_color: #fcf55b;
-@frey_color: #7b7b7f;
+@frey_color: #ccccd3;
+@font_color: #4b4b4b;
 
 /* Your Custom code here */
 
@@ -306,8 +307,86 @@ header.site-header {
   }
 }
 
-//Info-section style
+//Sliders style
+.home_slider {
+  display: flex;
+  height: 10rem;
+  border-bottom: 1px solid @frey_color;
+}
 
+//Info-section style
+.sect-info {
+  height: 5rem;
+  border-bottom: 1px solid @frey_color;
+
+  .sections-otd{
+    display: flex;
+    height: 100%;
+
+    .search-sect {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .search-form {
+        .search-submit {
+          font-size: 12px;
+          font-family: @font-merri;
+          color: @font_color;
+          font-style: italic;
+        }
+        label {
+          .screen-reader-text {
+            display: none;
+          }
+          .search-field {
+            border: 1px solid @frey_color;
+            font-size: 14px;
+            color: @font_color;
+            padding: 7px 0 7px 10px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+
+    .stations {
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .sect-art {
+        font-size: 16px;
+        font-family: @font-merri;
+        color: @font_color;
+        padding: 5px 15px;
+        border: 1px solid @bagr_color;
+        border-radius: 3px;
+        cursor: pointer;
+        .transition(all 400ms ease-in-out);
+        &:hover {
+          background: @bagr_color;
+          color: @active_color;
+          .transition(all 400ms ease-in-out);
+        }
+      }
+    }
+
+    .basket {
+      width: 33%;
+
+      .cart-contents {
+
+        i {
+          height: 30px;
+          width: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
 
 //Footer style
 footer.site-footer {

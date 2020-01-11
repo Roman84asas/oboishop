@@ -608,7 +608,7 @@ html[xmlns] .slides {
 header.site-header {
   background: #0408e2;
   height: 80px;
-  border-bottom: 1px solid #7b7b7f;
+  border-bottom: 1px solid #ccccd3;
 }
 header.site-header .content-header {
   display: flex;
@@ -864,10 +864,82 @@ header.site-header .content-header .myself-cab .myself:hover {
   -o-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }
+.home_slider {
+  display: flex;
+  height: 10rem;
+  border-bottom: 1px solid #ccccd3;
+}
+.sect-info {
+  height: 5rem;
+  border-bottom: 1px solid #ccccd3;
+}
+.sect-info .sections-otd {
+  display: flex;
+  height: 100%;
+}
+.sect-info .sections-otd .search-sect {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect-info .sections-otd .search-sect .search-form .search-submit {
+  font-size: 12px;
+  font-family: 'Merriweather', serif;
+  color: #4b4b4b;
+  font-style: italic;
+}
+.sect-info .sections-otd .search-sect .search-form label .screen-reader-text {
+  display: none;
+}
+.sect-info .sections-otd .search-sect .search-form label .search-field {
+  border: 1px solid #ccccd3;
+  font-size: 14px;
+  color: #4b4b4b;
+  padding: 7px 0 7px 10px;
+  border-radius: 3px;
+}
+.sect-info .sections-otd .stations {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect-info .sections-otd .stations .sect-art {
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+  color: #4b4b4b;
+  padding: 5px 15px;
+  border: 1px solid #0408e2;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+.sect-info .sections-otd .stations .sect-art:hover {
+  background: #0408e2;
+  color: #fcf55b;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+.sect-info .sections-otd .basket {
+  width: 33%;
+}
+.sect-info .sections-otd .basket .cart-contents i {
+  height: 30px;
+  width: 30px;
+  font-size: 14px;
+}
 footer.site-footer {
   background: #0408e2;
   height: 300px;
-  border-top: 1px solid #7b7b7f;
+  border-top: 1px solid #ccccd3;
 }
 footer.site-footer .footer {
   display: flex;
