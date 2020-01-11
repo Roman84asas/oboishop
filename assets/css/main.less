@@ -53,11 +53,17 @@ header.site-header {
     height: 100%;
 
     .logo_sect {
-      height: auto;
       width: 33.3%;
+      height: 80px;
       a {
         color: #FFFFFF;
         font-size: 20px;
+        height: 80px;
+
+        img {
+          max-height: 80px;
+          width: auto;
+        }
       }
     }
 
@@ -103,6 +109,7 @@ header.site-header {
     .myself-cab {
       width: 5%;
       font-size: 14px;
+      cursor: pointer;
 
       .myself {
         width: 25px;
@@ -123,9 +130,184 @@ header.site-header {
       }
     }
   }
-
-
 }
+
+//Form style
+.form-popup {
+  display: none;
+  width:100%;
+  min-height:100%;
+  background: rgba(0,0,0,0.55);
+  overflow:hidden;
+  position:fixed;
+  top:0;
+
+  .form {
+    width: 800px;
+    height: 350px;
+    background: #FFFFFF;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid @active_color;
+    margin: 6rem 34rem 7rem 34rem;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      color: @active_color;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .form-footer {
+      display: flex;
+      background: #dfe1ff;
+      height: 25%;
+      border-bottom: #878d93;
+      align-items: center;
+
+      .login-button-form {
+        height: 30px;
+        width: 90px;
+        margin-left: 20px;
+        font-size: 15px;
+        border: 1px solid @bagr_color;
+        border-radius: 3px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        background: white;
+        cursor: pointer;
+
+      }
+      .register-button-form {
+        height: 30px;
+        width: 90px;
+        margin-left: 20px;
+        font-size: 15px;
+        border: 1px solid @bagr_color;
+        border-radius: 3px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        background: white;
+        cursor: pointer;
+      }
+      .active {
+        background: @bagr_color;
+        color: @active_color;
+      }
+    }
+
+    .form-login {
+      display: block;
+      height: 100%;
+      width: 100%;
+
+      .login-shop {
+        height: 100%;
+        width: 100%;
+        margin-left: 0.8rem;
+        margin-top: 1.5rem;
+
+        p {
+          text-align: left;
+          line-height: 1.5;
+          font-size: 14px;
+          font-family: @font-merri;
+          margin-bottom: 1.5rem;
+
+          #username {
+            width: 35%;
+            margin-left: 10px;
+            border-radius: 3px;
+            border: 1px solid @bagr_color;
+            font-size: 16px;
+            color: #4a4a4a;
+          }
+          #password {
+            width: 35%;
+            margin-left: 21%;
+            border-radius: 3px;
+            border: 1px solid @bagr_color;
+            font-size: 16px;
+            color: #4a4a4a;
+          }
+
+          .login-button {
+            margin-left: 10%;
+            border-radius: 3px;
+            width: 8rem;
+            border: 1px solid @bagr_color;
+            font-weight: bold;
+            .transition(all 400ms ease-in-out);
+
+            &:hover {
+              background: @bagr_color;
+              color: @active_color;
+              border: 1px solid @active_color;
+              .transition(all 400ms ease-in-out);
+            }
+          }
+        }
+      }
+    }
+
+    .form-register {
+      display: none;
+      height: auto;
+      width: auto;
+
+      .register-shop {
+        height: 100%;
+        width: auto;
+        margin-left: 0.8rem;
+        margin-top: 1.5rem;
+        padding-right: 2rem;
+
+        p {
+          text-align: left;
+          line-height: 1.5;
+          font-size: 14px;
+          font-family: @font-merri;
+          margin-bottom: 1rem;
+
+          #reg_email {
+            width: 35%;
+            margin-left: 1rem;
+            border-radius: 3px;
+            border: 1px solid @bagr_color;
+            font-size: 16px;
+            color: #4a4a4a;
+          }
+
+          .register-button {
+            border-radius: 3px;
+            width: 9rem;
+            height: 2.5rem;
+            border: 1px solid @bagr_color;
+            font-weight: bold;
+            .transition(all 400ms ease-in-out);
+
+            &:hover {
+              background: @bagr_color;
+              color: @active_color;
+              border: 1px solid @active_color;
+              .transition(all 400ms ease-in-out);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Info-section style
+
 
 //Footer style
 footer.site-footer {
@@ -148,6 +330,10 @@ footer.site-footer {
 
         a {
           color: #FFFFFF;
+          img {
+            max-height: 50px;
+            width: auto;
+          }
         }
       }
       .social-link {
@@ -157,17 +343,16 @@ footer.site-footer {
         align-items: center;
 
         a {
-          color: #FFFFFF;
+          color: #b3b9bf;
           font-size: 35px;
           margin-left: 40px;
-          opacity: 0.6;
           .transition(all 400ms ease-in-out);
           &:first-child {
             margin-left: 0;
           }
 
           &:hover {
-            opacity: 1;
+            color: @active_color;
             .transition(all 400ms ease-in-out);
           }
         }
@@ -185,12 +370,11 @@ footer.site-footer {
           li {
             line-height: 35px;
             a {
-              color: #FFFFFF;
+              color: #b3b9bf;
               font-size: 18px;
-              opacity: 0.6;
               .transition(all 400ms ease-in-out);
               &:hover {
-                opacity: 1;
+                color: @active_color;
                 .transition(all 400ms ease-in-out);
               }
             }
@@ -215,12 +399,11 @@ footer.site-footer {
       justify-content: center;
 
       a {
-        color: #FFFFFF;
+        color: #b3b9bf;
         font-size: 18px;
-        opacity: 0.6;
         .transition(all 400ms ease-in-out);
         &:hover {
-          opacity: 1;
+          color: @active_color;
           .transition(all 400ms ease-in-out);
         }
       }

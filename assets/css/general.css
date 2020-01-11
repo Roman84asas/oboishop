@@ -617,12 +617,17 @@ header.site-header .content-header {
   height: 100%;
 }
 header.site-header .content-header .logo_sect {
-  height: auto;
   width: 33.3%;
+  height: 80px;
 }
 header.site-header .content-header .logo_sect a {
   color: #FFFFFF;
   font-size: 20px;
+  height: 80px;
+}
+header.site-header .content-header .logo_sect a img {
+  max-height: 80px;
+  width: auto;
 }
 header.site-header .content-header .overlayMenu {
   width: 80%;
@@ -662,6 +667,7 @@ header.site-header .content-header .overlayMenu .navbar-nav .current-menu-item a
 header.site-header .content-header .myself-cab {
   width: 5%;
   font-size: 14px;
+  cursor: pointer;
 }
 header.site-header .content-header .myself-cab .myself {
   width: 25px;
@@ -681,6 +687,177 @@ header.site-header .content-header .myself-cab .myself {
 }
 header.site-header .content-header .myself-cab .myself:hover {
   opacity: 1;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+.form-popup {
+  display: none;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+.form-popup .form {
+  width: 800px;
+  height: 350px;
+  background: #FFFFFF;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #fcf55b;
+  margin: 6rem 34rem 7rem 34rem;
+  position: relative;
+}
+.form-popup .form i {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  color: #fcf55b;
+  font-size: 18px;
+  cursor: pointer;
+}
+.form-popup .form .form-footer {
+  display: flex;
+  background: #dfe1ff;
+  height: 25%;
+  border-bottom: #878d93;
+  align-items: center;
+}
+.form-popup .form .form-footer .login-button-form {
+  height: 30px;
+  width: 90px;
+  margin-left: 20px;
+  font-size: 15px;
+  border: 1px solid #0408e2;
+  border-radius: 3px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  background: white;
+  cursor: pointer;
+}
+.form-popup .form .form-footer .register-button-form {
+  height: 30px;
+  width: 90px;
+  margin-left: 20px;
+  font-size: 15px;
+  border: 1px solid #0408e2;
+  border-radius: 3px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  background: white;
+  cursor: pointer;
+}
+.form-popup .form .form-footer .active {
+  background: #0408e2;
+  color: #fcf55b;
+}
+.form-popup .form .form-login {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.form-popup .form .form-login .login-shop {
+  height: 100%;
+  width: 100%;
+  margin-left: 0.8rem;
+  margin-top: 1.5rem;
+}
+.form-popup .form .form-login .login-shop p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 1.5rem;
+}
+.form-popup .form .form-login .login-shop p #username {
+  width: 35%;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: 1px solid #0408e2;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+.form-popup .form .form-login .login-shop p #password {
+  width: 35%;
+  margin-left: 21%;
+  border-radius: 3px;
+  border: 1px solid #0408e2;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+.form-popup .form .form-login .login-shop p .login-button {
+  margin-left: 10%;
+  border-radius: 3px;
+  width: 8rem;
+  border: 1px solid #0408e2;
+  font-weight: bold;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+.form-popup .form .form-login .login-shop p .login-button:hover {
+  background: #0408e2;
+  color: #fcf55b;
+  border: 1px solid #fcf55b;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+.form-popup .form .form-register {
+  display: none;
+  height: auto;
+  width: auto;
+}
+.form-popup .form .form-register .register-shop {
+  height: 100%;
+  width: auto;
+  margin-left: 0.8rem;
+  margin-top: 1.5rem;
+  padding-right: 2rem;
+}
+.form-popup .form .form-register .register-shop p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 1rem;
+}
+.form-popup .form .form-register .register-shop p #reg_email {
+  width: 35%;
+  margin-left: 1rem;
+  border-radius: 3px;
+  border: 1px solid #0408e2;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+.form-popup .form .form-register .register-shop p .register-button {
+  border-radius: 3px;
+  width: 9rem;
+  height: 2.5rem;
+  border: 1px solid #0408e2;
+  font-weight: bold;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+.form-popup .form .form-register .register-shop p .register-button:hover {
+  background: #0408e2;
+  color: #fcf55b;
+  border: 1px solid #fcf55b;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
@@ -708,6 +885,10 @@ footer.site-footer .footer .logo_sect_footer .logo-footer {
 footer.site-footer .footer .logo_sect_footer .logo-footer a {
   color: #FFFFFF;
 }
+footer.site-footer .footer .logo_sect_footer .logo-footer a img {
+  max-height: 50px;
+  width: auto;
+}
 footer.site-footer .footer .logo_sect_footer .social-link {
   height: 50%;
   display: flex;
@@ -715,10 +896,9 @@ footer.site-footer .footer .logo_sect_footer .social-link {
   align-items: center;
 }
 footer.site-footer .footer .logo_sect_footer .social-link a {
-  color: #FFFFFF;
+  color: #b3b9bf;
   font-size: 35px;
   margin-left: 40px;
-  opacity: 0.6;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
@@ -729,7 +909,7 @@ footer.site-footer .footer .logo_sect_footer .social-link a:first-child {
   margin-left: 0;
 }
 footer.site-footer .footer .logo_sect_footer .social-link a:hover {
-  opacity: 1;
+  color: #fcf55b;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
@@ -746,9 +926,8 @@ footer.site-footer .footer .bottom-nav nav .navbar-nav li {
   line-height: 35px;
 }
 footer.site-footer .footer .bottom-nav nav .navbar-nav li a {
-  color: #FFFFFF;
+  color: #b3b9bf;
   font-size: 18px;
-  opacity: 0.6;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
@@ -756,7 +935,7 @@ footer.site-footer .footer .bottom-nav nav .navbar-nav li a {
   transition: all 400ms ease-in-out;
 }
 footer.site-footer .footer .bottom-nav nav .navbar-nav li a:hover {
-  opacity: 1;
+  color: #fcf55b;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
@@ -776,9 +955,8 @@ footer.site-footer .footer .stations {
   justify-content: center;
 }
 footer.site-footer .footer .stations a {
-  color: #FFFFFF;
+  color: #b3b9bf;
   font-size: 18px;
-  opacity: 0.6;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
@@ -786,7 +964,7 @@ footer.site-footer .footer .stations a {
   transition: all 400ms ease-in-out;
 }
 footer.site-footer .footer .stations a:hover {
-  opacity: 1;
+  color: #fcf55b;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;

@@ -60,7 +60,7 @@
                 // Get all entered urls from the database
                 $logo = carbon_get_theme_option( 'obo_logo' );
                 if ( $logo) {
-                    echo '<a href="' . esc_attr( home_url( '/' ) ) . '" >' . esc_attr( $logo ) . '</a>';
+                    echo '<a href="' . esc_attr( home_url( '/' ) ) . '" >' . wp_get_attachment_image( $logo ) . '</a>';
                 } else {
                     echo '<a href="' . esc_attr( home_url( '/' ) ) . '" >SHOP</a>';
                 }
@@ -78,13 +78,28 @@
             ) );
             ?>
 
-            <a href="<?php echo esc_url( home_url( '/my-account' ) ); ?>" class="myself-cab" title="Личный кабинет">
+            <div class="myself-cab" title="Личный кабинет">
                 <div class="myself">
                     <i class="fas fa-user-tie"></i>
                 </div>
-            </a>
+            </div>
         </div>
 
 	</header><!-- #masthead -->
+    <div class="form-popup">
+       <div class="form">
+           <i class="far fa-times-circle"></i>
+           <div class="form-footer">
+               <div class="login-button-form active">Войти</div>
+               <div class="register-button-form">Регистрация</div>
+           </div>
+
+           <?php get_template_part('woocommerce/includes/parts/wc-form-login', 'login') ?>
+
+           <?php get_template_part('woocommerce/includes/parts/wc-form-register', 'register') ?>
+
+       </div>
+    </div>
+</div>
 
 	<div id="content" class="site-content">
