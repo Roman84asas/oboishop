@@ -27,6 +27,9 @@ get_header(); ?>
             </div>
             <div class="basket">
                 <?php oboishop_woocommerce_cart_link() ?>
+                <!--<div class="mini-cart-content ">
+                    <?php /*the_widget('WC_Widget_Cart', 'title=') */?>
+                </div>-->
             </div>
         </div>
     </section>

@@ -28,15 +28,30 @@
                     ?>
                 </div>
                 <div class="social-link">
-                    <a href="#" class="ok">
-                        <i class="fab fa-odnoklassniki"></i>
-                    </a>
-                    <a href="#" class="fb">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="insta">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                    <?php
+                    $odnokl = carbon_get_theme_option( 'obo_odnoklassniki' );
+                    if ($odnokl) { ?>
+                        <a href="<?php echo esc_attr($odnokl); ?>" class="ok">
+                            <i class="fab fa-odnoklassniki"></i>
+                        </a>
+                    <?php } ?>
+
+                    <?php
+                    $face = carbon_get_theme_option( 'obo_facebook' );
+                    if ($face) { ?>
+                        <a href="<?php echo esc_attr($face); ?>" class="fb">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    <?php } ?>
+
+                    <?php
+                    $insta = carbon_get_theme_option( 'obo_insta' );
+                    if ($insta) { ?>
+                        <a href="<?php echo esc_attr($insta); ?>" class="insta">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    <?php } ?>
+
                 </div>
             </div>
 
@@ -62,8 +77,7 @@
                 <div class="info-my">
                     <div class="number-phone">
                         <?php
-                        // Get all entered urls from the database
-                        $phone = carbon_get_theme_option( 'obo_header_phone' );
+                        $phone = carbon_get_theme_option( 'obo_footer_phone' );
                         if ( $phone) { ?>
                             <span class="phone">
                                 Телефон:
@@ -76,8 +90,7 @@
 
                     <div class="my-mail">
                         <?php
-                        // Get all entered urls from the database
-                        $mail = carbon_get_theme_option( 'obo_header_email' );
+                        $mail = carbon_get_theme_option( 'obo_footer_email' );
                         if ( $mail) { ?>
                             <span class="label-email">
                                 Email:
