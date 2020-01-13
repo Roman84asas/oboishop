@@ -872,6 +872,12 @@ header.site-header .content-header .myself-cab .myself:hover {
   height: 10rem;
   border-bottom: 1px solid #ccccd3;
 }
+.home_slider .slider_1 {
+  width: 50%;
+}
+.home_slider .slider_2 {
+  width: 50%;
+}
 .sect-info {
   height: 5rem;
   border-bottom: 1px solid #ccccd3;
@@ -965,6 +971,15 @@ header.site-header .content-header .myself-cab .myself:hover {
 .sect-info .sections-otd .basket .cart-contents i {
   font-size: 30px;
   color: #0408e2;
+}
+.content-shop {
+  display: flex;
+}
+.content-shop .sidebar {
+  width: 25%;
+}
+.content-shop .all-show-info {
+  width: 75%;
 }
 footer.site-footer {
   background: #0408e2;
