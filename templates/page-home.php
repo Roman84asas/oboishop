@@ -51,8 +51,7 @@ get_header(); ?>
                     $woo_cat_slug = $woo_cat->slug;
                     echo '<li class="main-cat-item">';
                     $category_thumbnail_id = get_term_meta($woo_cat_id, 'thumbnail_id', true);
-                    $thumbnail_image_url = wp_get_attachment_image_src( $category_thumbnail_id, 'medium')[0];
-                    echo '<a href="' . get_term_link( $woo_cat_id, 'product_cat' ) . '"><img src="' . $thumbnail_image_url . '"/> <h4>' . $woo_cat_name . '</h4></a>';
+                    echo '<a href="' . get_term_link( $woo_cat_id, 'product_cat' ) . '"><h4>' . $woo_cat_name . '</h4></a>';
                     echo "</li>\n";
                 }
 
