@@ -36,6 +36,7 @@ get_header(); ?>
 
     <section class="content-shop">
         <section class="sidebar">
+            <h3>Каталог товаров</h3>
             <ul class="homepage-category">
                 <?php
                 $prod_cat_args = array(
