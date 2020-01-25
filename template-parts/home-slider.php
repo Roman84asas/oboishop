@@ -12,4 +12,7 @@
     <div class="slider_2">
         Slider №2
     </div>
+    <div class="slider_3">
+        Slider №3
+    </div>
 </section>

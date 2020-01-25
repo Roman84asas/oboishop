@@ -7,7 +7,7 @@ Container::make( 'theme_options', __( 'Настройки темы' ) )
     ->set_icon( 'dashicons-carrot' )
     ->add_tab( __( 'Header' ), array(
         Field::make( 'image', 'obo_logo', __( 'Логотип темы' ))
-            ->set_width( 50 ),
+            ->set_width( 100 ),
         Field::make( 'text', 'obo_header_email', __( 'Ваш Email' ) ),
         Field::make( 'text', 'obo_header_phone', __( 'Ваш номер телефона' ) ),
     ) )

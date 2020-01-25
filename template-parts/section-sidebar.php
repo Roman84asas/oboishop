@@ -27,6 +27,6 @@
             echo "</li>\n";
         }
         ?>
-        <li class="main-cat-item"><a href="<?php echo esc_url( home_url( '/calculator/' ) )?>"><h4>Калькулятор</h4></a></li>
+
     </ul>
 </section>

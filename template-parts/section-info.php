@@ -10,9 +10,7 @@
             <?php  echo esc_attr(get_search_form()); ?>
         </div>
         <div class="stations">
-            <div class="sect-art">
-                Статьи
-            </div>
+            <a href="<?php echo esc_url( home_url( '/calculator/' ) )?>" class="sect-art">Калькулятор обоев</a>
         </div>
         <div class="basket">
             <?php oboishop_woocommerce_cart_link() ?>

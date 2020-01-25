@@ -21,7 +21,7 @@
                     // Get all entered urls from the database
                     $logo = carbon_get_theme_option( 'obo_logo' );
                     if ( $logo) {
-                        echo '<a href="' . esc_url( home_url( '/' ) ) . '" >' . wp_get_attachment_image( $logo ) . '</a>';
+                        echo '<a href="' . esc_url( home_url( '/' ) ) . '" >' . wp_get_attachment_image( $logo, 'full' ) . '</a>';
                     } else {
                         echo '<a href="' . esc_url( home_url( '/' ) ) . '" >SHOP</a>';
                     }
@@ -67,10 +67,6 @@
                     'container_id'   => 'header-nav',
                 ) );
                 ?>
-            </div>
-
-            <div class="stations">
-                <a href="#">Статьи</a>
             </div>
 
             <div class="footer-info">
