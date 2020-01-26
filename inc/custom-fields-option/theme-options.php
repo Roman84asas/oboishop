@@ -1,4 +1,8 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly
+}
+
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
@@ -21,4 +25,16 @@ Container::make( 'theme_options', __( 'Сoциальные сети' ) )
         Field::make( 'text', 'obo_facebook', __( 'Facebook аккаунт' ) ),
         Field::make( 'text', 'obo_odnoklassniki', __( 'Odnoklassniki аккаунт' ) ),
         Field::make( 'text', 'obo_insta', __( 'Instagram аккаунт' ) ),
+    ) );
+
+Container::make( 'theme_options', __( 'Slideshow' ) )
+    ->add_fields( array(
+        Field::make( 'image', 'obo_image1', __( 'Первая фотография' )),
+        Field::make( 'text', 'obo_url_image1', __( 'URL к первой фотографии' ) ),
+        Field::make( 'image', 'obo_image2', __( 'Вторая фотография' )),
+        Field::make( 'text', 'obo_url_image2', __( 'URL к второй фотографии' ) ),
+        Field::make( 'image', 'obo_image3', __( 'Третья фотография' )),
+        Field::make( 'text', 'obo_url_image3', __( 'URL к третей фотографии' ) ),
+        Field::make( 'image', 'obo_image4', __( 'Четвертая фотография' )),
+        Field::make( 'text', 'obo_url_image4', __( 'URL к четвертой фотографии' ) ),
     ) );

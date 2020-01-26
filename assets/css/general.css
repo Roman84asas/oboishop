@@ -983,7 +983,8 @@ header.site-header .content-header .myself-cab .myself:hover {
   display: flex;
 }
 .content-shop .sidebar {
-  width: 25%;
+  width: 20%;
+  border-right: 1px solid #ccccd3;
 }
 .content-shop .all-show-info {
   width: 75%;
