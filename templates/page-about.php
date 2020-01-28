@@ -2,7 +2,9 @@
 /*
   * Template name: About
   * */
-
+if ( !defined('ABSPATH') ) {
+    exit;
+}
 
 get_header(); ?>
 

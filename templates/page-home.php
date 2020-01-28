@@ -1,8 +1,11 @@
 <?php
-
 /*
   * Template name: Home
-  * */
+  *
+ * */
+if ( !defined('ABSPATH') ) {
+    exit;
+}
 
 
 get_header(); ?>

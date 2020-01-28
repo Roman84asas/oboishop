@@ -3,6 +3,10 @@
  * Template part for section sidebar
  *
  */
+
+if ( !defined('ABSPATH') ) {
+    exit;
+}
 ?>
 <section class="sidebar">
     <h3>Каталог товаров</h3>

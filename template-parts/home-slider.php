@@ -3,6 +3,10 @@
  * Template part for home slider
  *
  */
+
+if ( !defined('ABSPATH') ) {
+exit;
+}
 ?>
 
 <section class="home_slider">

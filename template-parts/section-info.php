@@ -3,7 +3,12 @@
  * Template part for section info
  *
  */
+
+if ( !defined('ABSPATH') ) {
+exit;
+}
 ?>
+
 <section class="sect-info">
     <div class="sections-otd wrapper">
         <div class="search-sect">

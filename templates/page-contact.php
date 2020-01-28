@@ -2,7 +2,9 @@
 /*
   * Template name: Contact
   * */
-
+if ( !defined('ABSPATH') ) {
+    exit;
+}
 
 get_header(); ?>
 
