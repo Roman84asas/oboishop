@@ -7,7 +7,7 @@ import { addAction } from '@wordpress/hooks';
 /**
  * Internal dependencies.
  */
-import './store';
+import './store/index';
 import './fields';
 import initializeMonitors from './monitors';
 import initializeContainers from './containers';

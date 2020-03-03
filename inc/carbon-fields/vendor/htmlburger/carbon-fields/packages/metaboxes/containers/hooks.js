@@ -12,7 +12,7 @@ import { withFilters } from '@carbon-fields/core';
 /**
  * Internal dependencies.
  */
-import withContainer from '../hocs/with-container';
+import withContainer from '../hocs/with-container/index';
 
 /**
  * Extends the containers with necessary hooks.

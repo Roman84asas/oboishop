@@ -1,8 +1,8 @@
 /**
  * Internal dependencies.
  */
-import withProps from '../../hocs/with-props';
-import RadioField from '../radio';
+import withProps from '../../hocs/with-props/index';
+import RadioField from '../radio/index';
 import './style.scss';
 
 export default withProps( ( props ) => {

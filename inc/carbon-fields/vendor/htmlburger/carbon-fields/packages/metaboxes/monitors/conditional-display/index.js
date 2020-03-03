@@ -8,8 +8,8 @@ import { withEffects } from 'refract-callbag';
 /**
  * Internal dependencies.
  */
-import aperture from './aperture';
-import handler from './handler';
+import aperture from './aperture/index';
+import handler from './handler/index';
 
 /**
  * Performs the evaluation of conditions.

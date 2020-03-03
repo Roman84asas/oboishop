@@ -13,7 +13,7 @@ import { withValidation } from '@carbon-fields/core';
 /**
  * Internal dependencies.
  */
-import withConditionalLogic from '../hocs/with-conditional-logic';
+import withConditionalLogic from '../hocs/with-conditional-logic/index';
 
 /**
  * Connects every field to the store.
@@ -34,7 +34,7 @@ addFilter( 'carbon-fields.field-edit.block', 'carbon-fields/blocks', compose(
 /**
  * Internal dependencies.
  */
-import './association';
+import './association/index';
 import './complex';
 import './datetime';
 import './file';

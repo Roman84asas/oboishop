@@ -6,10 +6,10 @@ import { Fragment, render } from '@wordpress/element';
 /**
  * Internal dependencies.
  */
-import SaveLock from './save-lock';
-import ConditionalDisplay from './conditional-display';
-import WidgetHandler from './widget-handler';
-import RevisionsFlag from './revisions-flag';
+import SaveLock from './save-lock/index';
+import ConditionalDisplay from './conditional-display/index';
+import WidgetHandler from './widget-handler/index';
+import RevisionsFlag from './revisions-flag/index';
 import isGutenberg from '../utils/is-gutenberg';
 import { PAGE_NOW_WIDGETS, PAGE_NOW_CUSTOMIZE } from '../lib/constants';
 

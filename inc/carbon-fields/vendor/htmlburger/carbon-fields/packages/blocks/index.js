@@ -15,7 +15,7 @@ import {
 /**
  * Internal dependencies.
  */
-import './fields';
+import './fields/index';
 import './store';
 import BlockEdit from './components/block-edit';
 import BlockSave from './components/block-save';

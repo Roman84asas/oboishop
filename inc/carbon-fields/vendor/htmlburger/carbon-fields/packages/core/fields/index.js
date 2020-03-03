@@ -7,31 +7,31 @@ import { addFilter } from '@wordpress/hooks';
 /**
  * Internal dependencies.
  */
-import withFilters from '../hocs/with-filters';
+import withFilters from '../hocs/with-filters/index';
 import { registerFieldType } from '../registry/fields';
-import AssociationField from './association';
-import CheckboxField from './checkbox';
-import ColorField from './color';
-import ComplexField from './complex';
-import DateField from './date';
-import DateTimeField from './datetime';
-import FileField from './file';
-import HiddenField from './hidden';
-import HtmlField from './html';
-import MapField from './map';
-import MediaGalleryField from './media-gallery';
-import MultiselectField from './multiselect';
-import OembedField from './oembed';
-import RadioField from './radio';
-import RadioImageField from './radio-image';
-import RichTextField from './rich-text';
-import SelectField from './select';
-import SeparatorField from './separator';
-import SetField from './set';
-import SidebarField from './sidebar';
-import TextField from './text';
-import TextareaField from './textarea';
-import TimeField from './time';
+import AssociationField from './association/index';
+import CheckboxField from './checkbox/index';
+import ColorField from './color/index';
+import ComplexField from './complex/index';
+import DateField from './date/index';
+import DateTimeField from './datetime/index';
+import FileField from './file/index';
+import HiddenField from './hidden/index';
+import HtmlField from './html/index';
+import MapField from './map/index';
+import MediaGalleryField from './media-gallery/index';
+import MultiselectField from './multiselect/index';
+import OembedField from './oembed/index';
+import RadioField from './radio/index';
+import RadioImageField from './radio-image/index';
+import RichTextField from './rich-text/index';
+import SelectField from './select/index';
+import SeparatorField from './separator/index';
+import SetField from './set/index';
+import SidebarField from './sidebar/index';
+import TextField from './text/index';
+import TextareaField from './textarea/index';
+import TimeField from './time/index';
 
 /**
  * Extends the fields with necessary hooks.

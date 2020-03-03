@@ -7,7 +7,7 @@ import { get, map } from 'lodash';
 /**
  * Internal dependencies.
  */
-import { renderContainer } from '../../../containers';
+import { renderContainer } from '../../../containers/index';
 import base from '../conditions/base';
 import boolean from '../conditions/boolean';
 import postTerm from '../conditions/post-term';

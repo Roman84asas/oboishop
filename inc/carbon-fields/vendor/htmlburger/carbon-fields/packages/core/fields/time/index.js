@@ -6,8 +6,8 @@ import { __ } from '@wordpress/i18n';
 /**
  * Internal dependencies.
  */
-import withProps from '../../hocs/with-props';
-import DatetimeField from '../datetime';
+import withProps from '../../hocs/with-props/index';
+import DatetimeField from '../datetime/index';
 
 export default withProps( ( props ) => {
 	return {

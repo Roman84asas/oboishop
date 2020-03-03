@@ -7,7 +7,7 @@ import { doAction } from '@wordpress/hooks';
 /**
  * Internal dependencies.
  */
-import './store';
+import './store/index';
 import './fields';
 
 /**

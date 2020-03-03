@@ -13,8 +13,8 @@ import { withValidation } from '@carbon-fields/core';
 /**
  * Internal dependencies.
  */
-import withField from '../hocs/with-field';
-import withConditionalLogic from '../hocs/with-conditional-logic';
+import withField from '../hocs/with-field/index';
+import withConditionalLogic from '../hocs/with-conditional-logic/index';
 import isGutenberg from '../utils/is-gutenberg';
 
 /**
@@ -43,7 +43,7 @@ addFilter( 'carbon-fields.field-edit.metabox', 'carbon-fields/metaboxes', compos
 	withValidation
 ) );
 
-import './association';
+import './association/index';
 import './complex';
 import './datetime';
 import './file';

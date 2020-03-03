@@ -18,7 +18,7 @@ import {
 import urldecode from '../../utils/urldecode';
 import flattenField from '../../utils/flatten-field';
 import fromEventPattern from '../../utils/from-event-pattern';
-import { renderContainer } from '../../containers';
+import { renderContainer } from '../../containers/index';
 import {
 	CARBON_FIELDS_CONTAINER_ID_PREFIX,
 	CARBON_FIELDS_CONTAINER_WIDGET_ID_PREFIX,
