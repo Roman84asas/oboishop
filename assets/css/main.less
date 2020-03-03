@@ -3,7 +3,7 @@
 @font-merri: 'Merriweather', serif;;
 @font-robo: 'Roboto', sans-serif;
 
-@bagr_color: #0408e2;
+@bagr_color: #a39e8b;
 @text_color: #ff0fa0;
 @active_color: #fcf55b;
 @frey_color: #ccccd3;
@@ -78,7 +78,7 @@ header.site-header {
 
     .overlayMenu {
       width: 80%;
-      padding-left: 15%;
+      padding-left: 5%;
 
       .navbar-nav {
         display: flex;
@@ -95,7 +95,7 @@ header.site-header {
             font-family: @font-robo;
             text-decoration: none;
             color: #FFFFFF;
-            font-size: 14px;
+            font-size: 17px;
           }
         }
         .current-menu-item {
@@ -109,7 +109,7 @@ header.site-header {
             font-family: @font-robo;
             text-decoration: none;
             color: @active_color;
-            font-size: 14px;
+            font-size: 17px;
           }
         }
       }
@@ -631,6 +631,11 @@ header.site-header {
           display: flex;
           align-items: center;
           position: relative;
+          -webkit-transition: all .3s ease-in-out;
+          &:hover {
+            border-bottom: 2px solid @active_color;
+            -webkit-transition: all .3s ease-in-out;
+          }
           &:before {
             content: url("../img/arrow-1.png");
             position: absolute;
@@ -639,6 +644,11 @@ header.site-header {
           h4 {
             margin-bottom: 0;
             color: black;
+            -webkit-transition: all .3s ease-in-out;
+            &:hover {
+            color: @bagr_color;
+              -webkit-transition: all .3s ease-in-out;
+            }
           }
         }
       }
@@ -782,7 +792,7 @@ footer.site-footer {
 
 
         a {
-          color: #FFFFFF;
+          color: white;
           img {
             max-height: 80px;
             width: auto;
@@ -797,7 +807,7 @@ footer.site-footer {
         align-items: center;
 
         a {
-          color: #b3b9bf;
+          color: white;
           font-size: 35px;
           margin-left: 40px;
           .transition(all 400ms ease-in-out);
@@ -824,7 +834,7 @@ footer.site-footer {
           li {
             line-height: 35px;
             a {
-              color: #b3b9bf;
+              color: white;
               font-size: 18px;
               .transition(all 400ms ease-in-out);
               &:hover {
@@ -854,12 +864,12 @@ footer.site-footer {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 20%;
         .number-phone {
           margin-bottom: 15px;
           span {
-            color: #FFFFFF;
+            color: white;
             margin-right: 10px;
           }
 
@@ -867,11 +877,11 @@ footer.site-footer {
 
         .my-mail {
           span {
-            color: #FFFFFF;
+            color: white;
             margin-right: 10px;
           }
           a {
-            color: #FFFFFF;
+            color: white;
           }
         }
       }

@@ -614,7 +614,7 @@ body {
   font-size: 12px;
 }
 header.site-header {
-  background: #0408e2;
+  background: #a39e8b;
   height: 80px;
   border-bottom: 1px solid #ccccd3;
 }
@@ -639,7 +639,7 @@ header.site-header .content-header .logo_sect a img {
 }
 header.site-header .content-header .overlayMenu {
   width: 80%;
-  padding-left: 15%;
+  padding-left: 5%;
 }
 header.site-header .content-header .overlayMenu .navbar-nav {
   display: flex;
@@ -651,13 +651,13 @@ header.site-header .content-header .overlayMenu .navbar-nav li {
   height: 77px;
   display: flex;
   align-items: center;
-  border-bottom: 3px solid #0408e2;
+  border-bottom: 3px solid #a39e8b;
 }
 header.site-header .content-header .overlayMenu .navbar-nav li a {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 17px;
 }
 header.site-header .content-header .overlayMenu .navbar-nav .current-menu-item {
   margin-right: 25px;
@@ -670,7 +670,7 @@ header.site-header .content-header .overlayMenu .navbar-nav .current-menu-item a
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: #fcf55b;
-  font-size: 14px;
+  font-size: 17px;
 }
 header.site-header .content-header .myself-cab {
   width: 5%;
@@ -741,7 +741,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   width: 90px;
   margin-left: 20px;
   font-size: 15px;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   border-radius: 3px;
   align-items: center;
   display: flex;
@@ -755,7 +755,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   width: 90px;
   margin-left: 20px;
   font-size: 15px;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   border-radius: 3px;
   align-items: center;
   display: flex;
@@ -765,7 +765,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   cursor: pointer;
 }
 .form-popup .form .form-footer .active {
-  background: #0408e2;
+  background: #a39e8b;
   color: #fcf55b;
 }
 .form-popup .form .form-login {
@@ -791,7 +791,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   width: 35%;
   margin-left: 10px;
   border-radius: 3px;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   font-size: 16px;
   color: #4a4a4a;
 }
@@ -799,7 +799,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   width: 35%;
   margin-left: 21%;
   border-radius: 3px;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   font-size: 16px;
   color: #4a4a4a;
 }
@@ -807,7 +807,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   margin-left: 10%;
   border-radius: 3px;
   width: 8rem;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   font-weight: bold;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -816,7 +816,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   transition: all 400ms ease-in-out;
 }
 .form-popup .form .form-login .login-shop p .login-button:hover {
-  background: #0408e2;
+  background: #a39e8b;
   color: #fcf55b;
   border: 1px solid #fcf55b;
   -webkit-transition: all 400ms ease-in-out;
@@ -849,7 +849,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   width: 35%;
   margin-left: 1rem;
   border-radius: 3px;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   font-size: 16px;
   color: #4a4a4a;
 }
@@ -857,7 +857,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   border-radius: 3px;
   width: 9rem;
   height: 2.5rem;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   font-weight: bold;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -866,7 +866,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   transition: all 400ms ease-in-out;
 }
 .form-popup .form .form-register .register-shop p .register-button:hover {
-  background: #0408e2;
+  background: #a39e8b;
   color: #fcf55b;
   border: 1px solid #fcf55b;
   -webkit-transition: all 400ms ease-in-out;
@@ -1108,7 +1108,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   font-family: 'Merriweather', serif;
   color: #4b4b4b;
   padding: 5px 15px;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   border-radius: 3px;
   cursor: pointer;
   box-shadow: 1px 2px 20px #c4c4c4;
@@ -1119,7 +1119,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   transition: all 400ms ease-in-out;
 }
 .sect-info .sections-otd .stations .sect-art:hover {
-  background: #0408e2;
+  background: #a39e8b;
   color: #fcf55b;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -1138,7 +1138,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   height: 43px;
   width: 43px;
   position: relative;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1152,7 +1152,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   width: 12px;
   position: absolute;
   border-radius: 50%;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   top: -12px;
   right: -12px;
   padding: 2px;
@@ -1160,7 +1160,7 @@ header.site-header .content-header .myself-cab .myself:hover {
 }
 .sect-info .sections-otd .basket .cart-contents i {
   font-size: 30px;
-  color: #0408e2;
+  color: #a39e8b;
 }
 .content-shop {
   display: flex;
@@ -1189,6 +1189,11 @@ header.site-header .content-header .myself-cab .myself:hover {
   display: flex;
   align-items: center;
   position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.content-shop .sidebar .homepage-category .main-cat-item a:hover {
+  border-bottom: 2px solid #fcf55b;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .content-shop .sidebar .homepage-category .main-cat-item a:before {
   content: url("../img/arrow-1.png");
@@ -1198,6 +1203,11 @@ header.site-header .content-header .myself-cab .myself:hover {
 .content-shop .sidebar .homepage-category .main-cat-item a h4 {
   margin-bottom: 0;
   color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.content-shop .sidebar .homepage-category .main-cat-item a h4:hover {
+  color: #a39e8b;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .content-shop .all-show-info {
   width: 100%;
@@ -1237,12 +1247,12 @@ header.site-header .content-header .myself-cab .myself:hover {
 }
 .content-shop .all-show-info .row-all-calculator .calculator-body .calc-value-all .row-calc .row-calc-input-value .calc_block_title {
   display: block;
-  color: #0408e2;
+  color: #a39e8b;
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 7px;
-  border-bottom: 1px solid #0408e2;
+  border-bottom: 1px solid #a39e8b;
 }
 .content-shop .all-show-info .row-all-calculator .calculator-body .calc-value-all .row-calc .row-calc-input-value .form-group .calc_block2 input {
   width: 15rem;
@@ -1255,7 +1265,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   background: #ffffff;
   font-size: 16px;
   color: #4b4b4b;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   border-radius: 4px;
   margin-bottom: 2rem;
   -webkit-transition: all 400ms ease-in-out;
@@ -1265,7 +1275,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   transition: all 400ms ease-in-out;
 }
 .content-shop .all-show-info .row-all-calculator .calculator-body .form-group-plus .btn-calculate:hover {
-  background: #0408e2;
+  background: #a39e8b;
   color: #fcf55b;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -1288,7 +1298,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   color: #4b4b4b;
   height: 2rem;
   width: 5rem;
-  border: 1px solid #0408e2;
+  border: 1px solid #a39e8b;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -1303,7 +1313,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   flex-flow: wrap;
 }
 footer.site-footer {
-  background: #0408e2;
+  background: #a39e8b;
   height: 300px;
   border-top: 1px solid #ccccd3;
 }
@@ -1321,7 +1331,7 @@ footer.site-footer .footer .logo_sect_footer .logo-footer {
   align-items: center;
 }
 footer.site-footer .footer .logo_sect_footer .logo-footer a {
-  color: #FFFFFF;
+  color: white;
 }
 footer.site-footer .footer .logo_sect_footer .logo-footer a img {
   max-height: 80px;
@@ -1335,7 +1345,7 @@ footer.site-footer .footer .logo_sect_footer .social-link {
   align-items: center;
 }
 footer.site-footer .footer .logo_sect_footer .social-link a {
-  color: #b3b9bf;
+  color: white;
   font-size: 35px;
   margin-left: 40px;
   -webkit-transition: all 400ms ease-in-out;
@@ -1365,7 +1375,7 @@ footer.site-footer .footer .bottom-nav nav .navbar-nav li {
   line-height: 35px;
 }
 footer.site-footer .footer .bottom-nav nav .navbar-nav li a {
-  color: #b3b9bf;
+  color: white;
   font-size: 18px;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -1396,22 +1406,22 @@ footer.site-footer .footer .footer-info .info-my {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 20%;
 }
 footer.site-footer .footer .footer-info .info-my .number-phone {
   margin-bottom: 15px;
 }
 footer.site-footer .footer .footer-info .info-my .number-phone span {
-  color: #FFFFFF;
+  color: white;
   margin-right: 10px;
 }
 footer.site-footer .footer .footer-info .info-my .my-mail span {
-  color: #FFFFFF;
+  color: white;
   margin-right: 10px;
 }
 footer.site-footer .footer .footer-info .info-my .my-mail a {
-  color: #FFFFFF;
+  color: white;
 }
 footer.site-footer .footer .footer-info .info-date {
   height: 50%;

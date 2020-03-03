@@ -10,8 +10,6 @@ if ( !defined('ABSPATH') ) {
 
 get_header(); ?>
 
-    <?php get_template_part( 'template-parts/home-slider', 'page' ); ?>
-
     <?php get_template_part( 'template-parts/section-info', 'page' ); ?>
 
     <section class="content-shop">
