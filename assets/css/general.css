@@ -1074,6 +1074,8 @@ header.site-header .content-header .myself-cab .myself:hover {
 .sect-info .sections-otd {
   display: flex;
   height: 100%;
+  max-width: 1366px;
+  margin: auto;
 }
 .sect-info .sections-otd .search-sect {
   width: 33%;
@@ -1081,21 +1083,45 @@ header.site-header .content-header .myself-cab .myself:hover {
   justify-content: center;
   align-items: center;
 }
+.sect-info .sections-otd .search-sect .search-form {
+  width: 90%;
+  margin: auto;
+  padding-left: 85px;
+}
 .sect-info .sections-otd .search-sect .search-form .search-submit {
   font-size: 12px;
   font-family: 'Merriweather', serif;
   color: #4b4b4b;
   font-style: italic;
+  margin-left: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.sect-info .sections-otd .search-sect .search-form .search-submit:hover {
+  background: #a39e8b;
+  color: #fcf55b;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .sect-info .sections-otd .search-sect .search-form label .screen-reader-text {
   display: none;
 }
 .sect-info .sections-otd .search-sect .search-form label .search-field {
   border: 1px solid #ccccd3;
-  font-size: 14px;
+  font-size: 16px;
   color: #4b4b4b;
-  padding: 7px 0 7px 10px;
-  border-radius: 3px;
+  border-radius: 10px;
+  padding: 16px 10px;
+  min-width: 60%;
 }
 .sect-info .sections-otd .stations {
   width: 33%;
@@ -1111,6 +1137,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   border: 1px solid #a39e8b;
   border-radius: 3px;
   cursor: pointer;
+  background-color: white;
   box-shadow: 1px 2px 20px #c4c4c4;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -1143,7 +1170,7 @@ header.site-header .content-header .myself-cab .myself:hover {
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  background: #ccccd3;
+  background: white;
 }
 .sect-info .sections-otd .basket .cart-contents .count {
   display: block;

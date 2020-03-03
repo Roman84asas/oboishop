@@ -10,7 +10,7 @@ exit;
 ?>
 
 <section class="sect-info">
-    <div class="sections-otd wrapper">
+    <div class="sections-otd">
         <div class="search-sect">
             <?php  echo esc_attr(get_search_form()); ?>
         </div>

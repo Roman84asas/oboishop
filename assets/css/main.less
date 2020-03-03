@@ -514,6 +514,8 @@ header.site-header {
   .sections-otd{
     display: flex;
     height: 100%;
+    max-width: 1366px;
+    margin: auto;
 
     .search-sect {
       width: 33%;
@@ -522,11 +524,25 @@ header.site-header {
       align-items: center;
 
       .search-form {
+        width: 90%;
+        margin: auto;
+        padding-left: 85px;
         .search-submit {
           font-size: 12px;
           font-family: @font-merri;
           color: @font_color;
           font-style: italic;
+          margin-left: 10px;
+          border: 1px solid;
+          border-radius: 10px;
+          background-color: white;
+          .transition(all .4s ease-in-out);
+          &:hover {
+            background: @bagr_color;
+            color: @active_color;
+            .transition(all .4s ease-in-out);
+          }
+
         }
         label {
           .screen-reader-text {
@@ -534,10 +550,11 @@ header.site-header {
           }
           .search-field {
             border: 1px solid @frey_color;
-            font-size: 14px;
+            font-size: 16px;
             color: @font_color;
-            padding: 7px 0 7px 10px;
-            border-radius: 3px;
+            border-radius: 10px;
+            padding: 16px 10px;
+            min-width: 60%;
           }
         }
       }
@@ -556,6 +573,7 @@ header.site-header {
         border: 1px solid @bagr_color;
         border-radius: 3px;
         cursor: pointer;
+        background-color: white;
         box-shadow: 1px 2px 20px #c4c4c4;
         .transition(all 400ms ease-in-out);
         &:hover {
@@ -582,7 +600,7 @@ header.site-header {
         justify-content: center;
         align-items: center;
         border-radius: 3px;
-        background: @frey_color;
+        background: white;
 
         .count  {
           display: block;
