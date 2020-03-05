@@ -1456,4 +1456,26 @@ footer.site-footer .footer .footer-info .info-date {
   justify-content: center;
   align-items: center;
 }
+.woocommerce-loop-product__title {
+  color: #4b4b4b;
+  margin-top: 1rem;
+}
+.price {
+  color: #4b4b4b;
+}
+del {
+  color: red;
+  margin-right: 15px;
+}
+.add_to_cart_button {
+  color: black;
+  margin-top: 10px;
+}
+.woocommerce-loop-product__link .onsale {
+  position: absolute;
+  color: red;
+  margin: 25% 15%;
+  font-size: 35px;
+  border-bottom: 1px solid;
+}
 /*# sourceMappingURL=general.css.map */
