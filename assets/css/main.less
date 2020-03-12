@@ -643,6 +643,7 @@ header.site-header {
     .homepage-category {
       display: flex;
       flex-direction: column;
+      margin-bottom: 45px;
       .main-cat-item {
         margin-bottom: 15px;
         a {
@@ -940,3 +941,86 @@ color: red;
   }
 }
 
+
+//Page about style
+.all-show-info-about {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  h2 {
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: 65px;
+    color: @font_color;
+    text-align: center;
+  }
+  .happing {
+    font-size: 18px;
+    font-weight: 700;
+    color: @font_color;
+  }
+  p {
+    font-size: 18px;
+    color: @font_color;
+    margin-bottom: 35px;
+  }
+  .show_for_now {
+    font-size: 18px;
+    color: @font_color;
+    margin-bottom: 25px;
+    .sfn_descr {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      span {
+        margin-bottom: 7px;
+        margin-left: 25px;
+        position: relative;
+        &:before {
+          content: url("../img/check.png");
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          left: -25px;
+        }
+      }
+    }
+  }
+  .your_no_mistake {
+    font-size: 19px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: @font_color;
+    font-weight: 700;
+  }
+}
+
+//Page vocation style
+.all-show-info-voc {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  h2 {
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: 65px;
+    color: @font_color;
+    text-align: center;
+  }
+  .voc_desc {
+    font-size: 18px;
+    color: @font_color;
+    text-align: center;
+    a {
+      text-transform: none;
+      text-decoration: none;
+      color: @font_color;
+      -webkit-transition: all .3s ease-in-out;
+      &:hover {
+        -webkit-transition: all .3s ease-in-out;
+        color: black;
+      }
+    }
+  }
+}

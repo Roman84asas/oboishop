@@ -1208,6 +1208,7 @@ header.site-header .content-header .myself-cab .myself:hover {
 .content-shop .sidebar .homepage-category {
   display: flex;
   flex-direction: column;
+  margin-bottom: 45px;
 }
 .content-shop .sidebar .homepage-category .main-cat-item {
   margin-bottom: 15px;
@@ -1477,5 +1478,84 @@ del {
   margin: 25% 15%;
   font-size: 35px;
   border-bottom: 1px solid;
+}
+.all-show-info-about {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.all-show-info-about h2 {
+  font-size: 35px;
+  margin-top: 35px;
+  margin-bottom: 65px;
+  color: #4b4b4b;
+  text-align: center;
+}
+.all-show-info-about .happing {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4b4b4b;
+}
+.all-show-info-about p {
+  font-size: 18px;
+  color: #4b4b4b;
+  margin-bottom: 35px;
+}
+.all-show-info-about .show_for_now {
+  font-size: 18px;
+  color: #4b4b4b;
+  margin-bottom: 25px;
+}
+.all-show-info-about .show_for_now .sfn_descr {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.all-show-info-about .show_for_now .sfn_descr span {
+  margin-bottom: 7px;
+  margin-left: 25px;
+  position: relative;
+}
+.all-show-info-about .show_for_now .sfn_descr span:before {
+  content: url("../img/check.png");
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -25px;
+}
+.all-show-info-about .your_no_mistake {
+  font-size: 19px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: #4b4b4b;
+  font-weight: 700;
+}
+.all-show-info-voc {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+}
+.all-show-info-voc h2 {
+  font-size: 35px;
+  margin-top: 35px;
+  margin-bottom: 65px;
+  color: #4b4b4b;
+  text-align: center;
+}
+.all-show-info-voc .voc_desc {
+  font-size: 18px;
+  color: #4b4b4b;
+  text-align: center;
+}
+.all-show-info-voc .voc_desc a {
+  text-transform: none;
+  text-decoration: none;
+  color: #4b4b4b;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.all-show-info-voc .voc_desc a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  color: black;
 }
 /*# sourceMappingURL=general.css.map */
