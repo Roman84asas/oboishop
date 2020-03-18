@@ -1457,20 +1457,50 @@ footer.site-footer .footer .footer-info .info-date {
   justify-content: center;
   align-items: center;
 }
+ul.products li.product {
+  position: relative;
+  margin-bottom: 5rem !important;
+}
 .woocommerce-loop-product__title {
   color: #4b4b4b;
   margin-top: 1rem;
+  display: block;
+  margin-left: 25%;
+  font-size: 1.5rem;
 }
 .price {
   color: #4b4b4b;
+  position: absolute;
+  border: 1px solid;
+  padding: 10px 15px;
+  top: 360px;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 del {
   color: red;
   margin-right: 15px;
 }
 .add_to_cart_button {
+  position: absolute;
+  color: #4b4b4b;
+  font-size: 1rem;
+  top: 360px;
+  left: 200px;
+  padding: 10px 15px;
+  border: 1px solid;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.add_to_cart_button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: #39cbee;
   color: black;
-  margin-top: 10px;
 }
 .woocommerce-loop-product__link .onsale {
   position: absolute;

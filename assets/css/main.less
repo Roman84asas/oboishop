@@ -916,20 +916,50 @@ footer.site-footer {
 
 
 //Stile product and price
+ul.products li.product{
+  position: relative;
+  margin-bottom: 5rem !important;
+}
 .woocommerce-loop-product__title {
   color: @font_color;
   margin-top: 1rem;
+  display: block;
+  margin-left: 25%;
+  font-size: 1.5rem;
 }
 .price {
   color: @font_color;
+  position: absolute;
+  border: 1px solid;
+  padding: 10px 15px;
+  top: 360px;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 del {
 color: red;
   margin-right: 15px;
 }
 .add_to_cart_button {
-  color: black;
-  margin-top: 10px;
+  position: absolute;
+  color: @font_color;
+  font-size: 1rem;
+  top: 360px;
+  left: 200px;
+  padding: 10px 15px;
+  border: 1px solid;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  &:hover {
+    -webkit-transition: all .3s ease-in-out;
+    background-color: #39cbee;
+    color: black;
+  }
 }
 .woocommerce-loop-product__link {
   .onsale {
