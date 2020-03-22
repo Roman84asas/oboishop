@@ -1633,4 +1633,25 @@ del {
   position: absolute;
   left: -25px;
 }
+.all-no-found {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.all-no-found .content_not_found {
+  border: 1px solid #646060;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 1px 2px 20px #646060;
+  padding: 25px;
+}
+.all-no-found .content_not_found h2 {
+  font-size: 44px;
+  color: red;
+}
+.all-no-found .content_not_found p {
+  font-size: 1.5rem;
+  color: #4b4b4b;
+}
 /*# sourceMappingURL=general.css.map */
