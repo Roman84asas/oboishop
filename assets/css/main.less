@@ -916,6 +916,86 @@ footer.site-footer {
 
 
 //Stile product and price
+.all-show-info {
+  padding-top: 1%;
+  padding-left: 5%;
+  .woocommerce-ordering {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    .orderby {
+      width: 300px;
+      height: 3rem;
+      color: @font_color;
+      font-size: 18px;
+      border-radius: 7px;
+      option {
+        width: 300px;
+      }
+    }
+  }
+  .columns-3 {
+    .products {
+      margin-bottom: 35px;
+    }
+    .woocommerce-pagination {
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      ul {
+        display: flex;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 30px;
+          width: 30px;
+          margin-right: 5px;
+          span {
+            font-size: 1.5rem;
+            color: black;
+            font-weight: 700;
+          }
+          a {
+            font-size: 1.5rem;
+            color: @font_color;
+          }
+          .next {
+            color: @text_color;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid @text_color;
+            .transition(all .4s ease-in-out);
+            &:hover {
+              background-color: @text_color;
+              color: white;
+              box-shadow: 1px 2px 20px @text_color;
+              .transition(all .4s ease-in-out);
+            }
+          }
+          .prev {
+            color: @text_color;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid @text_color;
+            .transition(all .4s ease-in-out);
+            &:hover {
+              background-color: @text_color;
+              color: white;
+              box-shadow: 1px 2px 20px @text_color;
+              .transition(all .4s ease-in-out);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 ul.products li.product{
   position: relative;
   margin-bottom: 5rem !important;
@@ -924,7 +1004,8 @@ ul.products li.product{
   color: @font_color;
   margin-top: 1rem;
   display: block;
-  margin-left: 25%;
+  width: 300px;
+  text-align: center;
   font-size: 1.5rem;
 }
 .price {
@@ -936,6 +1017,7 @@ ul.products li.product{
   font-size: 1rem;
   border-radius: 5px;
 }
+
 del {
 color: red;
   margin-right: 15px;
@@ -1130,6 +1212,6 @@ color: red;
 }
 
 //Page Акции и скидки style
-.all-show-prom {
-
+.all-show-product {
+  width: 80%;
 }

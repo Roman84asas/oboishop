@@ -60,7 +60,7 @@ add_filter( 'body_class', 'oboishop_woocommerce_active_body_class' );
  * @return integer number of products.
  */
 function oboishop_woocommerce_products_per_page() {
-	return 12;
+	return 9;
 }
 add_filter( 'loop_shop_per_page', 'oboishop_woocommerce_products_per_page' );
 
