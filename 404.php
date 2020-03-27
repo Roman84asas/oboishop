@@ -7,6 +7,7 @@
  * @package oboishop
  */
 
+defined('ABSPATH') || exit;
 get_header(); ?>
 
 <?php get_template_part( 'template-parts/section-info', 'page' ); ?>

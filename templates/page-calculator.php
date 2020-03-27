@@ -5,9 +5,7 @@
 /*
   * Template name: Home
   * */
-if ( !defined('ABSPATH') ) {
-    exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
 

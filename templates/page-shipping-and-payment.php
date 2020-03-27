@@ -2,9 +2,7 @@
 /*
   * Template name:Доставка и оплата
   * */
-if ( !defined('ABSPATH') ) {
-    exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
 <?php get_template_part( 'template-parts/section-info', 'page' ); ?>
