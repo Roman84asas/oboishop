@@ -4,9 +4,7 @@
  *
  */
 
-if ( !defined('ABSPATH') ) {
-    exit;
-}
+defined( 'ABSPATH' ) || exit;
 ?>
 <section class="sidebar">
     <h3>Каталог товаров</h3>
