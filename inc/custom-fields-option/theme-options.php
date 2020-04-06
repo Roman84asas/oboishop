@@ -18,7 +18,11 @@ Container::make( 'theme_options', __( 'Настройки темы' ) )
     ->add_tab( __( 'Footer' ), array(
         Field::make( 'text', 'obo_footer_email', __( 'Ваш Email' ) ),
         Field::make( 'text', 'obo_footer_phone', __( 'Ваш номер телефона' ) ),
-    ) );
+    ))
+	->add_tab( __( 'Список товаров' ), array(
+		Field::make('file', 'obo_price_list', 'Лист товаров (PDF)' ),
+		Field::make( 'text', 'obo_price_list_text', __( 'Копировать ссылку на файл PDF' ) ),
+	) );
 
 Container::make( 'theme_options', __( 'Сoциальные сети' ) )
     ->add_fields( array(

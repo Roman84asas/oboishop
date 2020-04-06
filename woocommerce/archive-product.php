@@ -28,6 +28,7 @@ do_action( 'woocommerce_archive_description' );
 		<?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
 		<section class="all-show-info">
 			<?php if ( woocommerce_product_loop() ) {
+				remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_output_all_notices', 10 );
 				remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
 			/**
 			* Hook: woocommerce_before_shop_loop.

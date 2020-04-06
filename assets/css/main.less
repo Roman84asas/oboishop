@@ -917,24 +917,75 @@ footer.site-footer {
 
 //Stile product and price
 .all-show-info {
-  padding-top: 1%;
   padding-left: 5%;
-  .woocommerce-ordering {
-    margin-top: 10px;
-    margin-bottom: 25px;
-    .orderby {
-      width: 300px;
-      height: 3rem;
-      color: @font_color;
-      font-size: 18px;
-      border-radius: 7px;
-      option {
+  .search_and_download {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 8%;
+    min-height: 7rem;
+    .woocommerce-ordering {
+      margin-top: auto;
+      margin-bottom: auto;
+      .orderby {
         width: 300px;
+        height: 3rem;
+        color: @font_color;
+        font-size: 18px;
+        border-radius: 7px;
+        option {
+          width: 300px;
+        }
+      }
+    }
+    .download-scheme {
+      margin-top: auto;
+      margin-bottom: auto;
+      a {
+        max-width: 270px;
+        width: 270px;
+        height: 60px;
+        border: 1px solid #39cbee;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-decoration: none;
+        line-height: 18px;
+        color: #333333;
+        border-radius: 5px;
+        @media (min-width: 767px) {
+          flex:0 0 29%;
+          width: 213px;
+        }
+        @media (min-width:961px) {
+          width: 270px;
+        }
+        p {
+          font-size: 14px;
+          position: relative;
+          padding-left: 35px;
+          margin: 0;
+          &:before {
+            content: "";
+            width: 14px;
+            height: 14px;
+            background-image: url(../img/img2.png);
+            position: absolute;
+            left: 0;
+          }
+        }
+        span {
+          font-size: 12px;
+          color: @font_color;
+          display: block;
+        }
       }
     }
   }
+
   .columns-3 {
     .products {
+      justify-content: center;
       margin-bottom: 35px;
     }
     .woocommerce-pagination {
@@ -994,152 +1045,74 @@ footer.site-footer {
         }
       }
     }
-  }
-}
-ul.products li.product{
-  position: relative;
-  margin-bottom: 5rem !important;
-}
-.woocommerce-loop-product__title {
-  color: @font_color;
-  margin-top: 1rem;
-  display: block;
-  width: 300px;
-  text-align: center;
-  font-size: 1.5rem;
-}
-.price {
-  color: @font_color;
-  position: absolute;
-  border: 1px solid;
-  padding: 10px 15px;
-  top: 360px;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-
-del {
-color: red;
-  margin-right: 15px;
-}
-.add_to_cart_button {
-  position: absolute;
-  color: @font_color;
-  font-size: 1rem;
-  top: 360px;
-  left: 200px;
-  padding: 10px 15px;
-  border: 1px solid;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  text-decoration: none;
-  -webkit-transition: all .3s ease-in-out;
-  &:hover {
-    -webkit-transition: all .3s ease-in-out;
-    background-color: #39cbee;
-    color: black;
-  }
-}
-.woocommerce-loop-product__link {
-  .onsale {
-    position: absolute;
-    color:red;
-    margin: 25% 15%;
-    font-size: 35px;
-    border-bottom: 1px solid;
-  }
-}
-
-//Page about style
-.all-show-info-about {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  h2 {
-    font-size: 35px;
-    margin-top: 35px;
-    margin-bottom: 65px;
-    color: @font_color;
-    text-align: center;
-  }
-  .happing {
-    font-size: 18px;
-    font-weight: 700;
-    color: @font_color;
-  }
-  p {
-    font-size: 18px;
-    color: @font_color;
-    margin-bottom: 35px;
-  }
-  .show_for_now {
-    font-size: 18px;
-    color: @font_color;
-    margin-bottom: 25px;
-    .sfn_descr {
-      display: flex;
-      flex-direction: column;
-      padding-top: 10px;
-      span {
-        margin-bottom: 7px;
-        margin-left: 25px;
+    @media screen and (min-width: 48em) {
+     ul.products li.product {
         position: relative;
-        &:before {
-          content: url("../img/check.png");
-          width: 10px;
-          height: 10px;
-          position: absolute;
-          left: -25px;
-        }
+        margin-bottom: 5rem !important;
+        width: 20%;
+        margin-right: 6%;
       }
-    }
-  }
-  .your_no_mistake {
-    font-size: 19px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    color: @font_color;
-    font-weight: 700;
   }
 }
 
-//Page vocation style
-.all-show-info-voc {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  width: 100%;
-  h2 {
-    font-size: 35px;
-    margin-top: 35px;
-    margin-bottom: 65px;
+  .woocommerce-loop-product__title {
     color: @font_color;
+    margin-top: 1rem;
+    display: block;
+    width: 300px;
     text-align: center;
+    font-size: 1.5rem;
   }
-  .voc_desc {
-    font-size: 18px;
+  .price {
     color: @font_color;
+    position: absolute;
+    border: 1px solid;
+    padding: 10px 15px;
+    top: 360px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+
+  del {
+    color: red;
+    margin-right: 15px;
+  }
+  .add_to_cart_button {
+    position: absolute;
+    color: @font_color;
+    font-size: 1rem;
+    top: 360px;
+    left: 195px;
+    padding: 10px 15px;
+    border: 1px solid;
+    display: flex;
     text-align: center;
-    a {
-      text-transform: none;
-      text-decoration: none;
-      color: @font_color;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-in-out;
+    &:hover {
       -webkit-transition: all .3s ease-in-out;
-      &:hover {
-        -webkit-transition: all .3s ease-in-out;
-        color: black;
-      }
+      background-color: #39cbee;
+      color: black;
     }
   }
-}
+  .woocommerce-loop-product__link {
+    .onsale {
+      position: absolute;
+      color:red;
+      margin: 25% 15%;
+      font-size: 35px;
+      border-bottom: 1px solid;
+    }
+  }
 
-//Page доставка style
-.all-show-info-dost {
-  padding: 15px;
-  .dost_info {
+  //Page about style
+  .all-show-info-about {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     h2 {
       font-size: 35px;
       margin-top: 35px;
@@ -1147,31 +1120,26 @@ color: red;
       color: @font_color;
       text-align: center;
     }
-    h3 {
-      font-size: 25px;
-      margin-top: 15px;
+    .happing {
+      font-size: 18px;
+      font-weight: 700;
       color: @font_color;
-      text-align: center;
     }
     p {
-      font-size: 16px;
-      margin-bottom: 5px;
+      font-size: 18px;
       color: @font_color;
+      margin-bottom: 35px;
     }
-    .info_in {
-      p {
-        font-size: 16px;
-        margin-bottom: 5px;
-        color: @font_color;
-        font-weight: 700;
-      }
-      .info_in_tb {
+    .show_for_now {
+      font-size: 18px;
+      color: @font_color;
+      margin-bottom: 25px;
+      .sfn_descr {
         display: flex;
         flex-direction: column;
+        padding-top: 10px;
         span {
-          font-size: 16px;
-          margin-bottom: 5px;
-          color: @font_color;
+          margin-bottom: 7px;
           margin-left: 25px;
           position: relative;
           &:before {
@@ -1184,33 +1152,121 @@ color: red;
         }
       }
     }
-  }
-}
-
-//Page 404 style
-.all-no-found {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  .content_not_found {
-    border: 1px solid #646060;
-    border-radius: 7px;
-    background-color: white;
-    box-shadow: 1px 2px 20px #646060;
-    padding: 25px;
-    h2 {
-      font-size: 44px;
-      color: red;
-    }
-    p {
-      font-size: 1.5rem;
+    .your_no_mistake {
+      font-size: 19px;
+      margin-bottom: 15px;
+      margin-top: 15px;
       color: @font_color;
+      font-weight: 700;
     }
   }
-}
 
-//Page Акции и скидки style
-.all-show-product {
-  width: 80%;
+  //Page vocation style
+  .all-show-info-voc {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    h2 {
+      font-size: 35px;
+      margin-top: 35px;
+      margin-bottom: 65px;
+      color: @font_color;
+      text-align: center;
+    }
+    .voc_desc {
+      font-size: 18px;
+      color: @font_color;
+      text-align: center;
+      a {
+        text-transform: none;
+        text-decoration: none;
+        color: @font_color;
+        -webkit-transition: all .3s ease-in-out;
+        &:hover {
+          -webkit-transition: all .3s ease-in-out;
+          color: black;
+        }
+      }
+    }
+  }
+
+  //Page доставка style
+  .all-show-info-dost {
+    padding: 15px;
+    .dost_info {
+      h2 {
+        font-size: 35px;
+        margin-top: 35px;
+        margin-bottom: 65px;
+        color: @font_color;
+        text-align: center;
+      }
+      h3 {
+        font-size: 25px;
+        margin-top: 15px;
+        color: @font_color;
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: @font_color;
+      }
+      .info_in {
+        p {
+          font-size: 16px;
+          margin-bottom: 5px;
+          color: @font_color;
+          font-weight: 700;
+        }
+        .info_in_tb {
+          display: flex;
+          flex-direction: column;
+          span {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: @font_color;
+            margin-left: 25px;
+            position: relative;
+            &:before {
+              content: url("../img/check.png");
+              width: 10px;
+              height: 10px;
+              position: absolute;
+              left: -25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Page 404 style
+  .all-no-found {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    .content_not_found {
+      border: 1px solid #646060;
+      border-radius: 7px;
+      background-color: white;
+      box-shadow: 1px 2px 20px #646060;
+      padding: 25px;
+      h2 {
+        font-size: 44px;
+        color: red;
+      }
+      p {
+        font-size: 1.5rem;
+        color: @font_color;
+      }
+    }
+  }
+
+  //Page Акции и скидки style
+  .all-show-product {
+    width: 80%;
+  }
 }

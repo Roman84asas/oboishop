@@ -1458,24 +1458,78 @@ footer.site-footer .footer .footer-info .info-date {
   align-items: center;
 }
 .all-show-info {
-  padding-top: 1%;
   padding-left: 5%;
 }
-.all-show-info .woocommerce-ordering {
-  margin-top: 10px;
-  margin-bottom: 25px;
+.all-show-info .search_and_download {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 8%;
+  min-height: 7rem;
 }
-.all-show-info .woocommerce-ordering .orderby {
+.all-show-info .search_and_download .woocommerce-ordering {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.all-show-info .search_and_download .woocommerce-ordering .orderby {
   width: 300px;
   height: 3rem;
   color: #4b4b4b;
   font-size: 18px;
   border-radius: 7px;
 }
-.all-show-info .woocommerce-ordering .orderby option {
+.all-show-info .search_and_download .woocommerce-ordering .orderby option {
   width: 300px;
 }
+.all-show-info .search_and_download .download-scheme {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.all-show-info .search_and_download .download-scheme a {
+  max-width: 270px;
+  width: 270px;
+  height: 60px;
+  border: 1px solid #39cbee;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+  line-height: 18px;
+  color: #333333;
+  border-radius: 5px;
+}
+@media (min-width: 767px) {
+  .all-show-info .search_and_download .download-scheme a {
+    flex: 0 0 29%;
+    width: 213px;
+  }
+}
+@media (min-width: 961px) {
+  .all-show-info .search_and_download .download-scheme a {
+    width: 270px;
+  }
+}
+.all-show-info .search_and_download .download-scheme a p {
+  font-size: 14px;
+  position: relative;
+  padding-left: 35px;
+  margin: 0;
+}
+.all-show-info .search_and_download .download-scheme a p:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/img2.png);
+  position: absolute;
+  left: 0;
+}
+.all-show-info .search_and_download .download-scheme a span {
+  font-size: 12px;
+  color: #4b4b4b;
+  display: block;
+}
 .all-show-info .columns-3 .products {
+  justify-content: center;
   margin-bottom: 35px;
 }
 .all-show-info .columns-3 .woocommerce-pagination {
@@ -1551,11 +1605,15 @@ footer.site-footer .footer .footer-info .info-date {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-ul.products li.product {
-  position: relative;
-  margin-bottom: 5rem !important;
+@media screen and (min-width: 48em) {
+  .all-show-info .columns-3 ul.products li.product {
+    position: relative;
+    margin-bottom: 5rem !important;
+    width: 20%;
+    margin-right: 6%;
+  }
 }
-.woocommerce-loop-product__title {
+.all-show-info .woocommerce-loop-product__title {
   color: #4b4b4b;
   margin-top: 1rem;
   display: block;
@@ -1563,7 +1621,7 @@ ul.products li.product {
   text-align: center;
   font-size: 1.5rem;
 }
-.price {
+.all-show-info .price {
   color: #4b4b4b;
   position: absolute;
   border: 1px solid;
@@ -1572,16 +1630,16 @@ ul.products li.product {
   font-size: 1rem;
   border-radius: 5px;
 }
-del {
+.all-show-info del {
   color: red;
   margin-right: 15px;
 }
-.add_to_cart_button {
+.all-show-info .add_to_cart_button {
   position: absolute;
   color: #4b4b4b;
   font-size: 1rem;
   top: 360px;
-  left: 200px;
+  left: 195px;
   padding: 10px 15px;
   border: 1px solid;
   display: flex;
@@ -1592,164 +1650,164 @@ del {
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
 }
-.add_to_cart_button:hover {
+.all-show-info .add_to_cart_button:hover {
   -webkit-transition: all 0.3s ease-in-out;
   background-color: #39cbee;
   color: black;
 }
-.woocommerce-loop-product__link .onsale {
+.all-show-info .woocommerce-loop-product__link .onsale {
   position: absolute;
   color: red;
   margin: 25% 15%;
   font-size: 35px;
   border-bottom: 1px solid;
 }
-.all-show-info-about {
+.all-show-info .all-show-info-about {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
-.all-show-info-about h2 {
+.all-show-info .all-show-info-about h2 {
   font-size: 35px;
   margin-top: 35px;
   margin-bottom: 65px;
   color: #4b4b4b;
   text-align: center;
 }
-.all-show-info-about .happing {
+.all-show-info .all-show-info-about .happing {
   font-size: 18px;
   font-weight: 700;
   color: #4b4b4b;
 }
-.all-show-info-about p {
+.all-show-info .all-show-info-about p {
   font-size: 18px;
   color: #4b4b4b;
   margin-bottom: 35px;
 }
-.all-show-info-about .show_for_now {
+.all-show-info .all-show-info-about .show_for_now {
   font-size: 18px;
   color: #4b4b4b;
   margin-bottom: 25px;
 }
-.all-show-info-about .show_for_now .sfn_descr {
+.all-show-info .all-show-info-about .show_for_now .sfn_descr {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
 }
-.all-show-info-about .show_for_now .sfn_descr span {
+.all-show-info .all-show-info-about .show_for_now .sfn_descr span {
   margin-bottom: 7px;
   margin-left: 25px;
   position: relative;
 }
-.all-show-info-about .show_for_now .sfn_descr span:before {
+.all-show-info .all-show-info-about .show_for_now .sfn_descr span:before {
   content: url("../img/check.png");
   width: 10px;
   height: 10px;
   position: absolute;
   left: -25px;
 }
-.all-show-info-about .your_no_mistake {
+.all-show-info .all-show-info-about .your_no_mistake {
   font-size: 19px;
   margin-bottom: 15px;
   margin-top: 15px;
   color: #4b4b4b;
   font-weight: 700;
 }
-.all-show-info-voc {
+.all-show-info .all-show-info-voc {
   display: flex;
   flex-direction: column;
   padding: 20px;
   width: 100%;
 }
-.all-show-info-voc h2 {
+.all-show-info .all-show-info-voc h2 {
   font-size: 35px;
   margin-top: 35px;
   margin-bottom: 65px;
   color: #4b4b4b;
   text-align: center;
 }
-.all-show-info-voc .voc_desc {
+.all-show-info .all-show-info-voc .voc_desc {
   font-size: 18px;
   color: #4b4b4b;
   text-align: center;
 }
-.all-show-info-voc .voc_desc a {
+.all-show-info .all-show-info-voc .voc_desc a {
   text-transform: none;
   text-decoration: none;
   color: #4b4b4b;
   -webkit-transition: all 0.3s ease-in-out;
 }
-.all-show-info-voc .voc_desc a:hover {
+.all-show-info .all-show-info-voc .voc_desc a:hover {
   -webkit-transition: all 0.3s ease-in-out;
   color: black;
 }
-.all-show-info-dost {
+.all-show-info .all-show-info-dost {
   padding: 15px;
 }
-.all-show-info-dost .dost_info h2 {
+.all-show-info .all-show-info-dost .dost_info h2 {
   font-size: 35px;
   margin-top: 35px;
   margin-bottom: 65px;
   color: #4b4b4b;
   text-align: center;
 }
-.all-show-info-dost .dost_info h3 {
+.all-show-info .all-show-info-dost .dost_info h3 {
   font-size: 25px;
   margin-top: 15px;
   color: #4b4b4b;
   text-align: center;
 }
-.all-show-info-dost .dost_info p {
+.all-show-info .all-show-info-dost .dost_info p {
   font-size: 16px;
   margin-bottom: 5px;
   color: #4b4b4b;
 }
-.all-show-info-dost .dost_info .info_in p {
+.all-show-info .all-show-info-dost .dost_info .info_in p {
   font-size: 16px;
   margin-bottom: 5px;
   color: #4b4b4b;
   font-weight: 700;
 }
-.all-show-info-dost .dost_info .info_in .info_in_tb {
+.all-show-info .all-show-info-dost .dost_info .info_in .info_in_tb {
   display: flex;
   flex-direction: column;
 }
-.all-show-info-dost .dost_info .info_in .info_in_tb span {
+.all-show-info .all-show-info-dost .dost_info .info_in .info_in_tb span {
   font-size: 16px;
   margin-bottom: 5px;
   color: #4b4b4b;
   margin-left: 25px;
   position: relative;
 }
-.all-show-info-dost .dost_info .info_in .info_in_tb span:before {
+.all-show-info .all-show-info-dost .dost_info .info_in .info_in_tb span:before {
   content: url("../img/check.png");
   width: 10px;
   height: 10px;
   position: absolute;
   left: -25px;
 }
-.all-no-found {
+.all-show-info .all-no-found {
   display: flex;
   align-items: center;
   text-align: center;
   margin: auto;
 }
-.all-no-found .content_not_found {
+.all-show-info .all-no-found .content_not_found {
   border: 1px solid #646060;
   border-radius: 7px;
   background-color: white;
   box-shadow: 1px 2px 20px #646060;
   padding: 25px;
 }
-.all-no-found .content_not_found h2 {
+.all-show-info .all-no-found .content_not_found h2 {
   font-size: 44px;
   color: red;
 }
-.all-no-found .content_not_found p {
+.all-show-info .all-no-found .content_not_found p {
   font-size: 1.5rem;
   color: #4b4b4b;
 }
-.all-show-product {
+.all-show-info .all-show-product {
   width: 80%;
 }
 /*# sourceMappingURL=general.css.map */
