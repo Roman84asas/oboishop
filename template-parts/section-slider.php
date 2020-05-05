@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for home slider 1
+ * Template part for home slider top
  *
  */
 
