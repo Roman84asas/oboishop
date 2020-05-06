@@ -10,21 +10,24 @@ defined( 'ABSPATH' ) || exit;
 	<div class="inner">
 	</div>
 	<div class="mSlider owl-carousel">
-		<div class="mSlider-item mslider1" style='background-image: url(/wp-content/themes/voxlink/minimg/mslider1.jpg);'>
+		<div class="mSlider-item mslider1" style='background-image: url(/wp-content/themes/oboishop/assets/img/colomn.jpg);'>
 			<div class="inner">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6">
-							<img src="/wp-content/themes/voxlink/minimg/chel.png" alt="">
+							<img src="/wp-content/themes/oboishop/assets/img/chel.png" alt="">
 						</div>
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
 								<div class="mSlider-text">
-									<h3>IP-телефония и CRM-система без абонентской платы на всю жизнь</h3>
+									<h3>Лучшие аксессуары для ремонта и декора Вашего дома!</h3>
 									<p>
-										Комплексное внедрение телефонии + базовая настройка CRM-системы все от за проект
+										Индивидуальная подбор товара под Ваши желания и возможности.
 									</p>
-									<a href="/solutions/small-business/" class="mSlider-more">
+                                    <?php
+                                        $image4_url = carbon_get_theme_option( 'obo_url_image4' );
+                                    ?>
+									<a href="<?php echo esc_url( home_url( '/'.$image4_url.'' ) ); ?>" class="mSlider-more">
 										Подробнее
 										<i class="icon icon-m-more"></i>
 									</a>
@@ -35,21 +38,24 @@ defined( 'ABSPATH' ) || exit;
 				</div>
 			</div>
 		</div>
-		<div class="mSlider-item mslider1" style='background-image: url(/wp-content/themes/voxlink/minimg/mslider2.jpg);'>
+		<div class="mSlider-item mslider1" style='background-image: url(/wp-content/themes/oboishop/assets/img/light.jpg);'>
 			<div class="inner">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6">
-							<img src="/wp-content/themes/voxlink/minimg/chel1.png" alt="">
+							<img src="/wp-content/themes/oboishop/assets/img/chel1.png" alt="">
 						</div>
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
 								<div class="mSlider-text">
-									<h3>Бесплатная техническая поддержка Вашего Asterisk на всю жизнь</h3>
+									<h3>Лампы и светильник для любого интерьера!</h3>
 									<p>
-										Решаем любые проблемы с Вашим сервером Asterisk бесплатно (лимит обращений – 1 час в месяц)
+										Экономные светильники, лампы и люстры на любой вкус.
 									</p>
-									<a href="/projects/free-techsupport/" class="mSlider-more">
+									<?php
+									$image3_url = carbon_get_theme_option( 'obo_url_image3' );
+									?>
+									<a href="<?php echo esc_url( home_url( '/'.$image3_url.'' ) ); ?>" class="mSlider-more">
 										Подробнее
 										<i class="icon icon-m-more"></i>
 									</a>
@@ -60,21 +66,24 @@ defined( 'ABSPATH' ) || exit;
 				</div>
 			</div>
 		</div>
-		<div class="mSlider-item mslider1" style='background-image: url(/wp-content/themes/voxlink/minimg/mslider3.jpg);'>
+		<div class="mSlider-item mslider1" style='background-image: url(/wp-content/themes/oboishop/assets/img/laminat.jpg);'>
 			<div class="inner">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6">
-							<img src="/wp-content/themes/voxlink/minimg/chel2.png" alt="">
+							<img src="/wp-content/themes/oboishop/assets/img/chel2.png" alt="">
 						</div>
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
 								<div class="mSlider-text">
-									<h3>Решения VoxLink для Call-центров любых масштабов</h3>
+									<h3>Лучший ламинат для Вашего дома</h3>
 									<p>
-										Автоматизируем с интеллектом входящие и исходящие звонки. Поднимите обслуживание клиентов на новый уровень.
+										Помощь в подборе ламината под Ваш декор и мебель.
 									</p>
-									<a href="/solutions/call-center/" class="mSlider-more">
+									<?php
+									$image1_url = carbon_get_theme_option( 'obo_url_image1' );
+									?>
+									<a href="<?php echo esc_url( home_url( '/'.$image1_url.'' ) ); ?>" class="mSlider-more">
 										Подробнее
 										<i class="icon icon-m-more"></i>
 									</a>
@@ -85,21 +94,24 @@ defined( 'ABSPATH' ) || exit;
 				</div>
 			</div>
 		</div>
-		<div class="mSlider-item mslider1" style='background-image: url(/wp-content/themes/voxlink/minimg/mslider4.jpg);'>
+		<div class="mSlider-item mslider1" style='background-image: url(/wp-content/themes/oboishop/assets/img/oboi.jpg);'>
 			<div class="inner">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6">
-							<img src="/wp-content/themes/voxlink/minimg/chel3.png" alt="">
+							<img src="/wp-content/themes/oboishop/assets/img/chel3.png" alt="">
 						</div>
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
 								<div class="mSlider-text">
-									<h3>Обучение Asterisk: 5-ти дневный очный курс по Asterisk в Москве</h3>
+									<h3>ОЛучшие обои по Вашему желанию</h3>
 									<p>
-										Выбирайте программу обучения: «Интенсив-курс по Asterisk», «Asterisk в Крупном бизнесе», «Asterisk в Call-центре»
+										Огромный выбор обоев и индивидуальный подход при заказе товара.
 									</p>
-									<a href="/edu/asterisk/" class="mSlider-more">
+									<?php
+									$image2_url = carbon_get_theme_option( 'obo_url_image2' );
+									?>
+									<a href="<?php echo esc_url( home_url( '/'.$image2_url.'' ) ); ?>" class="mSlider-more">
 										Подробнее
 										<i class="icon icon-m-more"></i>
 									</a>

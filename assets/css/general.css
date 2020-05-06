@@ -581,6 +581,9 @@ html[xmlns] .slides {
 /* Your Custom code here */
 body {
   background-image: url("../img/baground.jpg");
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 .wrapper {
   width: 96%;
