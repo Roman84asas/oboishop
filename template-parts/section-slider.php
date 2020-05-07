@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="inner">
 	</div>
 	<div class="mSlider owl-carousel">
-		<div class="mSlider-item mslider1" style='background-image: url(/wp-content/themes/oboishop/assets/img/colomn.jpg);'>
+		<div class="mSlider-item mslider1" style='background-image: url(/wp-content/themes/oboishop/assets/img/hotel.jpg);'>
 			<div class="inner">
 				<div class="container-fluid">
 					<div class="row">
@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
 								<div class="mSlider-text">
-									<h3>Лучшие аксессуары для ремонта и декора Вашего дома!</h3>
+									<h3>Аксессуары для ремонта и декора Вашего дома!</h3>
 									<p>
 										Индивидуальная подбор товара под Ваши желания и возможности.
 									</p>
@@ -48,7 +48,7 @@ defined( 'ABSPATH' ) || exit;
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
 								<div class="mSlider-text">
-									<h3>Лампы и светильник для любого интерьера!</h3>
+									<h3>Лампы и светильники для любого интерьера!</h3>
 									<p>
 										Экономные светильники, лампы и люстры на любой вкус.
 									</p>
@@ -76,7 +76,7 @@ defined( 'ABSPATH' ) || exit;
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
 								<div class="mSlider-text">
-									<h3>Лучший ламинат для Вашего дома</h3>
+									<h3>Ламинат для Вашего дома</h3>
 									<p>
 										Помощь в подборе ламината под Ваш декор и мебель.
 									</p>
@@ -104,7 +104,7 @@ defined( 'ABSPATH' ) || exit;
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
 								<div class="mSlider-text">
-									<h3>ОЛучшие обои по Вашему желанию</h3>
+									<h3>Лучшие обои по Вашему желанию</h3>
 									<p>
 										Огромный выбор обоев и индивидуальный подход при заказе товара.
 									</p>
