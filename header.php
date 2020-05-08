@@ -62,7 +62,7 @@
                 if ( $logo) {
                     echo '<a href="' . esc_url( home_url( '/' ) ) . '" >' . wp_get_attachment_image( $logo, 'full' ) . '</a>';
                 } else {
-                    echo '<a href="' . esc_url( home_url( '/' ) ) . '" >SHOP</a>';
+                    echo '<a href="' . esc_url( home_url( '/' ) ) . '" >OBOI SHOP</a>';
                 }
                 ?>
             </div>
