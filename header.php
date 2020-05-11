@@ -29,56 +29,59 @@
                 <div class="content_header">
                     <div class="row">
                         <div class="coll_header">
-                            <div class="logo_sect">
+                            <a class="logo_sect" href=" <?php echo esc_url( home_url( '/' ) ); ?>">
 		                        <?php
 		                        the_custom_logo();
 		                        // Get all entered urls from the database
 		                        $logo = carbon_get_theme_option( 'obo_logo' );
 		                        if ( $logo) {
-			                        echo '<a href="' . esc_url( home_url( '/' ) ) . '" >' . wp_get_attachment_image( $logo, 'full' ) . '</a>';
+			                        echo  wp_get_attachment_image( $logo, 'full' ) ;
 		                        } else {
-			                        echo '<a href="' . esc_url( home_url( '/' ) ) . '" >OBOI SHOP</a>';
+			                        echo "OBOI SHOP";
 		                        }
 		                        ?>
-                            </div>
+                            </a>
                             <div class="info_and_contact">
-                                <div class="number-phone">
-			                        <?php
-			                        // Get all entered urls from the database
-			                        $phone = carbon_get_theme_option( 'obo_header_phone' );
-			                        if ( $phone) { ?>
-                                        <span class="phone">
-                    Телефон:
-                </span>
-                                        <span class="number">
-                    <?php echo esc_attr($phone); ?>
-                </span>
-			                        <?php } ?>
+                                <i class="far fa-address-book"></i>
+                                <div class="calls_right">
+                                    <div class="number_phone">
+		                                <?php
+		                                // Get all entered urls from the database
+		                                $phone = carbon_get_theme_option( 'obo_header_phone' );
+		                                if ( $phone) { ?>
+                                            <span class="phone">
+                                                Телефон:
+                                            </span>
+                                            <p class="number">
+                                                <?php echo esc_attr($phone); ?>
+                                            </p>
+		                                <?php } ?>
+                                    </div>
+                                    <div class="my_mail">
+		                                <?php
+		                                // Get all entered urls from the database
+		                                $mail = carbon_get_theme_option( 'obo_header_email' );
+		                                if ( $mail) { ?>
+                                            <span class="label-email">
+                                            Email:
+                                            </span><br>
+                                            <a href="mailto:<?php echo esc_attr($mail); ?>">
+				                                <?php echo esc_attr($mail); ?>
+                                            </a>
+		                                <?php } ?>
+                                    </div>
                                 </div>
 
-                                <div class="my-mail">
-			                        <?php
-			                        // Get all entered urls from the database
-			                        $mail = carbon_get_theme_option( 'obo_header_email' );
-			                        if ( $mail) { ?>
-                                        <span class="label-email">
-                    Email:
-                </span>
-                                        <a href="mailto:<?php echo esc_attr($mail); ?>">
-					                        <?php echo esc_attr($mail); ?>
-                                        </a>
-			                        <?php } ?>
-                                </div>
                             </div>
-                            <div class="sections-otd">
+                            <div class="sections_otd">
+                                <i class="fas fa-calculator"></i>
+                                <a href="<?php echo esc_url( home_url( '/calculator/' ) )?>" class="sect-art">Калькулятор обоев</a>
+
                                 <div class="search-sect">
 			                        <?php  echo esc_attr(get_search_form()); ?>
                                 </div>
-                                <div class="stations">
-                                    <a href="<?php echo esc_url( home_url( '/calculator/' ) )?>" class="sect-art">Калькулятор обоев</a>
-                                </div>
-
                             </div>
+
                             <div class="lk_and_files">
                                 <div class="myself-cab" title="Личный кабинет">
                                     <div class="myself">

@@ -28,48 +28,20 @@ body {
   max-width:1260px;
   margin: 0 auto;
 }
-//Header style
-.info-header {
-  height: 30px;
-  background: #191e23;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .number-phone {
-    span {
-      color: #FFFFFF;
-      font-size: 12px;
-      margin-right: 10px;
-    }
-  }
-
-  .my-mail {
-    margin-left: 30px;
-    span, a {
-      margin-right: 10px;
-      color: #FFFFFF;
-      font-size: 12px;
-    }
-  }
-}
 
 header {
   display: block;
   background-color: #ffffff;
-
   .header_top {
     padding: 15px 0;
     position: relative;
     z-index: 103;
-
     .wrapper {
       .content_header {
         margin-right: auto;
         margin-left: auto;
         padding-left: 15px;
         padding-right: 15px;
-
         .row{
           display: -webkit-box;
           display: -webkit-flex;
@@ -81,7 +53,110 @@ header {
           margin: 0;
           width: 100%;
           .coll_header {
+            width: 100%;
+            display: flex;
+            .logo_sect {
+              width: 196px;
+              display: inline-block;
+              vertical-align: middle;
+              img {
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+                height: auto;
+              }
+            }
+            .info_and_contact {
+              margin-left: 100px;
+              display: flex;
+              align-items: center;
+              .fa-address-book:before {
+                content: "\f2b9";
+                width: 33px;
+                height: 33px;
+                vertical-align: middle;
+                margin-right: 15px;
+                display: inline-block;
+                font-size: 33px;
+                color: #bbbfcc;
+              }
+              .calls_right {
+                display: inline-block;
+                vertical-align: middle;
+                .number_phone {
+                  line-height: 24px;
+                  color: @font_color;
+                  span {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 12px;
+                    font-weight: 300;
+                  }
+                  p {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 24px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin: 0;
+                  }
+                }
+                .my_mail {
+                  line-height: 24px;
+                  color: @frey_color;
+                  span {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 12px;
+                    font-weight: 300;
+                    width: 100%;
+                  }
+                  a {
+                    font-family: 'Roboto', sans-serif;
+                    color: @frey_color;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 24px;
+                  }
+                }
+              }
+            }
+            .sections_otd {
+              margin-left: 50px;
+              display: inline-block;
+              vertical-align: middle;
+              .fa-calculator:before {
+                content: "\f1ec";
+              }
+            }
+            .lk_and_files {
+              width: 190px;
+              text-align: center;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1020px) {
+    .header_top {
+      .wrapper {
+        .content_header {
+          .row{
+            .coll_header {
+              .info_and_contact {
+                margin-left: 50px;
+                .calls_right {
+                  .number_phone {
 
+                  }
+                }
+              }
+              .sections_otd {
+
+              }
+              .lk_and_files {
+
+              }
+            }
           }
         }
       }
@@ -93,108 +168,134 @@ header {
       .wrapper {
         .content_header {
           .row{
+            .coll_header {
+              .logo_sect {
+                width: 131px;
+              }
+              .info_and_contact {
+                margin-left: 8px;
+                .calls_right {
+                  .number_phone {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 30px;
 
+                  }
+                }
+              }
+              .sections_otd {
+
+              }
+              .lk_and_files {
+
+              }
+            }
           }
         }
       }
     }
   }
+  @media (max-width: 767px) {
+    .header_top {
+      .wrapper {
+        .content_header {
+          .row{
+            .coll_header {
+              .sections_otd {
+
+              }
+              .lk_and_files {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 680px) {
+    .header_top {
+      .wrapper {
+        .content_header {
+          .row{
+            .coll_header {
+              .logo_sect {
+                display: none;
+              }
+              .info_and_contact {
+                width: 100%;
+                margin-top: 0;
+                margin-left: 0;
+                .fa-address-book:before {
+                  margin-right: 5px;
+                }
+                .calls_right {
+                  width: 250px;
+                  .number_phone {
+                    p {
+                      font-size: 13px;
+                      line-height: 14px;
+                    }
+                  }
+                  .my_mail {
+                    a {
+                      font-size: 13px;
+                      line-height: 14px;
+                    }
+                  }
+                }
+              }
+              .sections_otd {
+
+              }
+              .lk_and_files {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    .header_top {
+      .wrapper {
+        .content_header {
+          .row{
+            .coll_header {
+              .sections_otd {
+
+              }
+              .lk_and_files {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    .header_top {
+      .wrapper {
+        .content_header {
+          .row{
+            .coll_header {
+              .sections_otd {
+
+              }
+              .lk_and_files {
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
-/*header.site-header {
-  background: white;
-  min-height: 80px;
-  border-bottom: 1px solid white;
-
-  .content-header {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 100%;
-
-    .logo_sect {
-      width: 33.3%;
-      height: 80px;
-      a {
-        color: @bagr_color;
-        font-size: 20px;
-        height: 80px;
-
-        img {
-          max-height: 80px;
-          width: auto;
-        }
-      }
-    }
-
-    .overlayMenu {
-      width: 80%;
-      padding-left: 5%;
-
-      .navbar-nav {
-        display: flex;
-        margin-right: 10px;
-        align-items: center;
-
-        li {
-          margin-right: 25px;
-          height: 77px;
-          display: flex;
-          align-items: center;
-          border-bottom: 3px solid white;
-          a {
-            font-family: @font-robo;
-            text-decoration: none;
-            color: @bagr_color;
-            font-size: 17px;
-          }
-        }
-        .current-menu-item {
-          margin-right: 25px;
-          height: 77px;
-          display: flex;
-          align-items: center;
-          border-bottom: 3px solid @active_color;
-
-          a {
-            font-family: @font-robo;
-            text-decoration: none;
-            color: @active_color;
-            font-size: 17px;
-          }
-        }
-      }
-    }
-
-    .myself-cab {
-      width: 5%;
-      font-size: 14px;
-      cursor: pointer;
-
-      .myself {
-        width: 25px;
-        height: 25px;
-        display: block;
-        color: @bagr_color;
-        border-radius: 100%;
-        border: 1px solid @bagr_color;
-        padding-left: 12px;
-        padding-top: 12px;
-        opacity: 0.6;
-        .transition(all 400ms ease-in-out);
-
-        &:hover {
-          opacity: 1;
-          .transition(all 400ms ease-in-out);
-        }
-      }
-    }
-
-    .overlay {
-max-height: 50px;
-    }
-  }
-}*/
 
 //Form style
 .form-popup {

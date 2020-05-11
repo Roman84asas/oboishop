@@ -595,27 +595,6 @@ body {
   max-width: 1260px;
   margin: 0 auto;
 }
-.info-header {
-  height: 30px;
-  background: #191e23;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.info-header .number-phone span {
-  color: #FFFFFF;
-  font-size: 12px;
-  margin-right: 10px;
-}
-.info-header .my-mail {
-  margin-left: 30px;
-}
-.info-header .my-mail span,
-.info-header .my-mail a {
-  margin-right: 10px;
-  color: #FFFFFF;
-  font-size: 12px;
-}
 header {
   display: block;
   background-color: #ffffff;
@@ -642,105 +621,131 @@ header .header_top .wrapper .content_header .row {
   margin: 0;
   width: 100%;
 }
+header .header_top .wrapper .content_header .row .coll_header {
+  width: 100%;
+  display: flex;
+}
+header .header_top .wrapper .content_header .row .coll_header .logo_sect {
+  width: 196px;
+  display: inline-block;
+  vertical-align: middle;
+}
+header .header_top .wrapper .content_header .row .coll_header .logo_sect img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+header .header_top .wrapper .content_header .row .coll_header .info_and_contact {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+header .header_top .wrapper .content_header .row .coll_header .info_and_contact .fa-address-book:before {
+  content: "\f2b9";
+  width: 33px;
+  height: 33px;
+  vertical-align: middle;
+  margin-right: 15px;
+  display: inline-block;
+  font-size: 33px;
+  color: #bbbfcc;
+}
+header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right .number_phone {
+  line-height: 24px;
+  color: #4b4b4b;
+}
+header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right .number_phone span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right .number_phone p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right .my_mail {
+  line-height: 24px;
+  color: #ccccd3;
+}
+header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right .my_mail span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  width: 100%;
+}
+header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right .my_mail a {
+  font-family: 'Roboto', sans-serif;
+  color: #ccccd3;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+header .header_top .wrapper .content_header .row .coll_header .sections_otd {
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+header .header_top .wrapper .content_header .row .coll_header .sections_otd .fa-calculator:before {
+  content: "\f1ec";
+}
+header .header_top .wrapper .content_header .row .coll_header .lk_and_files {
+  width: 190px;
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 1020px) {
+  header .header_top .wrapper .content_header .row .coll_header .info_and_contact {
+    margin-left: 50px;
+  }
+}
 @media (max-width: 920px) {
   header .header_top {
     padding: 25px 0;
   }
-}
-/*header.site-header {
-  background: white;
-  min-height: 80px;
-  border-bottom: 1px solid white;
-
-  .content-header {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 100%;
-
-    .logo_sect {
-      width: 33.3%;
-      height: 80px;
-      a {
-        color: @bagr_color;
-        font-size: 20px;
-        height: 80px;
-
-        img {
-          max-height: 80px;
-          width: auto;
-        }
-      }
-    }
-
-    .overlayMenu {
-      width: 80%;
-      padding-left: 5%;
-
-      .navbar-nav {
-        display: flex;
-        margin-right: 10px;
-        align-items: center;
-
-        li {
-          margin-right: 25px;
-          height: 77px;
-          display: flex;
-          align-items: center;
-          border-bottom: 3px solid white;
-          a {
-            font-family: @font-robo;
-            text-decoration: none;
-            color: @bagr_color;
-            font-size: 17px;
-          }
-        }
-        .current-menu-item {
-          margin-right: 25px;
-          height: 77px;
-          display: flex;
-          align-items: center;
-          border-bottom: 3px solid @active_color;
-
-          a {
-            font-family: @font-robo;
-            text-decoration: none;
-            color: @active_color;
-            font-size: 17px;
-          }
-        }
-      }
-    }
-
-    .myself-cab {
-      width: 5%;
-      font-size: 14px;
-      cursor: pointer;
-
-      .myself {
-        width: 25px;
-        height: 25px;
-        display: block;
-        color: @bagr_color;
-        border-radius: 100%;
-        border: 1px solid @bagr_color;
-        padding-left: 12px;
-        padding-top: 12px;
-        opacity: 0.6;
-        .transition(all 400ms ease-in-out);
-
-        &:hover {
-          opacity: 1;
-          .transition(all 400ms ease-in-out);
-        }
-      }
-    }
-
-    .overlay {
-max-height: 50px;
-    }
+  header .header_top .wrapper .content_header .row .coll_header .logo_sect {
+    width: 131px;
   }
-}*/
+  header .header_top .wrapper .content_header .row .coll_header .info_and_contact {
+    margin-left: 8px;
+  }
+  header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right .number_phone {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 680px) {
+  header .header_top .wrapper .content_header .row .coll_header .logo_sect {
+    display: none;
+  }
+  header .header_top .wrapper .content_header .row .coll_header .info_and_contact {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  header .header_top .wrapper .content_header .row .coll_header .info_and_contact .fa-address-book:before {
+    margin-right: 5px;
+  }
+  header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right {
+    width: 250px;
+  }
+  header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right .number_phone p {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  header .header_top .wrapper .content_header .row .coll_header .info_and_contact .calls_right .my_mail a {
+    font-size: 13px;
+    line-height: 14px;
+  }
+}
 .form-popup {
   display: none;
   width: 100%;
