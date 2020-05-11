@@ -22,66 +22,96 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-    <div class="info-header ">
-        <div class="number-phone">
-            <?php
-            // Get all entered urls from the database
-            $phone = carbon_get_theme_option( 'obo_header_phone' );
-            if ( $phone) { ?>
-                <span class="phone">
+
+	<header id="masthead" >
+        <div class="header_top">
+            <div class="wrapper">
+                <div class="content_header">
+                    <div class="row">
+                        <div class="coll_header">
+                            <div class="logo_sect">
+		                        <?php
+		                        the_custom_logo();
+		                        // Get all entered urls from the database
+		                        $logo = carbon_get_theme_option( 'obo_logo' );
+		                        if ( $logo) {
+			                        echo '<a href="' . esc_url( home_url( '/' ) ) . '" >' . wp_get_attachment_image( $logo, 'full' ) . '</a>';
+		                        } else {
+			                        echo '<a href="' . esc_url( home_url( '/' ) ) . '" >OBOI SHOP</a>';
+		                        }
+		                        ?>
+                            </div>
+                            <div class="info_and_contact">
+                                <div class="number-phone">
+			                        <?php
+			                        // Get all entered urls from the database
+			                        $phone = carbon_get_theme_option( 'obo_header_phone' );
+			                        if ( $phone) { ?>
+                                        <span class="phone">
                     Телефон:
                 </span>
-                <span class="number">
+                                        <span class="number">
                     <?php echo esc_attr($phone); ?>
                 </span>
-            <?php } ?>
-        </div>
+			                        <?php } ?>
+                                </div>
 
-        <div class="my-mail">
-            <?php
-            // Get all entered urls from the database
-            $mail = carbon_get_theme_option( 'obo_header_email' );
-            if ( $mail) { ?>
-                <span class="label-email">
+                                <div class="my-mail">
+			                        <?php
+			                        // Get all entered urls from the database
+			                        $mail = carbon_get_theme_option( 'obo_header_email' );
+			                        if ( $mail) { ?>
+                                        <span class="label-email">
                     Email:
                 </span>
-                <a href="mailto:<?php echo esc_attr($mail); ?>">
-                    <?php echo esc_attr($mail); ?>
-                </a>
-            <?php } ?>
-        </div>
-    </div>
-	<header id="masthead" class="site-header">
+                                        <a href="mailto:<?php echo esc_attr($mail); ?>">
+					                        <?php echo esc_attr($mail); ?>
+                                        </a>
+			                        <?php } ?>
+                                </div>
+                            </div>
+                            <div class="sections-otd">
+                                <div class="search-sect">
+			                        <?php  echo esc_attr(get_search_form()); ?>
+                                </div>
+                                <div class="stations">
+                                    <a href="<?php echo esc_url( home_url( '/calculator/' ) )?>" class="sect-art">Калькулятор обоев</a>
+                                </div>
 
-        <div class="content-header wrapper">
-            <div class="logo_sect">
-                <?php
-                the_custom_logo();
-                // Get all entered urls from the database
-                $logo = carbon_get_theme_option( 'obo_logo' );
-                if ( $logo) {
-                    echo '<a href="' . esc_url( home_url( '/' ) ) . '" >' . wp_get_attachment_image( $logo, 'full' ) . '</a>';
-                } else {
-                    echo '<a href="' . esc_url( home_url( '/' ) ) . '" >OBOI SHOP</a>';
-                }
-                ?>
-            </div>
+                            </div>
+                            <div class="lk_and_files">
+                                <div class="myself-cab" title="Личный кабинет">
+                                    <div class="myself">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                </div>
+                                <div class="files_for_dow">
+                                    Files Download
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <?php
-            wp_nav_menu( array(
-                'theme_location' => 'menu-1',
-                'menu_id'        => 'primary-menu',
-                'menu_class'     => 'navbar-nav',
-                'container'      => 'nav',
-                'container_class'=> 'overlayMenu',
-                'container_id'   => 'header-nav',
-            ) );
-            ?>
-
-            <div class="myself-cab" title="Личный кабинет">
-                <div class="myself">
-                    <i class="fas fa-user-tie"></i>
                 </div>
+            </div>
+        </div>
+
+        <div class="overlay wrapper">
+	        <?php
+	        wp_nav_menu( array(
+		        'theme_location' => 'menu-1',
+		        'menu_id'        => 'primary-menu',
+		        'menu_class'     => 'navbar-nav',
+		        'container'      => 'nav',
+		        'container_class'=> 'overlayMenu',
+		        'container_id'   => 'header-nav',
+	        ) );
+	        ?>
+            <div class="basket">
+		        <?php oboishop_woocommerce_cart_link() ?>
+                <!--<div class="mini-cart-content ">
+                    <?php /*the_widget('WC_Widget_Cart', 'title=') */?>
+                </div>-->
             </div>
         </div>
 
