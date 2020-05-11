@@ -3,7 +3,7 @@ jQuery(function($) {
 
     //Scripts from popup
 
-    $('.myself-cab').on('click', function() {
+    $('.myself_cab').on('click', function() {
         $('.form-popup').css('display', 'block');
     });
     $('.fa-times-circle').click(function() { // Обрабатываем клик по заднему фону

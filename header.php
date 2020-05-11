@@ -74,23 +74,32 @@
 
                             </div>
                             <div class="sections_otd">
-                                <i class="fas fa-calculator"></i>
-                                <a href="<?php echo esc_url( home_url( '/calculator/' ) )?>" class="sect-art">Калькулятор обоев</a>
-
+                                <div class="calcul">
+                                    <i class="fas fa-calculator"></i>
+                                    <a href="<?php echo esc_url( home_url( '/calculator/' ) )?>" class="sect-art">Калькулятор обоев</a>
+                                </div>
                                 <div class="search-sect">
-			                        <?php  echo esc_attr(get_search_form()); ?>
+                                    <form class="search_form" action="/">
+                                        <input type="text" name="s" placeholder="Поиск" autocomplete="off"
+		                                       <?php if(isset($_GET['s'])){?>value="<?php echo $_GET['s']; ?>"<?php } ?>>
+                                        <input type="submit">
+                                    </form>
                                 </div>
                             </div>
 
                             <div class="lk_and_files">
-                                <div class="myself-cab" title="Личный кабинет">
-                                    <div class="myself">
-                                        <i class="fas fa-user-tie"></i>
-                                    </div>
+                                <div class="myself_cab" title="Личный кабинет">
+                                    <i class="icon_login"></i>
+                                    <span class="myself">Вход для клиентов</span>
                                 </div>
-                                <div class="files_for_dow">
-                                    Files Download
-                                </div>
+                                <a href="#" class="files_for_dow">
+                                    <i class="icon-present"></i>
+                                    <span>Прайс листы</span>
+                                </a>
+                                <a href="#" class="top-callback-open">
+                                    <i class="icon-phone-grey"></i>
+                                    <span>Обратный звонок</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -99,23 +108,38 @@
             </div>
         </div>
 
-        <div class="overlay wrapper">
-	        <?php
-	        wp_nav_menu( array(
-		        'theme_location' => 'menu-1',
-		        'menu_id'        => 'primary-menu',
-		        'menu_class'     => 'navbar-nav',
-		        'container'      => 'nav',
-		        'container_class'=> 'overlayMenu',
-		        'container_id'   => 'header-nav',
-	        ) );
-	        ?>
-            <div class="basket">
-		        <?php oboishop_woocommerce_cart_link() ?>
-                <!--<div class="mini-cart-content ">
-                    <?php /*the_widget('WC_Widget_Cart', 'title=') */?>
-                </div>-->
+        <div class="header_mnu">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="coll">
+                            <div class="nav_header_menu">
+                                <div class="overlay">
+		                            <?php
+		                            wp_nav_menu( array(
+			                            'theme_location' => 'menu-1',
+			                            'menu_id'        => 'primary-menu',
+			                            'menu_class'     => 'menu',
+			                            'container'      => 'nav',
+			                            'container_class'=> 'overlayMenu',
+			                            'container_id'   => 'header-nav',
+		                            ) );
+		                            ?>
+                                </div>
+                                <div class="navBurger" role="navigation" id="navToggle"></div>
+                            </div>
+                            <div class="basket">
+		                        <?php oboishop_woocommerce_cart_link() ?>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
 
 	</header><!-- #masthead -->
