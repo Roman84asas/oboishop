@@ -99,15 +99,27 @@
                                 <div class="top_present">
 	                                <?php
 	                                $file_pdf_for_shop = carbon_get_theme_option( 'obo_price_list' );
+	                                $file_pdf_for_laminat = carbon_get_theme_option( 'obo_price_list_laminat' );
+	                                $file_pdf_for_oboi = carbon_get_theme_option( 'obo_price_list_oboi' );
+	                                $file_pdf_for_light = carbon_get_theme_option( 'obo_price_list_light' );
+	                                $file_pdf_for_all_other = carbon_get_theme_option( 'obo_price_list_all_other' );
 
-	                                if ($file_pdf_for_shop) {
-		                                $url_pdf_file = carbon_get_theme_option( 'obo_price_list_text' ); ?>
+	                                if ($file_pdf_for_shop) { ?>
                                         <a href="<?php echo esc_url(wp_get_attachment_url($file_pdf_for_shop)); ?>" download>Все товары</a>
-	                                <?php } ?>
-                                    <a href="#" download>Ламинат</a>
-                                    <a href="#" download>Обои</a>
-                                    <a href="#" download>Светильники</a>
-                                    <a href="#" download>Сопутствующие товары</a>
+	                                <?php }
+	                                if ($file_pdf_for_laminat) { ?>
+                                        <a href="<?php echo esc_url(wp_get_attachment_url($file_pdf_for_laminat)); ?>" download>Ламинат</a>
+	                                <?php }
+	                                if ($file_pdf_for_oboi) { ?>
+                                        <a href="<?php echo esc_url(wp_get_attachment_url($file_pdf_for_oboi)); ?>" download>Обои</a>
+	                                <?php }
+	                                if ($file_pdf_for_light) { ?>
+                                        <a href="<?php echo esc_url(wp_get_attachment_url($file_pdf_for_light)); ?>" download>Светильники</a>
+	                                <?php }
+	                                if ($file_pdf_for_all_other) { ?>
+                                        <a href="<?php echo esc_url(wp_get_attachment_url($file_pdf_for_all_other)); ?>" download>Сопутствующие товары</a>
+	                                <?php }
+	                                ?>
                                 </div>
 
 
@@ -115,6 +127,34 @@
                                     <i class="icon-phone-grey"></i>
                                     <span>Обратный звонок</span>
                                 </a>
+                                <div class="top_callback">
+                                    <h3>Обратный звонок</h3>
+                                    <img src="/wp-content/themes/oboishop/assets/img/callback-img.png" alt="">
+                                    <p>
+                                        Введите свой номер телефона <br> и мы перезвоним вам
+                                    </p>
+                                    <form>
+                                        <input type="hidden" name="action" value="submitForm" />
+                                        <div style="display: none;">
+                                            <input type="text" name="fullName" value="" />
+                                        </div>
+                                        <label>
+                                            <input type="text" name="phone" placeholder="Ваш телефон">
+                                        </label>
+                                        <label>
+                                            <input type="text" name="time" placeholder="Удобное время">
+                                        </label>
+                                        <p>
+                                            <strong>Рабочее время:</strong>
+                                            Пн. - Пт, с 10:00 до 19:00
+                                        </p>
+                                        <button>перезвоните мне!</button>
+                                        <label>
+                                            <input type="checkbox" name="agree" checked>
+                                            <span>Соглашение об обработке персональных данных</span>
+                                        </label>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

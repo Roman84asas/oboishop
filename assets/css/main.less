@@ -346,6 +346,116 @@ header {
                   display: inline-block;
                 }
               }
+              .top_callback {
+                display: none;
+                position: absolute;
+                z-index: 103;
+                -webkit-box-shadow: 0 15px 40px rgba(127, 136, 144, .4);
+                box-shadow: 0 15px 40px rgba(127, 136, 144, .4);
+                border: 1px solid #e1e1e1;
+                background-color: #fbfbfb;
+                width: 330px;
+                left: 50%;
+                border-radius: 25px;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                padding: 0 40px;
+                h3 {
+                  color: #263139;
+                  font-size: 18px;
+                  font-weight: 700;
+                  line-height: 24px;
+                  text-transform: uppercase;
+                  margin-top: 50px;
+                }
+                img {
+                  margin: 20px auto;
+                  display: block
+                }
+                p {
+                  color: #42414f;
+                  font-size: 14px;
+                  font-weight: 300;
+                  line-height: 18px;
+                  text-align: center;
+                  margin-bottom: 20px
+                }
+                form {
+                  label {
+                    display: block;
+                    margin-bottom: 20px;
+                    input[name=phone] {
+                      background-image: url(../img/telephone.svg);
+                      background-repeat: no-repeat;
+                      background-position: 20px center;
+                    }
+                    input[name=time] {
+                      background-image: url(../img/clock.svg);
+                      background-repeat: no-repeat;
+                      background-position: 20px center;
+                    }
+                    input[type=text] {
+                      width: 280px;
+                      height: 40px;
+                      border: 1px solid #d5d4d9;
+                      background-color: #fff;
+                      padding-left: 50px;
+                      color: #999;
+                      font-size: 14px;
+                      font-weight: 300;
+                      -webkit-border-radius: 10000px;
+                      border-radius: 10000px;
+                    }
+                    input[type=text]:focus {
+                      outline: 0;
+                    }
+                  }
+                  label:last-child {
+                    color: #7f8890;
+                    font-size: 12px;
+                    font-weight: 300;
+                    padding-bottom: 50px;
+                    margin-bottom: 0;
+                    margin-top: 24px;
+                  }
+                  p {
+                    color: #263139;
+                    strong {
+                      display: block;
+                    }
+                  }
+                  button {
+                    height: 50px;
+                    background-color: #ff8a00;
+                    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff8a00), to(#ffb100));
+                    background-image: -webkit-linear-gradient(bottom, #ff8a00 0, #ffb100 100%);
+                    background-image: -o-linear-gradient(bottom, #ff8a00 0, #ffb100 100%);
+                    background-image: linear-gradient(to top, #ff8a00 0, #ffb100 100%);
+                    -webkit-border-radius: 1000px;
+                    border-radius: 1000px;
+                    width: 100%;
+                    border: 0;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    position: relative;
+                    padding-left: 40px;
+                    outline: 0;
+                    &:after {
+                      content: "";
+                      background: url(../img/top-submit.svg);
+                      width: 40px;
+                      height: 40px;
+                      position: absolute;
+                      left: 5px;
+                      top: 5px;
+                    }
+                  }
+                }
+              }
+
             }
           }
         }
@@ -359,6 +469,27 @@ header {
     margin-top: -5px;
     position: relative;
     z-index: 101;
+  }
+  @media (max-width: 1350px) {
+    .header_top {
+      .wrapper {
+        .content_header {
+          .row{
+            .coll_header {
+              .lk_and_files {
+                .top_callback {
+                  -webkit-transform: none;
+                  -ms-transform: none;
+                  transform: none;
+                  left: auto;
+                  right: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   @media (max-width: 1020px) {
     .header_top {

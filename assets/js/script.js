@@ -10,6 +10,16 @@ jQuery(function($) {
         }
     });
 
+    //Script for callback phone
+    $('.top-callback-open').on('click', function () {
+        let stateVar = $('.top_callback').is(":visible");
+        if (!stateVar) {
+            $('.top_callback').show(300);
+        } else {
+            $('.top_callback').hide(300);
+        }
+    });
+
     //Scripts from popup
 
     $('.myself_cab').on('click', function() {
