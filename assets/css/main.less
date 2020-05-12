@@ -291,6 +291,38 @@ header {
                   vertical-align: middle;
                 }
               }
+              .top_present {
+                display: none;
+                position: absolute;
+                border: 1px solid #dadde0;
+                background-color: #fff;
+                margin-top: -22px;
+                padding: 32px 7px 10px 7px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                z-index: 2;
+                transition: .55s opacity, .55s visibility;
+                width: -webkit-fill-available;
+                a {
+                  color: #7a7a7a;
+                  font-size: 15px;
+                  font-weight: 300;
+                  display: block;
+                  position: relative;
+                  text-align: left;
+                  padding-left: 15px;
+                  margin-bottom: 15px;
+                  &:before {
+                    width: 7px;
+                    height: 6px;
+                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAGCAYAAAAPDoR2AAAATElEQVQYV2NkQAL1HRP+N1YUMMKE4AyQAFbJhs7+gv//GfvhOhj/FzaUF06A62xo73cASi4A4oSGysIDIIWM6EbBdIPEwZLIjkJmAwBt8R4zaEZFpQAAAABJRU5ErkJggg==);
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                  }
+                }
+              }
               .top-callback-open {
                 margin-top: 5px;
                 display: inline-block;
@@ -340,8 +372,8 @@ header {
               .sections_otd {
                 margin-left: 20px;
               }
-              .top-callback-open {
-
+              .lk_and_files {
+                .top_present {}
               }
             }
           }
@@ -356,6 +388,9 @@ header {
         .content_header {
           .row{
             .coll_header {
+              .info_and_contact {
+                width: 250px;
+              }
               .logo_sect {
                 width: 131px;
               }
@@ -385,6 +420,10 @@ header {
               .lk_and_files {
                 margin-left: 10px;
                 margin-top: 17px;
+                max-width: 220px;
+                .top_present {
+                  max-width: 170px;
+                }
               }
               .top-callback-open {
 
@@ -401,13 +440,11 @@ header {
         .content_header {
           .row{
             .coll_header {
-              .info_and_contact {
-                width: 200px;
-              }
               .sections_otd {
                 .calcul {
                   .sect-art {
                     margin-left: 5px;
+                    font-size: 14px;
                   }
                 }
               }

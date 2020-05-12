@@ -90,12 +90,27 @@
                             <div class="lk_and_files">
                                 <div class="myself_cab" title="Личный кабинет">
                                     <i class="icon_login"></i>
-                                    <span class="myself">Вход для клиентов</span>
+                                    <span class="myself">Личный кабинет</span>
                                 </div>
                                 <a href="#" class="files_for_dow">
                                     <i class="icon-present"></i>
                                     <span>Прайс листы</span>
                                 </a>
+                                <div class="top_present">
+	                                <?php
+	                                $file_pdf_for_shop = carbon_get_theme_option( 'obo_price_list' );
+
+	                                if ($file_pdf_for_shop) {
+		                                $url_pdf_file = carbon_get_theme_option( 'obo_price_list_text' ); ?>
+                                        <a href="<?php echo esc_url(wp_get_attachment_url($file_pdf_for_shop)); ?>" download>Все товары</a>
+	                                <?php } ?>
+                                    <a href="#" download>Ламинат</a>
+                                    <a href="#" download>Обои</a>
+                                    <a href="#" download>Светильники</a>
+                                    <a href="#" download>Сопутствующие товары</a>
+                                </div>
+
+
                                 <a href="#" class="top-callback-open">
                                     <i class="icon-phone-grey"></i>
                                     <span>Обратный звонок</span>

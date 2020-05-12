@@ -30,15 +30,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<input type="hidden" name="paged" value="1" />
 		<?php wc_query_string_form_fields( null, array( 'orderby', 'submit', 'paged', 'product-page' ) ); ?>
 	</form>
-	<div class="download-scheme">
-		<?php
-		$file_pdf_for_shop = carbon_get_theme_option( 'obo_price_list' );
-		if ($file_pdf_for_shop) {
-			$url_pdf_file = carbon_get_theme_option( 'obo_price_list_text' ); ?>
-            <a href="<?php echo $url_pdf_file; ?>" download>
-                <p>Скачать схему проезда<span>pdf, 327 Кб</span></p>
-            </a>
-		<?php } ?>
-
-	</div>
 </div>

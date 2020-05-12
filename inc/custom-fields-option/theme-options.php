@@ -19,9 +19,12 @@ Container::make( 'theme_options', __( 'Настройки темы' ) )
         Field::make( 'text', 'obo_footer_email', __( 'Ваш Email' ) ),
         Field::make( 'text', 'obo_footer_phone', __( 'Ваш номер телефона' ) ),
     ))
-	->add_tab( __( 'Список товаров' ), array(
-		Field::make('file', 'obo_price_list', 'Лист товаров (PDF)' ),
-		Field::make( 'text', 'obo_price_list_text', __( 'Копировать ссылку на файл PDF' ) ),
+	->add_tab( __( 'Прайс листы' ), array(
+		Field::make('file', 'obo_price_list', 'Общий прайс лист (PDF)' ),
+		Field::make('file', 'obo_price_list_laminat', 'Ламинат (PDF)' ),
+		Field::make('file', 'obo_price_list_oboi', 'Обои (PDF)' ),
+		Field::make('file', 'obo_price_list_light', 'Светильники (PDF)' ),
+		Field::make('file', 'obo_price_list_all_other', 'Сопутствующие товары (PDF)' )
 	) );
 
 Container::make( 'theme_options', __( 'Сoциальные сети' ) )

@@ -1,5 +1,14 @@
 jQuery(function($) {
     "use strict";
+    //Script for download
+    $('.files_for_dow').on('click', function () {
+        let stateVar = $('.top_present').is(":visible");
+        if (!stateVar) {
+            $('.top_present').show(300);
+        } else {
+            $('.top_present').hide(300);
+        }
+    });
 
     //Scripts from popup
 
