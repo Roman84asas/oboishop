@@ -165,7 +165,7 @@
 
         <div class="header_mnu">
             <div class="wrapper">
-                <div class="container-fluid">
+                <div class="container_fluid">
                     <div class="row">
                         <div class="coll">
                             <div class="nav_header_menu">
@@ -186,7 +186,6 @@
                             <div class="basket">
 		                        <?php oboishop_woocommerce_cart_link() ?>
                             </div>
-
                         </div>
 
                     </div>

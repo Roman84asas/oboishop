@@ -9,8 +9,6 @@ defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
 
-    <?php get_template_part( 'template-parts/section-info', 'page' ); ?>
-
     <section class="content-shop wrapper-content">
         <?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
 
