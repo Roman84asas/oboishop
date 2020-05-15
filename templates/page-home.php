@@ -5,10 +5,7 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
-	<section class="content-home">
+	<main class="content-home">
 		<?php get_template_part( 'template-parts/section-slider', 'page' ); ?>
-	</section>
-
-
-
+	</main>
 <?php get_footer();
