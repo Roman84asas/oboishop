@@ -526,6 +526,32 @@
               position: relative;
               .row {
                 .col-sm-6 {
+                  -webkit-box-flex: 0;
+                  -webkit-flex: 0 0 50%;
+                  -ms-flex: 0 0 50%;
+                  flex: 0 0 50%;
+                  .stab-img {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #f57c00;
+                    -webkit-border-radius: 100%;
+                    border-radius: 100%;
+                    position: absolute;
+                    left: -54px;
+                    top: 0;
+                    svg {
+                      position: absolute;
+                      margin: auto;
+                      left: 0;
+                      top: 0;
+                      bottom: 0;
+                      right: 0;
+                      fill: #fff;
+                      use {
+                        fill: #fff;
+                      };
+                    }
+                  }
                   .mapa-content {
                     h3 {
                       font-weight: 300;
@@ -533,6 +559,23 @@
                       font-size: 36px;
                       margin-bottom: 28px;
                       text-transform: none;
+                    }
+                    p {
+                      color: #263139;
+                      font-size: 16px;
+                      font-weight: 300;
+                      margin-bottom: 20px;
+                    }
+                    ul {
+                      color: #263139;
+                      font-size: 16px;
+                      font-weight: 300;
+                      margin-bottom: 20px;
+                    }
+                  }
+                  .tabs-buttons {
+                    .btn-orange2 {
+                      margin-right: 30px;
                     }
                   }
                 }
@@ -573,10 +616,24 @@
                padding: 47px 17px 26px 17px;
                .row {
                  .col-sm-6 {
+                   .stab-img {
+                     left: 17px;
+                   }
                    .mapa-content {
                      h3 {
                        font-size: 30px;
                        padding-left: 74px;
+                     }
+                     p {
+                       font-size: 14px;
+                     }
+                     ul {
+                       font-size: 14px;
+                     }
+                   }
+                   .tabs-buttons {
+                     .btn-orange2 {
+                       margin-right: 20px;
                      }
                    }
                  }
@@ -597,6 +654,88 @@
           .col-md-12 {
             .tabs-container {
               .stab {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 793px) {
+    .inner {
+      .container-fluid {
+        .row {
+          .col-md-12 {
+            .main-services-tabs {
+              -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              border-right: 1px solid #e1e1e1;
+              a {
+                font-size: 13px;
+                width: 25%;
+                margin-left: 0;
+                border-bottom: 0;
+                border-right: 0;
+              }
+            }
+            .tabs-container {
+              .stab {
+                .row {
+                  .col-sm-6 {
+                    .tabs-buttons {
+                      .btn-orange2 {
+                        margin-right: 0;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 745px) {
+    .inner {
+      .container-fluid {
+        .row {
+          .col-md-12 {
+            .main-services-tabs {
+              -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              border-right: 1px solid #e1e1e1;
+              a {
+                font-size: 13px;
+                width: 25%;
+                margin-left: 0;
+                border-bottom: 0;
+                border-right: 0;
+              }
+            }
+            .tabs-container {
+              .stab {
+                .row {
+                  .col-sm-6 {
+                    .tabs-buttons {
+                      .btn-orange2 {
+                        margin-bottom: 15px
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -654,6 +793,8 @@
       }
     }
   }
+
+
 }
 @media (max-width: 600px) {
   .service {

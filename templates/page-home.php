@@ -205,14 +205,13 @@ get_header(); ?>
 													<li>обои на любой вкус и для любого кошелька,</li>
 													<li>в магазине есть все, необходимое для клейки обоев,</li>
 													<li>дизайн, размеры и расцветка обоев для всех.</li>
-													<li></li>
 												</ul>
 											</div>
 											<div class="tabs-buttons">
-												<a href="<?php echo esc_url( home_url( '/product-category/обои/' ) ); ?>" class="btn btn-orange2" style="background-color: #160bf3">
+												<a href="<?php echo esc_url( home_url( '/product-category/обои/' ) ); ?>" class="btn-orange2" style="background-color: #160bf3">
 													Перейти в магазин
 												</a>
-												<a href="#questions" class="btn btn-empty" rel="m_PageScroll2id">
+												<a href="#questions" class="btn-empty" rel="m_PageScroll2id">
 													Задать вопрос
 												</a>
 											</div>
@@ -335,10 +334,11 @@ get_header(); ?>
 												<h3 style="color: #f30bb1">
 													Светильники
 												</h3>
-												<p></p>
+												<p>Большой выбор светильников в нашем магазине, позволит подобрать по личным предпочтениям. Большой выбор навесных, настольных ламп, светильников и других приборов освещения.</p>
 												<ul>
-													<li></li>
-													<li></li>
+													<li>большой выбор приборов освещения,</li>
+													<li>любой вид и тип осветительных приборов, светильников,</li>
+													<li>предоставляется гарантия для используемых светильников.</li>
 												</ul>
 											</div>
 											<div class="tabs-buttons">
@@ -397,6 +397,12 @@ get_header(); ?>
 												<h3 style="color: #f57c00">
 													Сопутствующие товары
 												</h3>
+                                                <p>Наши товары для ремонта, позволят произвести ремонт в различных стилях и на Ваш взгляд. У нас есть большой перечень товаров, который даст возможность выбрать товар для любого превередлевого покупателя:</p>
+												<ul>
+													<li>вы сможете выбирать любой элемент декора,</li>
+													<li>для Вас большой перечень товаров, для художественных элементов дизайна,</li>
+													<li>самый взыскательный вкус будет удовлетворен.</li>
+												</ul>
 											</div>
 											<div class="tabs-buttons">
 												<a href="<?php echo esc_url( home_url( '/product-category/сопутствующие-товары/' ) ); ?>" class="btn btn-orange2" style="background-color: #f57c00">
