@@ -429,6 +429,17 @@
           min-height: 1px;
           padding-left: 15px;
           padding-right: 15px;
+          h2 {
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 42px;
+            font-weight: 300;
+            line-height: 37px;
+            margin-bottom: 50px;
+            margin-top: 85px;
+            color: #263139;
+          }
           .main-services-tabs {
             font-size: 0;
             display: -webkit-box;
@@ -518,6 +529,9 @@
             }
           }
           .tabs-container {
+            .tab {
+              display: none;
+            }
             .stab {
               border: 1px solid #e1e1e1;
               border-top: 0;
@@ -537,8 +551,8 @@
                     -webkit-border-radius: 100%;
                     border-radius: 100%;
                     position: absolute;
-                    left: -54px;
-                    top: 0;
+                    left: 24px;
+                    top: 50px;
                     svg {
                       position: absolute;
                       margin: auto;
@@ -553,6 +567,7 @@
                     }
                   }
                   .mapa-content {
+                    margin-bottom: 7px;
                     h3 {
                       font-weight: 300;
                       color: #f57c00;
@@ -571,15 +586,61 @@
                       font-size: 16px;
                       font-weight: 300;
                       margin-bottom: 20px;
+                      li {
+                        margin-bottom: 20px;
+                        position: relative;
+                        padding-left: 18px;
+                        &:before {
+                          width: 4px;
+                          height: 4px;
+                          background-color: var(--my-color-var);
+                          display: inline-block;
+                          content: "";
+                          -webkit-border-radius: 100%;
+                          border-radius: 100%;
+                          position: absolute;
+                          left: 0;
+                          top: 9px;
+                        }
+                      }
                     }
                   }
                   .tabs-buttons {
+                    margin-top: 100px;
                     .btn-orange2 {
                       margin-right: 30px;
+                      padding: 15px;
+                      color: white;
+                      text-transform: uppercase;
+                      border-radius: 55px;
+                      -webkit-transition: .3s all;
+                      &:hover {
+                        box-shadow: 1px 1px 10px #8d96a0;
+                        -webkit-transition: .3s all;
+                      }
                     }
+                    .btn-empty {
+                      margin-right: 30px;
+                      padding: 15px;
+                      color: @bagr_color;
+                      text-transform: uppercase;
+                      border-radius: 55px;
+                      -webkit-transition: .3s all;
+                      border: 1px solid @bagr_color;
+                      &:hover {
+                        box-shadow: 1px 1px 10px #8d96a0;
+                        -webkit-transition: .3s all;
+                      }
+                    }
+                  }
+                  img {
+                    width: 100%;
                   }
                 }
               }
+            }
+            .active {
+              display: block;
             }
           }
         }
@@ -629,6 +690,7 @@
                      }
                      ul {
                        font-size: 14px;
+                       margin-bottom: 36px;
                      }
                    }
                    .tabs-buttons {
@@ -667,28 +729,27 @@
       .container-fluid {
         .row {
           .col-md-12 {
-            .main-services-tabs {
-              -webkit-flex-wrap: wrap;
-              -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              border-right: 1px solid #e1e1e1;
-              a {
-                font-size: 13px;
-                width: 25%;
-                margin-left: 0;
-                border-bottom: 0;
-                border-right: 0;
-              }
-            }
             .tabs-container {
               .stab {
                 .row {
                   .col-sm-6 {
                     .tabs-buttons {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-flex-wrap: wrap;
+                      -ms-flex-wrap: wrap;
+                      flex-wrap: wrap;
+                      -webkit-box-pack: justify;
+                      -webkit-justify-content: space-between;
+                      -ms-flex-pack: justify;
+                      justify-content: space-between;
+                      -webkit-box-flex: 0;
+                      -webkit-flex: 0 0 100%;
+                      -ms-flex: 0 0 100%;
+                      flex: 0 0 100%;
+                      text-align: center;
                       .btn-orange2 {
                         margin-right: 0;
                       }
@@ -708,28 +769,15 @@
       .container-fluid {
         .row {
           .col-md-12 {
-            .main-services-tabs {
-              -webkit-flex-wrap: wrap;
-              -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              border-right: 1px solid #e1e1e1;
-              a {
-                font-size: 13px;
-                width: 25%;
-                margin-left: 0;
-                border-bottom: 0;
-                border-right: 0;
-              }
-            }
             .tabs-container {
               .stab {
                 .row {
                   .col-sm-6 {
                     .tabs-buttons {
+                      -webkit-box-pack: center;
+                      -webkit-justify-content: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
                       .btn-orange2 {
                         margin-bottom: 15px
                       }
@@ -753,6 +801,36 @@
             .tabs-container {
               .stab {
                 padding-top: 15px;
+                .row {
+                  .col-sm-6 {
+                    -webkit-box-flex: 0;
+                    -webkit-flex: 0 0 100%;
+                    -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+                    &:first-child {
+                      -webkit-box-ordinal-group: 3;
+                      -webkit-order: 2;
+                      -ms-flex-order: 2;
+                      order: 2;
+                    }
+                    &:nth-child(2) {
+                      -webkit-box-ordinal-group: 2;
+                      -webkit-order: 1;
+                      -ms-flex-order: 1;
+                      order: 1;
+                    }
+                    .tabs-buttons {
+                      -webkit-justify-content: space-around;
+                      -ms-flex-pack: distribute;
+                      justify-content: space-around;
+                    }
+                    img {
+                      max-width: 400px;
+                      display: block;
+                      margin: 0 auto 30px;
+                    }
+                  }
+                }
               }
             }
           }
@@ -794,10 +872,34 @@
     }
   }
 
-
+  @media (max-width: 399px) {
+    .inner {
+      .container-fluid {
+        .row {
+          .col-md-12 {
+            .tabs-container {
+              .stab {
+                .row {
+                  .col-sm-6 {
+                    .tabs-buttons {
+                      .btn-orange2 {
+                        margin-right: 0;
+                        margin-bottom: 15px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 600px) {
   .service {
     padding-bottom: 30px;
   }
 }
+
