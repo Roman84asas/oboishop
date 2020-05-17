@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    var mainClSliders = [];
+
     if($(".mSlider").length){
         var mSlider = $(".mSlider");
 
