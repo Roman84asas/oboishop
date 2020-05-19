@@ -425,6 +425,39 @@ get_header(); ?>
 			</div>
         </div>
 
+        <div class="main-digits"  style="background-image: url(/wp-content/themes/oboishop/assets/img/we.png);">
+            <div class="inner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="white">Мы в цифрах</h2>
+                            <div class="digit-items">
+	                            <div class="digit-item">
+		                            <h3 class="white with-border">Скидки</h3>
+		                            <p>от 15% за товар</p>
+	                            </div>
+	                            <div class="digit-item">
+		                            <h3 class="white with-border"> > 200</h3>
+		                            <p>наименований товаров</p>
+	                            </div>
+	                            <div class="digit-item">
+		                            <h3 class="white with-border">> 50</h3>
+		                            <p>брендов производителей стройматериалов</p>
+	                            </div>
+	                            <div class="digit-item">
+		                            <h3 class="white with-border">> 10</h3>
+		                            <p>сотрудничающих компаний с нами</p>
+	                            </div>
+	                            <div class="digit-item">
+		                            <h3 class="white with-border">24/7</h3>
+		                            <p>мы на связи с Вами</p>
+	                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 	</main>
 <?php get_footer();
