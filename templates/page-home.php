@@ -442,11 +442,11 @@ get_header(); ?>
 	                            </div>
 	                            <div class="digit-item">
 		                            <h3 class="white with-border">> 50</h3>
-		                            <p>брендов производителей стройматериалов</p>
+		                            <p>брендов производителей<br> стройматериалов</p>
 	                            </div>
 	                            <div class="digit-item">
 		                            <h3 class="white with-border">> 10</h3>
-		                            <p>сотрудничающих компаний с нами</p>
+		                            <p>сотрудничающих<br> компаний с нами</p>
 	                            </div>
 	                            <div class="digit-item">
 		                            <h3 class="white with-border">24/7</h3>

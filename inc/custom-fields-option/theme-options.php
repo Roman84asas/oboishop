@@ -29,9 +29,21 @@ Container::make( 'theme_options', __( 'Настройки темы' ) )
 
 Container::make( 'theme_options', __( 'Сoциальные сети' ) )
     ->add_fields( array(
+	    Field::make( 'image', 'obo_facebook_image', __( 'Facebook фотография' )),
         Field::make( 'text', 'obo_facebook', __( 'Facebook аккаунт' ) ),
+        Field::make( 'text', 'text_obo_facebook', __( 'Facebook комментарии с аккаунта' ) ),
+        Field::make( 'image', 'obo_odnoklassniki_image', __( 'Odnoklassniki фотография' ) ),
         Field::make( 'text', 'obo_odnoklassniki', __( 'Odnoklassniki аккаунт' ) ),
+        Field::make( 'text', 'text_obo_odnoklassniki', __( 'Odnoklassniki комментарии с аккаунта' ) ),
         Field::make( 'text', 'obo_insta', __( 'Instagram аккаунт' ) ),
+        Field::make( 'text', 'text_obo_insta', __( 'Instagram комментарии с аккаунта' ) ),
+        Field::make( 'text', 'obo_google', __( 'Google аккаунт' ) ),
+        Field::make( 'text', 'text_obo_google', __( 'Google комментарии с аккаунта' ) ),
+        Field::make( 'text', 'obo_yandex', __( 'Yandex аккаунт' ) ),
+        Field::make( 'text', 'text_obo_yandex', __( 'Yandex комментарии с аккаунта' ) ),
+        Field::make( 'text', 'text_obo_twitter', __( 'Twitter комментарии с аккаунта' ) ),
+        Field::make( 'text', 'obo_vk', __( 'Vk аккаунт' ) ),
+        Field::make( 'text', 'text_obo_vk', __( 'Vk комментарии с аккаунта' ) ),
     ) );
 
 Container::make( 'theme_options', __( 'Slideshow' ) )
