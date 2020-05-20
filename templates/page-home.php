@@ -481,6 +481,7 @@ get_header(); ?>
 								if ($face_image) {
 									$face_text    = carbon_get_theme_option( 'text_obo_facebook' );
 									$face_name    = carbon_get_theme_option( 'name_obo_facebook' );
+									$face_ack     = carbon_get_theme_option( 'obo_facebook' );
 									?>
                                     <div class="main-clients-about-full-cont">
                                         <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
@@ -492,6 +493,7 @@ get_header(); ?>
 													</span>
                                                 </p>
                                                 <strong><?php echo esc_attr($face_name); ?></strong>
+                                                <a href="<?php echo esc_attr($face_ack); ?>" target="_blank">Facebook аккаунт</a>
                                             </div>
                                         </div>
                                     </div>
@@ -499,6 +501,7 @@ get_header(); ?>
 	                            if ($odnok_image) {
 	                                $odnok_text    = carbon_get_theme_option( 'text_obo_odnoklassniki' );
 	                                $odnok_name    = carbon_get_theme_option( 'name_obo_odnoklassniki' );
+		                            $odnok_ack     = carbon_get_theme_option( 'obo_odnoklassniki' );
 	                            ?>
 	                            <div class="main-clients-about-full-cont">
 		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
@@ -510,6 +513,7 @@ get_header(); ?>
 													</span>
 				                            </p>
 				                            <strong><?php echo esc_attr($odnok_name); ?></strong>
+                                            <a href="<?php echo esc_attr($odnok_ack); ?>" target="_blank">Odnoklassniki аккаунт</a>
 			                            </div>
 		                            </div>
 	                            </div>
@@ -517,6 +521,7 @@ get_header(); ?>
 	                            if ($insta_image) {
 	                            	$insta_text    = carbon_get_theme_option( 'text_obo_insta' );
 		                            $insta_name    = carbon_get_theme_option( 'name_obo_insta' );
+		                            $insta_ack     = carbon_get_theme_option( 'obo_insta' );
 	                            ?>
 	                            <div class="main-clients-about-full-cont">
 		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
@@ -528,6 +533,7 @@ get_header(); ?>
 													</span>
 				                            </p>
 				                            <strong><?php echo esc_attr($insta_name); ?></strong>
+                                            <a href="<?php echo esc_attr($odnok_ack); ?>" target="_blank">Instagram аккаунт</a>
 			                            </div>
 		                            </div>
 	                            </div>
@@ -535,6 +541,7 @@ get_header(); ?>
 	                            if ($google_image) {
 		                            $google_text    = carbon_get_theme_option( 'text_obo_google' );
 		                            $google_name    = carbon_get_theme_option( 'name_obo_google' );
+		                            $google_ack     = carbon_get_theme_option( 'obo_google' );
 	                            ?>
 	                            <div class="main-clients-about-full-cont">
 		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
@@ -546,6 +553,7 @@ get_header(); ?>
 													</span>
 				                            </p>
 				                            <strong><?php echo esc_attr($google_name); ?></strong>
+                                            <a href="<?php echo esc_attr($google_ack); ?>" target="_blank">Google аккаунт</a>
 			                            </div>
 		                            </div>
 	                            </div>
@@ -553,6 +561,7 @@ get_header(); ?>
 	                            if ($yandex_image) {
 		                            $yandex_text    = carbon_get_theme_option( 'text_obo_yandex' );
 		                            $yandex_name    = carbon_get_theme_option( 'name_obo_yandex' );
+		                            $yandex_ack     = carbon_get_theme_option( 'obo_yandex' );
 	                            ?>
 	                            <div class="main-clients-about-full-cont">
 		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
@@ -564,6 +573,7 @@ get_header(); ?>
 													</span>
 				                            </p>
 				                            <strong><?php echo esc_attr($yandex_name); ?></strong>
+                                            <a href="<?php echo esc_attr($yandex_ack); ?>" target="_blank">Yandex аккаунт</a>
 			                            </div>
 		                            </div>
 	                            </div>
@@ -571,6 +581,7 @@ get_header(); ?>
 	                            if ($twitter_image) {
 		                            $twitter_text    = carbon_get_theme_option( 'text_obo_twitter' );
 		                            $twitter_name    = carbon_get_theme_option( 'name_obo_twitter' );
+		                            $twitter_ack     = carbon_get_theme_option( 'obo_twitter' );
 	                            ?>
 	                            <div class="main-clients-about-full-cont">
 		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
@@ -582,6 +593,7 @@ get_header(); ?>
 													</span>
 				                            </p>
 				                            <strong><?php echo esc_attr($twitter_name); ?></strong>
+                                            <a href="<?php echo esc_attr($twitter_ack); ?>" target="_blank">Twitter аккаунт</a>
 			                            </div>
 		                            </div>
 	                            </div>
@@ -589,6 +601,7 @@ get_header(); ?>
 	                            if ($vk_image) {
 		                            $vk_text    = carbon_get_theme_option( 'text_obo_vk' );
 		                            $vk_name    = carbon_get_theme_option( 'name_obo_vk' );
+		                            $vk_ack     = carbon_get_theme_option( 'obo_vk' );
 	                            ?>
 	                            <div class="main-clients-about-full-cont">
 		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
@@ -600,6 +613,7 @@ get_header(); ?>
 													</span>
 				                            </p>
 				                            <strong><?php echo esc_attr($vk_name); ?></strong>
+                                            <a href="<?php echo esc_attr($vk_ack); ?>" target="_blank">VK аккаунт</a>
 			                            </div>
 		                            </div>
 	                            </div>
