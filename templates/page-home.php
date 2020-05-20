@@ -4,6 +4,7 @@
   * */
 defined( 'ABSPATH' ) || exit;
 
+
 get_header(); ?>
 	<main class="content-home">
 		<?php get_template_part( 'template-parts/section-slider', 'page' ); ?>
@@ -459,5 +460,103 @@ get_header(); ?>
             </div>
         </div>
 
+        <div class="main-clients-about loading">
+            <div class="inner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Клиенты  о нас</h2>
+                            <div class="main-clients-about-full-slider owl-carousel">
+								<?
+								$face_image    = carbon_get_theme_option( 'obo_facebook_image' );
+								$odnok_image   = carbon_get_theme_option( 'obo_odnoklassniki_image' );
+								$insta_image   = carbon_get_theme_option( 'obo_insta_image' );
+								$google_image  = carbon_get_theme_option( 'obo_google_image' );
+								$yandex_image  = carbon_get_theme_option( 'obo_yandex_image' );
+								$twitter_image = carbon_get_theme_option( 'obo_twitter_image' );
+								$vk_image      = carbon_get_theme_option( 'obo_vk_image' );
+
+								$key = 0;
+
+								if ($face_image) {
+									$face_text    = carbon_get_theme_option( 'text_obo_facebook' );
+									$face_name    = carbon_get_theme_option( 'name_obo_facebook' );
+									?>
+                                    <div class="main-clients-about-full-cont">
+                                        <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
+                                            <img src="<?php echo wp_get_attachment_image( $face_image, 'medium' ); ?>" alt="">
+                                            <div class="main-clients-about-text">
+                                                <p>
+													<span>
+														<?php echo esc_attr($face_text); ?>
+													</span>
+                                                </p>
+                                                <strong><?php echo esc_attr($face_name); ?></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+								<?php }
+	                            if ($odnok_image) {
+	                                $odnok_text    = carbon_get_theme_option( 'text_obo_odnoklassniki' );
+	                                $odnok_name    = carbon_get_theme_option( 'name_obo_odnoklassniki' );
+	                            ?>
+	                            <div class="main-clients-about-full-cont">
+		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
+			                            <img src="<?php echo wp_get_attachment_image( $odnok_image, 'medium' ); ?>" alt="">
+			                            <div class="main-clients-about-text">
+				                            <p>
+													<span>
+														<?php echo esc_attr($odnok_text); ?>
+													</span>
+				                            </p>
+				                            <strong><?php echo esc_attr($odnok_name); ?></strong>
+			                            </div>
+		                            </div>
+	                            </div>
+	                            <?php }
+	                            if ($insta_image) {
+	                            	$insta_text    = carbon_get_theme_option( 'text_obo_insta' );
+		                            $insta_name    = carbon_get_theme_option( 'name_obo_insta' );
+	                            ?>
+	                            <div class="main-clients-about-full-cont">
+		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
+			                            <img src="<?php echo wp_get_attachment_image( $insta_image, 'medium' ); ?>" alt="">
+			                            <div class="main-clients-about-text">
+				                            <p>
+													<span>
+														<?php echo esc_attr($insta_text); ?>
+													</span>
+				                            </p>
+				                            <strong><?php echo esc_attr($insta_name); ?></strong>
+			                            </div>
+		                            </div>
+	                            </div>
+	                            <?php }
+
+	                            ?>
+                            </div>
+                            <div class="main-clients-about-full-cont">
+                                <div class="main-clients-about-slider-cont2">
+                                    <div class="main-clients-about-slider-cont">
+                                        <div class="main-clients-about-slider owl-carousel">
+											<?php for($i=1;$i<=10;$i++){
+												$j = $i - 1;
+												?>
+                                                <div class="main-clients-about-slide" data-count="<?php echo $j; ?>">
+                                                    <img src="/wp-content/themes/voxlink/minimg/clients/client<?php echo $i; ?>.png" alt="">
+                                                </div>
+											<?php } ?>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="ip-prev main-clients-about-slider-prev"></a>
+                                    <a href="#" class="ip-next main-clients-about-slider-next"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 	</main>
 <?php get_footer();
