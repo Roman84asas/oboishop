@@ -484,7 +484,7 @@ get_header(); ?>
 									?>
                                     <div class="main-clients-about-full-cont">
                                         <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
-                                            <img src="<?php echo wp_get_attachment_image( $face_image, 'medium' ); ?>" alt="">
+                                            <?php echo wp_get_attachment_image( $face_image, 'full' ); ?>
                                             <div class="main-clients-about-text">
                                                 <p>
 													<span>
@@ -502,7 +502,7 @@ get_header(); ?>
 	                            ?>
 	                            <div class="main-clients-about-full-cont">
 		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
-			                            <img src="<?php echo wp_get_attachment_image( $odnok_image, 'medium' ); ?>" alt="">
+			                            <?php echo wp_get_attachment_image( $odnok_image, 'full' ); ?>
 			                            <div class="main-clients-about-text">
 				                            <p>
 													<span>
@@ -520,7 +520,7 @@ get_header(); ?>
 	                            ?>
 	                            <div class="main-clients-about-full-cont">
 		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
-			                            <img src="<?php echo wp_get_attachment_image( $insta_image, 'medium' ); ?>" alt="">
+			                            <?php echo wp_get_attachment_image( $insta_image, 'full' ); ?>
 			                            <div class="main-clients-about-text">
 				                            <p>
 													<span>
@@ -532,18 +532,89 @@ get_header(); ?>
 		                            </div>
 	                            </div>
 	                            <?php }
-
+	                            if ($google_image) {
+		                            $google_text    = carbon_get_theme_option( 'text_obo_google' );
+		                            $google_name    = carbon_get_theme_option( 'name_obo_google' );
+	                            ?>
+	                            <div class="main-clients-about-full-cont">
+		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
+			                            <?php echo wp_get_attachment_image( $google_image, 'full' ); ?>
+			                            <div class="main-clients-about-text">
+				                            <p>
+													<span>
+														<?php echo esc_attr($google_text); ?>
+													</span>
+				                            </p>
+				                            <strong><?php echo esc_attr($google_name); ?></strong>
+			                            </div>
+		                            </div>
+	                            </div>
+	                            <?php }
+	                            if ($yandex_image) {
+		                            $yandex_text    = carbon_get_theme_option( 'text_obo_yandex' );
+		                            $yandex_name    = carbon_get_theme_option( 'name_obo_yandex' );
+	                            ?>
+	                            <div class="main-clients-about-full-cont">
+		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
+			                            <?php echo wp_get_attachment_image( $yandex_image, 'full' ); ?>
+			                            <div class="main-clients-about-text">
+				                            <p>
+													<span>
+														<?php echo esc_attr($yandex_text); ?>
+													</span>
+				                            </p>
+				                            <strong><?php echo esc_attr($yandex_name); ?></strong>
+			                            </div>
+		                            </div>
+	                            </div>
+	                            <?php }
+	                            if ($twitter_image) {
+		                            $twitter_text    = carbon_get_theme_option( 'text_obo_twitter' );
+		                            $twitter_name    = carbon_get_theme_option( 'name_obo_twitter' );
+	                            ?>
+	                            <div class="main-clients-about-full-cont">
+		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
+			                            <?php echo wp_get_attachment_image( $twitter_image, 'full' ); ?>
+			                            <div class="main-clients-about-text">
+				                            <p>
+													<span>
+														<?php echo esc_attr($twitter_text); ?>
+													</span>
+				                            </p>
+				                            <strong><?php echo esc_attr($twitter_name); ?></strong>
+			                            </div>
+		                            </div>
+	                            </div>
+	                            <?php }
+	                            if ($vk_image) {
+		                            $vk_text    = carbon_get_theme_option( 'text_obo_vk' );
+		                            $vk_name    = carbon_get_theme_option( 'name_obo_vk' );
+	                            ?>
+	                            <div class="main-clients-about-full-cont">
+		                            <div class="main-clients-about-full" id="clAboutFull<?php echo $key++; ?>">
+			                            <?php echo wp_get_attachment_image( $vk_image, 'full' ); ?>
+			                            <div class="main-clients-about-text">
+				                            <p>
+													<span>
+														<?php echo esc_attr($vk_text); ?>
+													</span>
+				                            </p>
+				                            <strong><?php echo esc_attr($vk_name); ?></strong>
+			                            </div>
+		                            </div>
+	                            </div>
+	                            <?php }
 	                            ?>
                             </div>
                             <div class="main-clients-about-full-cont">
                                 <div class="main-clients-about-slider-cont2">
                                     <div class="main-clients-about-slider-cont">
                                         <div class="main-clients-about-slider owl-carousel">
-											<?php for($i=1;$i<=10;$i++){
+											<?php for($i=1;$i<=7;$i++){
 												$j = $i - 1;
 												?>
                                                 <div class="main-clients-about-slide" data-count="<?php echo $j; ?>">
-                                                    <img src="/wp-content/themes/voxlink/minimg/clients/client<?php echo $i; ?>.png" alt="">
+                                                    <img src="/wp-content/themes/oboishop/assets/img/client<?php echo $i; ?>.png" alt="">
                                                 </div>
 											<?php } ?>
                                         </div>
