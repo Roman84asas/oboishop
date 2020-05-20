@@ -643,5 +643,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+
+		<?php get_template_part( 'template-parts/questions', 'page' ); ?>
 	</main>
 <?php get_footer();
