@@ -644,6 +644,32 @@ get_header(); ?>
             </div>
         </div>
 
+        <div class="main-kb main-kb-add">
+            <div class="inner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div>
+                                <h2 class="white with-border">База знаний</h2>
+                                <p>
+                                    В современном обществе не обходится ни одного дня, где человек не использовал бы «мессенджеры». Для примера был взят один — Телеграм. Плюсы данного мессенджера — открыты API, Telegram развивает свой API для ботов, и с каждым днем их становится все больше.
+                                </p>
+                                <a href="/kb/" class="main-kb-btn">Перейти в раздел</a>
+                            </div>
+                            <div class="main-kb-bg"  style="background-image: url(/wp-content/themes/oboishop/assets/img/akcii.png);"></div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Новые статьи</h3>
+                            <div class="row">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 		<?php get_template_part( 'template-parts/questions', 'page' ); ?>
 	</main>
 <?php get_footer();

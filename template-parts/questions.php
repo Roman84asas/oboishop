@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 		</p>
 		<div class="questions-btns">
 
-			<div class="quest-open-tab btn btn-transparent">Отправить сообщение</div>
+			<div class="quest-open-tab">Отправить сообщение</div>
 			<form id="quest-open-tab2" class="quest-tab form-quest2">
 				<div style="display: none;">
 					<input type="text" name="fullName" value="" />
