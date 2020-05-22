@@ -6,7 +6,19 @@
 
 defined( 'ABSPATH' ) || exit;
 
+if (isset($_REQUEST["send"])) {
+	$name_client   = htmlentities($_POST['name']);
+	$email_address = htmlentities($_POST['email']);
+	$all_text      = htmlentities($_POST['message']);
+	$admin_email    = get_option('admin_email');
+	$admin_email = str_replace( ']]>', ']]>', $admin_email );
+	$admin_email = wp_strip_all_tags($admin_email);
 
+	$subject = 'Вопрос менеджеру с контента сайта';
+	$messageText = '<strong>Имя задающего вопрос: </strong> '.$name_client.'<br> <strong>Email задающего вопрос: </strong> '.$email_address.'<br> <strong>Содержание вопроса: </strong> '.$all_text.'<br> ';
+	wp_mail( $admin_email, $subject, $messageText);
+}
+?>
 ?>
 
 
@@ -20,7 +32,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="questions-btns">
 
 			<div class="quest-open-tab">Отправить сообщение</div>
-			<form id="quest-open-tab2" class="quest-tab form-quest2">
+			<form method="post" id="quest-open-tab2" class="quest-tab form-quest2">
 				<div style="display: none;">
 					<input type="text" name="fullName" value="" />
 				</div>
@@ -37,6 +49,7 @@ defined( 'ABSPATH' ) || exit;
 				</div>
 				<input type="submit" value="отправить" name="send">
 				<input type="hidden" name="action" value="submitForm" />
+				<?php wp_nonce_field(); ?>
 			</form>
 
 		</div>
