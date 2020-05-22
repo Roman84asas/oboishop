@@ -654,15 +654,54 @@ get_header(); ?>
                                 <p>
                                     В нашем магазине Вас ждет огромное разнообразие строительных товаров, профессиональные продавцы, которые помогут Вам с покупкой всего необходимого и порекомендуют необходимые интсрументы, и гибкие скидки и система оплаты и доставки по Москве и Московскому району.
                                 </p>
-                                <a href="/kb/" class="main-kb-btn">Перейти в магазин</a>
+                                <a href="/shop/" class="main-kb-btn">Перейти в магазин</a>
                             </div>
                             <div class="main-kb-bg"  style="background-image: url(/wp-content/themes/oboishop/assets/img/akcii.png);"></div>
                         </div>
                         <div class="col-md-8">
                             <h3>Товары со скидкой</h3>
                             <div class="row">
+	                            <?php
+	                            $product_ids_on_sale = wc_get_product_ids_on_sale();
+	                            $args = array(
+		                            'post_type' => 'product',
+		                            'post__in' => array_merge( array( 0 ), $product_ids_on_sale ),
+		                            'posts_per_page' => 4,
+		                            "orderby" => "date",
+		                            "order" => "DESC"
+	                            );
+	                            $loop = new WP_Query( $args );
+	                            if ( $loop->have_posts() ) {
+		                            while ( $loop->have_posts() ) : $loop->the_post();?>
+			                            <div class="col-md-6 main-kb-item">
+				                            <div class="row">
+					                            <?php
+					                            $item = get_post(get_the_ID());
+					                            $imgUrl = get_the_post_thumbnail_url();
+					                            $c = "col-sm-6";
+					                            ?>
+					                            <div class="<?php echo $c; ?>">
+						                            <a href="<?php echo get_the_permalink(); ?>" class="main-kb-img" <?php if(!empty($imgUrl)){?> style="background-image: url(<?php echo $imgUrl; ?>);"<?php } ?>></a>
+					                            </div>
+					                            <div class="<?php echo $c; ?>">
+						                            <a href="<?php echo get_the_permalink(); ?>" class="main-kb-item-title"><?php echo $item->post_title; ?></a>
+					                            </div>
+				                            </div>
+				                            <p>
+					                            <?php echo wp_trim_words( $item->post_excerpt, 20, " ..."); ?>
+				                            </p>
+				                            <div class="main-kb-meta">
+					                            <?php echo get_the_author_meta("display_name", $item->post_author )?> / <?php echo get_the_date( "j F, Y" ); ?>
+					                            <a href="<?php echo get_the_permalink(); ?>" class="main-kb-more"></a>
+				                            </div>
 
-
+			                            </div>
+		                            <?php endwhile;
+	                            } else {
+		                            echo __( 'Продуктов не найдено' );
+	                            }
+	                            wp_reset_postdata();
+	                            ?>
                             </div>
                         </div>
                     </div>
