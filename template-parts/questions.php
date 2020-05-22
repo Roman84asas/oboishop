@@ -19,7 +19,6 @@ if (isset($_REQUEST["send"])) {
 	wp_mail( $admin_email, $subject, $messageText);
 }
 ?>
-?>
 
 
 <div class="questions" id="questions">

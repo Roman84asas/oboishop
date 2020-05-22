@@ -580,7 +580,7 @@ html[xmlns] .slides {
 }
 /* Your Custom code here */
 body {
-  background-image: url("../img/baground.jpg");
+  background-color: #f4f5f7;
   max-width: 1920px;
   margin: 0 auto;
   overflow-x: hidden;
@@ -1741,51 +1741,6 @@ footer.site-footer .footer .footer-info .info-date {
 .content-shop {
   display: flex;
 }
-.content-shop .sidebar {
-  width: 20%;
-  border-right: 1px solid #ccccd3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.content-shop .sidebar h3 {
-  font-size: 25px;
-  margin-top: 65px;
-  margin-bottom: 45px;
-  color: #4b4b4b;
-}
-.content-shop .sidebar .homepage-category {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 45px;
-}
-.content-shop .sidebar .homepage-category .main-cat-item {
-  margin-bottom: 15px;
-}
-.content-shop .sidebar .homepage-category .main-cat-item a {
-  display: flex;
-  align-items: center;
-  position: relative;
-  -webkit-transition: all 0.3s ease-in-out;
-}
-.content-shop .sidebar .homepage-category .main-cat-item a:hover {
-  border-bottom: 2px solid #f18902;
-  -webkit-transition: all 0.3s ease-in-out;
-}
-.content-shop .sidebar .homepage-category .main-cat-item a:before {
-  content: url("../img/arrow-1.png");
-  position: absolute;
-  left: -35px;
-}
-.content-shop .sidebar .homepage-category .main-cat-item a h4 {
-  margin-bottom: 0;
-  color: black;
-  -webkit-transition: all 0.3s ease-in-out;
-}
-.content-shop .sidebar .homepage-category .main-cat-item a h4:hover {
-  color: #a39e8b;
-  -webkit-transition: all 0.3s ease-in-out;
-}
 .content-shop .all-show-info {
   width: 100%;
 }
@@ -1933,6 +1888,51 @@ footer.site-footer .footer .footer-info .info-date {
   height: 10px;
   position: absolute;
   left: -25px;
+}
+.sidebar {
+  width: 20%;
+  border-right: 1px solid #ccccd3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar h3 {
+  font-size: 25px;
+  margin-top: 65px;
+  margin-bottom: 45px;
+  color: #4b4b4b;
+}
+.sidebar .homepage-category {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+.sidebar .homepage-category .main-cat-item {
+  margin-bottom: 15px;
+}
+.sidebar .homepage-category .main-cat-item a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.sidebar .homepage-category .main-cat-item a:hover {
+  border-bottom: 2px solid #f18902;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.sidebar .homepage-category .main-cat-item a:before {
+  content: url("../img/arrow-1.png");
+  position: absolute;
+  left: -35px;
+}
+.sidebar .homepage-category .main-cat-item a h4 {
+  margin-bottom: 0;
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.sidebar .homepage-category .main-cat-item a h4:hover {
+  color: #a39e8b;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .all-show-info {
   padding-left: 5%;

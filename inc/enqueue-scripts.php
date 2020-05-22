@@ -8,6 +8,9 @@ if ( !defined('ABSPATH') ) {
 function oboishop_scripts() {
     wp_enqueue_style( 'general', get_template_directory_uri() . '/assets/css/general.css', array());
     wp_enqueue_style( 'home', get_template_directory_uri() . '/assets/css/home.css', array());
+	if(is_page( 340 )){
+		wp_enqueue_style( 'page-about', get_template_directory_uri() . '/assets/css/about.css', array());
+	}
     wp_enqueue_style( 'font-icon', get_template_directory_uri() . '/assets/css/all.min.css', array());
     wp_enqueue_style( 'owlcarousel', get_template_directory_uri() . '/libs/owl.carousel/dist/assets/owl.carousel.min.css', array());
     wp_enqueue_style( 'owlcarousel2', get_template_directory_uri() . '/libs/owl.carousel/dist/assets/owl.theme.default.min.css', array());

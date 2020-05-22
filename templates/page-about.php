@@ -5,7 +5,7 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
-    <section class="content-shop">
+    <section class="content_about">
         <?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
         <section class="all-show-info-about">
             <h2>О нас</h2>
@@ -29,6 +29,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="your_no_mistake">Вы не ошибетесь, остановив свой выбор на товарах нашего магазина - долгие годы интерьер будет радовать, вдохновлять, дарить комфорт и отличное настроение Вам и Вашим близким.</div>
+	        <?php get_template_part( 'template-parts/questions', 'page' ); ?>
         </section>
     </section>
 
