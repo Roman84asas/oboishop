@@ -25,7 +25,11 @@ Container::make( 'theme_options', __( 'Настройки темы' ) )
 		Field::make('file', 'obo_price_list_oboi', 'Обои (PDF)' ),
 		Field::make('file', 'obo_price_list_light', 'Светильники (PDF)' ),
 		Field::make('file', 'obo_price_list_all_other', 'Сопутствующие товары (PDF)' )
-	) );
+	) )
+	->add_tab( __( 'Схема и реквизиты' ), array(
+		Field::make( 'file', 'obo_scheme_to', __( 'Схема проезда' ) ),
+		Field::make( 'file', 'obo_requisites', __( 'Реквизиты' ) ),
+	));
 
 Container::make( 'theme_options', __( 'Сoциальные сети' ) )
     ->add_fields( array(
