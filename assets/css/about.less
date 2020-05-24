@@ -7,5 +7,30 @@
 @font_color: #4b4b4b;
 
 .content_about {
-  display: flex;
+  display: block;
+  padding: 0 15px;
+  overflow-x: hidden;
+  h2 {
+    margin: 70px auto 25px auto;
+    text-align: center;
+    color: #263139;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  p {
+    font-family: 'Merriweather', serif;
+    text-transform: none;
+    color: #7f8890;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0;
+    span {
+      color: @active_color;
+    }
+  }
+  .all-show-info-about {
+    margin-top: 70px;
+  }
 }

@@ -6,11 +6,12 @@ defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
     <section class="content_about">
-        <?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
-        <section class="all-show-info-about">
-            <h2>О нас</h2>
-            <div class="happing">Мы рады приветствовать Вас на нашем сайте.</div>
-            <p>Основное направление деятельности нашей кампании Обои Плюс - это реализация товаров для отделки помещений и создания уюта.</p>
+        <h2>О нас</h2>
+        <p class="happing">Мы рады приветствовать Вас на нашем сайте.</p>
+        <p>Основное направление деятельности нашей кампании <span>Обои Плюс</span> - это реализация товаров для отделки помещений и создания уюта.</p>
+
+        <section class="all-show-info-about wrapper">
+
             <div class="show_for_now">
                 <div class="sfn_title">В ассортименте нашего магазина представлены</div>
                 <div class="sfn_descr">
@@ -29,8 +30,9 @@ get_header(); ?>
                 </div>
             </div>
             <div class="your_no_mistake">Вы не ошибетесь, остановив свой выбор на товарах нашего магазина - долгие годы интерьер будет радовать, вдохновлять, дарить комфорт и отличное настроение Вам и Вашим близким.</div>
-	        <?php get_template_part( 'template-parts/questions', 'page' ); ?>
+
         </section>
+	    <?php get_template_part( 'template-parts/questions', 'page' ); ?>
     </section>
 
 <?php get_footer();
