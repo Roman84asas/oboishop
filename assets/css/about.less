@@ -10,27 +10,141 @@
   display: block;
   padding: 0 15px;
   overflow-x: hidden;
+  background-color: white;
   h2 {
-    margin: 70px auto 25px auto;
+    margin: 50px auto 35px auto;
     text-align: center;
     color: #263139;
     font-size: 36px;
     line-height: 30px;
     font-weight: 300;
   }
-  p {
-    font-family: 'Merriweather', serif;
-    text-transform: none;
-    color: #7f8890;
-    font-size: 15px;
-    line-height: 25px;
-    text-align: center;
-    margin: 0;
-    span {
-      color: @active_color;
+  .about-top {
+    background-color: #f9f9f9;
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 0 0 15px;
+    border-radius: 7px;
+    .col-md-6 {
+      h1 {
+        font-weight: 300;
+        color: #263139;
+        font-size: 36px;
+        line-height: 36px;
+        margin: 52px 0 45px;
+        font-family: 'Merriweather', serif;
+      }
+      p {
+        font-family: 'Roboto', sans-serif;
+        color: #7f8890;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 30px;
+        span {
+          color: @active_color;
+        }
+      }
+      img {
+        float: right;
+        max-width: 100%;
+      }
     }
   }
+  .about-map {
+    margin-top: 70px;
+    h2 {
+      color: #263139;
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 40px;
+      margin-bottom: 45px;
+      position: relative;
+      &:after {
+        content: "";
+        width: 45px;
+        height: 2px;
+        background-color: @active_color;
+        position: absolute;
+        bottom: -10px;
+        margin: 0 auto;
+        right: 49%;
+      }
+    }
+    .russiamap {
+      box-shadow: 1px 1px 13px #8d96a0;
+      margin: 0 auto;
+      position: relative;
+      max-width: 823px;
+      min-width: 669px;
+      img {
+        margin: 0 auto;
+        display: block
+      }
+    }
+  }
+
   .all-show-info-about {
     margin-top: 70px;
+  }
+  @media (min-width: 992px) {
+    .about-top {
+      .col-md-6 {
+        width: 50%;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .about-top {
+      flex-direction: column;
+      padding: 0;
+      .col-md-6 {
+
+        width: 100%;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 870px) {
+    .about-map {
+      width: 100%;
+      .russiamap {
+        width: 100%;
+        height: auto;
+        img {
+          width: inherit;
+          margin: 0 auto;
+          display: block
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .about-top {
+      .col-md-6 {
+        width: 100%;
+        h1 {
+          margin-top: 0;
+          font-size: 30px;
+          line-height: 33px;
+        }
+      }
+    }
+  }
+  @media (max-width: 370px) {
+    .about-top {
+      .col-md-6 {
+        width: 100%;
+        img {
+          margin-left: -15px;
+          margin-right: -15px;
+          width: 110%;
+          max-width: unset
+        }
+      }
+    }
   }
 }

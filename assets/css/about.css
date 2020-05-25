@@ -2,28 +2,132 @@
   display: block;
   padding: 0 15px;
   overflow-x: hidden;
+  background-color: white;
 }
 .content_about h2 {
-  margin: 70px auto 25px auto;
+  margin: 50px auto 35px auto;
   text-align: center;
   color: #263139;
   font-size: 36px;
   line-height: 30px;
   font-weight: 300;
 }
-.content_about p {
-  font-family: 'Merriweather', serif;
-  text-transform: none;
-  color: #7f8890;
-  font-size: 15px;
-  line-height: 25px;
-  text-align: center;
-  margin: 0;
+.content_about .about-top {
+  background-color: #f9f9f9;
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 0 0 15px;
+  border-radius: 7px;
 }
-.content_about p span {
+.content_about .about-top .col-md-6 h1 {
+  font-weight: 300;
+  color: #263139;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 52px 0 45px;
+  font-family: 'Merriweather', serif;
+}
+.content_about .about-top .col-md-6 p {
+  font-family: 'Roboto', sans-serif;
+  color: #7f8890;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+.content_about .about-top .col-md-6 p span {
   color: #f18902;
+}
+.content_about .about-top .col-md-6 img {
+  float: right;
+  max-width: 100%;
+}
+.content_about .about-map {
+  margin-top: 70px;
+}
+.content_about .about-map h2 {
+  color: #263139;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 45px;
+  position: relative;
+}
+.content_about .about-map h2:after {
+  content: "";
+  width: 45px;
+  height: 2px;
+  background-color: #f18902;
+  position: absolute;
+  bottom: -10px;
+  margin: 0 auto;
+  right: 49%;
+}
+.content_about .about-map .russiamap {
+  box-shadow: 1px 1px 13px #8d96a0;
+  margin: 0 auto;
+  position: relative;
+  max-width: 823px;
+  min-width: 669px;
+}
+.content_about .about-map .russiamap img {
+  margin: 0 auto;
+  display: block;
 }
 .content_about .all-show-info-about {
   margin-top: 70px;
+}
+@media (min-width: 992px) {
+  .content_about .about-top .col-md-6 {
+    width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .content_about .about-top {
+    flex-direction: column;
+    padding: 0;
+  }
+  .content_about .about-top .col-md-6 {
+    width: 100%;
+  }
+  .content_about .about-top .col-md-6 img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 870px) {
+  .content_about .about-map {
+    width: 100%;
+  }
+  .content_about .about-map .russiamap {
+    width: 100%;
+    height: auto;
+  }
+  .content_about .about-map .russiamap img {
+    width: inherit;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .content_about .about-top .col-md-6 {
+    width: 100%;
+  }
+  .content_about .about-top .col-md-6 h1 {
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+@media (max-width: 370px) {
+  .content_about .about-top .col-md-6 {
+    width: 100%;
+  }
+  .content_about .about-top .col-md-6 img {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: 110%;
+    max-width: unset;
+  }
 }
 /*# sourceMappingURL=about.css.map */

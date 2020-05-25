@@ -5,11 +5,63 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
-    <section class="content_about">
+    <section class="content_about wrapper">
         <h2>О нас</h2>
-        <p class="happing">Мы рады приветствовать Вас на нашем сайте.</p>
-        <p>Основное направление деятельности нашей кампании <span>Обои Плюс</span> - это реализация товаров для отделки помещений и создания уюта.</p>
+        <div class="about-top">
+            <div class="col-md-6">
+                <h1>Обои Плюс — все для Вашего интерьера</h1>
+                <p>
+                    Основное направление деятельности нашей кампании <span>Обои Плюс</span> - это реализация товаров для отделки помещений и создания уюта, качественное обслуживание и большое разнообразие товаров для Вас и для Вашего дома. Вы не ошибетесь, остановив свой выбор на товарах нашего магазина - долгие годы интерьер будет радовать, вдохновлять, дарить комфорт и отличное настроение Вам и Вашим близким.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="/wp-content/themes/oboishop/assets/img/about-img.png"></img>
+            </div>
+        </div>
+        <div class="about-map">
+            <h2>Мы в Москве:</h2>
+            <div class="russiamap">
+                <img src="/wp-content/themes/oboishop/assets/img/map2.png">
+            </div>
+        </div>
+        <div class="our-developments clearfix">
+            <h2>Почему выгодно покупать через сайт <span>ОбоиПлюс.рф</span>?</h2>
+            <div>
 
+                <div class="our-developments__item">
+                    <div class="our-developments__img">
+                        <img src=""></img>
+                    </div>
+                    <p>
+                        нет наценки розничного магазина
+                    </p>
+                </div>
+                <div class="our-developments__item">
+                    <div class="our-developments__img">
+                        <img src=""></img>
+                    </div>
+                    <p>
+                        профессиональные консультанты
+                    </p>
+                </div>
+                <div class="our-developments__item">
+                    <div class="our-developments__img">
+                        <img src=""></img>
+                    </div>
+                    <p>
+                        быстрая доставка
+                    </p>
+                </div>
+                <div class="our-developments__item">
+                    <div class="our-developments__img">
+                        <img src=""></img>
+                    </div>
+                    <p>
+                        качественная продукция
+                    </p>
+                </div>
+            </div>
+        </div>
         <section class="all-show-info-about wrapper">
 
             <div class="show_for_now">
@@ -20,16 +72,6 @@ get_header(); ?>
                     <span>светильники новейших коллекций станут неотъемлемой частью Вашего интерьера.</span>
                 </div>
             </div>
-            <div class="show_for_now">
-                <div class="sfn_title">Почему выгодно покупать через сайт ОбоиПлюс.рф?</div>
-                <div class="sfn_descr">
-                    <span>нет наценки розничного магазина</span>
-                    <span>профессиональные консультанты</span>
-                    <span>быстрая доставка</span>
-                    <span>качественная продукция</span>
-                </div>
-            </div>
-            <div class="your_no_mistake">Вы не ошибетесь, остановив свой выбор на товарах нашего магазина - долгие годы интерьер будет радовать, вдохновлять, дарить комфорт и отличное настроение Вам и Вашим близким.</div>
 
         </section>
 	    <?php get_template_part( 'template-parts/questions', 'page' ); ?>
