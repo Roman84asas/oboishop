@@ -24,7 +24,7 @@ get_header(); ?>
                 <img src="/wp-content/themes/oboishop/assets/img/map2.png">
             </div>
         </div>
-        <div class="our-developments clearfix">
+        <div class="our-developments">
             <h2>Почему выгодно покупать через сайт <span>ОбоиПлюс.рф</span>?</h2>
             <div>
                 <div class="our-developments__item">
@@ -48,7 +48,7 @@ get_header(); ?>
                         <img src="/wp-content/themes/oboishop/assets/img/delivery.png"></img>
                     </div>
                     <p>
-                        Быстрая доставка
+                        Быстрая доставка Вашего товара
                     </p>
                 </div>
                 <div class="our-developments__item">
@@ -56,23 +56,19 @@ get_header(); ?>
                         <img src="/wp-content/themes/oboishop/assets/img/product.png"></img>
                     </div>
                     <p>
-                        Качественная продукция
+                        Качественная продукция наших поставщиков
                     </p>
                 </div>
             </div>
         </div>
-        <section class="all-show-info-about wrapper">
-
-            <div class="show_for_now">
-                <div class="sfn_title">В ассортименте нашего магазина представлены</div>
-                <div class="sfn_descr">
-                    <span>обои фирмы Rasch - крупнейшего немецкого производителя, известного своим качеством и стилем</span>
-                    <span>ламинат Кronotex, Tarkett - придаст Вашему помещению комфорт и тепло</span>
-                    <span>светильники новейших коллекций станут неотъемлемой частью Вашего интерьера.</span>
-                </div>
+        <div class="show_for_now">
+            <div class="sfn_title">В ассортименте нашего магазина представлены</div>
+            <div class="sfn_descr">
+                <span>обои фирмы Rasch - крупнейшего немецкого производителя, известного своим качеством и стилем</span>
+                <span>ламинат Кronotex, Tarkett - придаст Вашему помещению комфорт и тепло</span>
+                <span>светильники новейших коллекций станут неотъемлемой частью Вашего интерьера.</span>
             </div>
-
-        </section>
+        </div>
 	    <?php get_template_part( 'template-parts/questions', 'page' ); ?>
     </section>
 

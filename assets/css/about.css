@@ -76,6 +76,9 @@
 }
 .content_about .our-developments {
   padding-top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .content_about .our-developments h2 {
   font-family: 'Merriweather', serif;
@@ -89,6 +92,47 @@
 .content_about .our-developments h2 span {
   color: #f18902;
   text-transform: none;
+}
+.content_about .our-developments div {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 448px;
+}
+.content_about .our-developments div .our-developments__item {
+  display: flex;
+  width: 197px;
+  margin-right: 27px;
+  margin-bottom: 48px;
+  box-shadow: 1px 1px 10px #ccccd3;
+  -webkit-transition: 0.3s ease-in-out;
+}
+.content_about .our-developments div .our-developments__item:hover {
+  box-shadow: 1px 1px 10px #a39e8b;
+  -webkit-transition: 0.3s ease-in-out;
+}
+.content_about .our-developments div .our-developments__item p {
+  margin-top: 18px;
+  padding: 0 24px;
+  text-align: center;
+  color: #7f8890;
+  font-size: 16px;
+  font-weight: 300;
+}
+.content_about .our-developments div .our-developments__item .our-developments__img {
+  height: 143px;
+  background-color: #f1f1f1;
+  position: relative;
+  width: 197px;
+}
+.content_about .our-developments div .our-developments__item .our-developments__img img {
+  height: 65px;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .content_about .all-show-info-about {
   margin-top: 70px;
