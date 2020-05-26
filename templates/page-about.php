@@ -27,37 +27,36 @@ get_header(); ?>
         <div class="our-developments clearfix">
             <h2>Почему выгодно покупать через сайт <span>ОбоиПлюс.рф</span>?</h2>
             <div>
-
                 <div class="our-developments__item">
                     <div class="our-developments__img">
-                        <img src=""></img>
+                        <img src="/wp-content/themes/oboishop/assets/img/price.png"></img>
                     </div>
                     <p>
-                        нет наценки розничного магазина
+                        Нет наценки розничного магазина
                     </p>
                 </div>
                 <div class="our-developments__item">
                     <div class="our-developments__img">
-                        <img src=""></img>
+                        <img src="/wp-content/themes/oboishop/assets/img/consultant.png"></img>
                     </div>
                     <p>
-                        профессиональные консультанты
+                        Профессиональные консультанты
                     </p>
                 </div>
                 <div class="our-developments__item">
                     <div class="our-developments__img">
-                        <img src=""></img>
+                        <img src="/wp-content/themes/oboishop/assets/img/delivery.png"></img>
                     </div>
                     <p>
-                        быстрая доставка
+                        Быстрая доставка
                     </p>
                 </div>
                 <div class="our-developments__item">
                     <div class="our-developments__img">
-                        <img src=""></img>
+                        <img src="/wp-content/themes/oboishop/assets/img/product.png"></img>
                     </div>
                     <p>
-                        качественная продукция
+                        Качественная продукция
                     </p>
                 </div>
             </div>
