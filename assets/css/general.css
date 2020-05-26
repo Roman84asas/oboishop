@@ -1080,17 +1080,25 @@ header .header_mnu .container_fluid .row .coll .nav_header_menu .overlay .overla
   margin-left: 15px;
   margin-right: 15px;
 }
-header .header_mnu .container_fluid .row .coll .nav_header_menu .overlay .overlayMenu .menu li .current_page_item {
-  border-bottom: 1px solid #f18902;
-}
 header .header_mnu .container_fluid .row .coll .nav_header_menu .overlay .overlayMenu .menu li a {
   text-transform: none;
   color: #4b4b4b;
   font-size: 18px;
   font-family: 'Merriweather', serif;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+header .header_mnu .container_fluid .row .coll .nav_header_menu .overlay .overlayMenu .menu li a:hover {
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  color: #f18902;
 }
 header .header_mnu .container_fluid .row .coll .nav_header_menu .overlay .overlayMenu .menu .current_page_item {
+  color: #f18902;
   border-bottom: 4px solid #ff0fa0;
+}
+header .header_mnu .container_fluid .row .coll .nav_header_menu .overlay .overlayMenu .menu .current_page_item a {
+  color: #f18902;
 }
 header .header_mnu .container_fluid .row .coll .basket {
   display: flex;

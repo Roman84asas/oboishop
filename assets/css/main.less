@@ -505,18 +505,26 @@ header {
                     height: 100%;
                     margin-left: 15px;
                     margin-right: 15px;
-                    .current_page_item {
-                      border-bottom: 1px solid @active_color;
-                    }
                     a {
                       text-transform: none;
                       color: @font_color;
                       font-size: 18px;
                       font-family: 'Merriweather', serif;
+                      transition: .3s ease-in-out;
+                      -webkit-transition: .3s ease-in-out;
+                      &:hover {
+                        transition: .3s ease-in-out;
+                        -webkit-transition: .3s ease-in-out;
+                        color: @active_color;
+                      }
                     }
                   }
                   .current_page_item {
+                    color: @active_color;
                     border-bottom: 4px solid @text_color;
+                    a {
+                      color: @active_color;
+                    }
                   }
                 }
               }
