@@ -97,6 +97,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 448px;
+  justify-content: center;
 }
 .content_about .our-developments div .our-developments__item {
   display: flex;
@@ -133,6 +134,84 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+.content_about .our-clients h2 {
+  font-size: 25px;
+  position: relative;
+}
+.content_about .our-clients h2:after {
+  content: "";
+  width: 45px;
+  height: 2px;
+  background-color: #f18902;
+  position: absolute;
+  bottom: -10px;
+  margin: 0 auto;
+  right: 49%;
+}
+.content_about .our-clients p {
+  margin-top: 10px;
+  padding: 0 24px;
+  text-align: center;
+  color: #7f8890;
+  font-size: 16px;
+  font-weight: 300;
+}
+.content_about .our-clients div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-top: 35px;
+}
+.content_about .our-clients div .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.content_about .our-clients div .item img {
+  width: 250px;
+}
+.content_about .our-clients div .item p {
+  margin-top: 25px;
+  width: 250px;
+}
+.content_about .our-clients .more-btn {
+  width: 193px;
+  height: 43px;
+  border: 1px solid #dadde0;
+  background-color: #fff;
+  -webkit-border-radius: 200px;
+  border-radius: 200px;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  color: #263139;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 41px;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.content_about .our-clients .more-btn:after {
+  content: "";
+  width: 7px;
+  height: 5px;
+  background: url(../img/more-arr.png);
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.content_about .our-clients .more-btn:hover {
+  -webkit-box-shadow: 0 0 15px 1px #dadde0;
+  box-shadow: 0 0 15px 1px #dadde0;
+}
+.content_about .our-clients .more-btn:focus {
+  -webkit-box-shadow: 0 0 15px 1px #dadde0;
+  box-shadow: 0 0 15px 1px #dadde0;
 }
 .content_about .all-show-info-about {
   margin-top: 70px;
@@ -202,9 +281,9 @@
 @media (max-width: 420px) {
   .content_about .our-developments > div {
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: center;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 @media (max-width: 370px) {

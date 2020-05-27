@@ -1341,13 +1341,11 @@ footer.site-footer {
     .row-all-calculator {
       padding: 2rem;
       font-family: @font-robo;
-
       .title-calc {
         display: flex;
         align-items: center;
         flex-direction: column;
         text-align: center;
-
         h3 {
           color: @font_color;
           font-size: 2rem;
@@ -1361,19 +1359,15 @@ footer.site-footer {
           text-align: center;
         }
       }
-
       .calculator-body {
         margin-top: 30px;
         padding: 0 10rem 0 10rem;
-
         .calc-value-all {
           display: flex;
           justify-content: space-between;
-
           .row-calc {
             .row-calc-input-value {
               margin-bottom: 2rem;
-
               .calc_block_title {
                 display: block;
                 color: @bagr_color;
@@ -1383,7 +1377,6 @@ footer.site-footer {
                 margin-bottom: 7px;
                 border-bottom: 1px solid @bagr_color;
               }
-
               .form-group {
                 .calc_block {}
 
@@ -1451,70 +1444,23 @@ footer.site-footer {
       flex-flow: wrap;
     }
   }
-  //Page доставка style
-  .all-show-info-dost {
-    padding: 15px;
-    .dost_info {
-      h2 {
-        font-size: 35px;
-        margin-top: 35px;
-        margin-bottom: 65px;
-        color: @font_color;
-        text-align: center;
-      }
-      h3 {
-        font-size: 25px;
-        margin-top: 15px;
-        color: @font_color;
-        text-align: center;
-      }
-      p {
-        font-size: 16px;
-        margin-bottom: 5px;
-        color: @font_color;
-      }
-      .info_in {
-        p {
-          font-size: 16px;
-          margin-bottom: 5px;
-          color: @font_color;
-          font-weight: 700;
-        }
-        .info_in_tb {
-          display: flex;
-          flex-direction: column;
-          span {
-            font-size: 16px;
-            margin-bottom: 5px;
-            color: @font_color;
-            margin-left: 25px;
-            position: relative;
-            &:before {
-              content: url("../img/check.png");
-              width: 10px;
-              height: 10px;
-              position: absolute;
-              left: -25px;
-            }
-          }
-        }
-      }
-    }
-  }
 }
+
 .sidebar {
-   width: 20%;
-   border-right: 1px solid @frey_color;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   h3 {
+  width: 17%;
+  border-right: 1px solid @frey_color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 5px;
+  h3 {
      font-size: 25px;
      margin-top: 65px;
      margin-bottom: 45px;
      color: @font_color;
    }
-   .homepage-category {
+  .homepage-category {
      display: flex;
      flex-direction: column;
      margin-bottom: 45px;
@@ -1532,7 +1478,7 @@ footer.site-footer {
          &:before {
            content: url("../img/arrow-1.png");
            position: absolute;
-           left: -35px;
+           left: -25px;
          }
          h4 {
            margin-bottom: 0;
@@ -1547,6 +1493,17 @@ footer.site-footer {
      }
    }
  }
+@media (max-width: 870px) {
+  .content-shop {
+    flex-direction: column;
+    .sidebar {
+
+      width: 100%;
+      border-bottom: 1px solid @frey_color;
+      box-shadow: 1px 1px 10px @frey_color;
+    }
+  }
+}
 //Stile product and price
 .all-show-info {
   padding-left: 5%;

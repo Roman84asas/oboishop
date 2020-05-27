@@ -1,0 +1,46 @@
+.all-show-info-dost {
+  padding: 15px;
+}
+.all-show-info-dost .dost_info h2 {
+  font-size: 35px;
+  margin-top: 35px;
+  margin-bottom: 65px;
+  color: #4b4b4b;
+  text-align: center;
+}
+.all-show-info-dost .dost_info h3 {
+  font-size: 25px;
+  margin-top: 15px;
+  color: #4b4b4b;
+  text-align: center;
+}
+.all-show-info-dost .dost_info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #4b4b4b;
+}
+.all-show-info-dost .dost_info .info_in p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #4b4b4b;
+  font-weight: 700;
+}
+.all-show-info-dost .dost_info .info_in .info_in_tb {
+  display: flex;
+  flex-direction: column;
+}
+.all-show-info-dost .dost_info .info_in .info_in_tb span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #4b4b4b;
+  margin-left: 25px;
+  position: relative;
+}
+.all-show-info-dost .dost_info .info_in .info_in_tb span:before {
+  content: url("../img/check.png");
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -25px;
+}
+/*# sourceMappingURL=dost.css.map */

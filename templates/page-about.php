@@ -61,14 +61,26 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="show_for_now">
-            <div class="sfn_title">В ассортименте нашего магазина представлены</div>
-            <div class="sfn_descr">
-                <span>обои фирмы Rasch - крупнейшего немецкого производителя, известного своим качеством и стилем</span>
-                <span>ламинат Кronotex, Tarkett - придаст Вашему помещению комфорт и тепло</span>
-                <span>светильники новейших коллекций станут неотъемлемой частью Вашего интерьера.</span>
+        <div class="our-clients">
+            <h2>Наши бренды</h2>
+            <p>В ассортименте нашего магазина представлены</p>
+            <div>
+                <div class="item">
+                    <img src="/wp-content/themes/oboishop/assets/img/Rasch.png" alt="">
+                    <p>Обои фирмы Rasch - крупнейшего немецкого производителя, известного своим качеством и стилем.</p>
+                </div>
+                <div class="item">
+                    <img src="/wp-content/themes/oboishop/assets/img/kronotex.jpg" alt="">
+                    <p>Ламинат Кronotex, Tarkett - придаст Вашему помещению комфорт и тепло.</p>
+                </div>
+                <div class="item">
+                    <img src="/wp-content/themes/oboishop/assets/img/Tarkett.png" alt="">
+                    <p>Светильники новейших коллекций станут неотъемлемой частью Вашего интерьера.</p>
+                </div>
             </div>
+            <a href="/hop/" class="more-btn">В магазин</a>
         </div>
+
 	    <?php get_template_part( 'template-parts/questions', 'page' ); ?>
     </section>
 
