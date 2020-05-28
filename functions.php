@@ -50,6 +50,9 @@ require get_template_directory() . '/inc/customizer.php';
 //Helpers
 require get_template_directory() . '/inc/helpers.php';
 
+//Post akcii
+require get_template_directory() . '/inc/posts/posts-akcii.php';
+
 /**
  * Load Jetpack compatibility file.
  */
