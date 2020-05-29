@@ -29,4 +29,21 @@ function my_custom_init(){
 		'menu_position'      => null,
 		'supports'           => array('title','editor','thumbnail','excerpt','comments')
 	) );
+	register_taxonomy('kat_akcii', 'akcii',array(
+		'hierarchical'  => false,
+		'labels'        => array(
+			'name'                        => _x( 'Категории акций', 'taxonomy general name' ),
+			'singular_name'               => _x( 'Категории акций', 'taxonomy singular name' ),
+			'all_items'                   => __( 'Все категории' ),
+			'parent_item'                 => null,
+			'parent_item_colon'           => null,
+			'edit_item'                   => __( 'Запищите категорию' ),
+			'update_item'                 => __( 'Обновите категорию' ),
+			'add_new_item'                => __( 'Добавьте новую категорию' ),
+			'menu_name'                   => __( 'Категории акций' ),
+		),
+		'show_ui'       => true,
+		'query_var'     => true,
+		//'rewrite'       => array( 'slug' => 'the_writer' ), // свой слаг в URL
+	));
 }
