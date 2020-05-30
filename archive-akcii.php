@@ -1,7 +1,4 @@
 <?php
-/*
-  * Template name:Акции и скидки
-  * */
 defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
@@ -49,4 +46,6 @@ get_header(); ?>
 		    ?>
 	    </div>
     </section>
-<?php get_footer();
+
+<?php
+get_footer();
