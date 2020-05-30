@@ -49,6 +49,7 @@ require get_template_directory() . '/inc/customizer.php';
 
 //Helpers
 require get_template_directory() . '/inc/helpers.php';
+require get_template_directory() . '/inc/photo_single.php';
 
 //Post akcii
 require get_template_directory() . '/inc/posts/posts-akcii.php';
