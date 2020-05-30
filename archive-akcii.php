@@ -40,7 +40,7 @@ get_header(); ?>
 				    </div>
 			    <?php endwhile;
 		    } else {
-			    echo __( 'Продуктов не найдено' );
+			    echo __( 'Акций не найдено' );
 		    }
 		    wp_reset_postdata();
 		    ?>
