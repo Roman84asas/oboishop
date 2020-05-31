@@ -54,6 +54,7 @@ require get_template_directory() . '/inc/return_kat.php';
 
 //Post akcii
 require get_template_directory() . '/inc/posts/posts-akcii.php';
+require get_template_directory() . '/inc/posts/posts-vocation.php';
 
 /**
  * Load Jetpack compatibility file.

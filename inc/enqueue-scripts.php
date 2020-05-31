@@ -17,6 +17,9 @@ function oboishop_scripts() {
 	if(is_page( 372 )){
 		wp_enqueue_style( 'page-dost', get_template_directory_uri() . '/assets/css/dost.css', array());
 	}
+	if(is_page( 357 )){
+		wp_enqueue_style( 'page-vocation', get_template_directory_uri() . '/assets/css/vacation.css', array());
+	}
 	if(is_archive()){
 		wp_enqueue_style( 'page-dost', get_template_directory_uri() . '/assets/css/akcii.css', array());
 	}

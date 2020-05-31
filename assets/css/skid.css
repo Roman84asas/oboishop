@@ -33,15 +33,6 @@
   margin: 0;
   position: relative;
 }
-.single_article .inner_wrapper .excerpt p:after {
-  content: '';
-  height: 2px;
-  width: 75px;
-  background-color: #ff0fa0;
-  position: absolute;
-  left: 45%;
-  bottom: -25px;
-}
 .single_article .slide {
   display: flex;
   -webkit-flex-wrap: wrap;
