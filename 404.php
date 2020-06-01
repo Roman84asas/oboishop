@@ -9,15 +9,15 @@
 
 defined('ABSPATH') || exit;
 get_header(); ?>
-
-    <section class="all-no-found">
+    <section class="all_no_found">
 	    <?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
         <div class="content_not_found">
-            <h2>404</h2>
-            <p>Страница не найдена!</p>
+            <div class="content_404">
+                <h2>404</h2>
+                <p>Страница не найдена!</p>
+            </div>
         </div>
     </section>
-
 
 
 <?php get_footer();

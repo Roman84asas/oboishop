@@ -1,0 +1,45 @@
+.all_no_found {
+  width: 100%;
+  display: flex;
+}
+.all_no_found .content_not_found {
+  min-height: 470px;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all_no_found .content_not_found .content_404 {
+  width: 300px;
+  height: 250px;
+  box-shadow: 1px 1px 10px #8d96a0;
+  border-radius: 10px;
+  margin: 15px;
+}
+.all_no_found .content_not_found .content_404 h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 28px;
+  margin-top: 65px;
+  margin-bottom: 35px;
+  color: #f57c00;
+  text-align: center;
+}
+.all_no_found .content_not_found .content_404 p {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  margin-bottom: 65px;
+  color: #4b4b4b;
+  text-align: center;
+}
+@media (max-width: 870px) {
+  .all_no_found {
+    flex-direction: column;
+  }
+  .all_no_found .sidebar {
+    width: 100%;
+    border-bottom: 1px solid #ccccd3;
+    box-shadow: 1px 1px 10px #ccccd3;
+  }
+}
+/*# sourceMappingURL=notfound.css.map */

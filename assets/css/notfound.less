@@ -1,0 +1,53 @@
+@font-merri: 'Merriweather', serif;;
+@font-robo: 'Roboto', sans-serif;
+@bagr_color: #a39e8b;
+@text_color: #ff0fa0;
+@active_color: #f57c00;
+@frey_color: #ccccd3;
+@font_color: #4b4b4b;
+
+.all_no_found {
+  width: 100%;
+  display: flex;
+  .content_not_found {
+    min-height: 470px;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content_404 {
+      width: 300px;
+      height: 250px;
+      box-shadow: 1px 1px 10px #8d96a0;
+      border-radius: 10px;
+      margin: 15px;
+      h2 {
+        font-family: @font-merri;
+        font-size: 28px;
+        margin-top: 65px;
+        margin-bottom: 35px;
+        color: @active_color;
+        text-align: center;
+      }
+      p {
+        font-family: @font-merri;
+        font-size: 18px;
+        margin-bottom: 65px;
+        color: @font_color;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 870px) {
+  .all_no_found {
+    flex-direction: column;
+    .sidebar {
+
+      width: 100%;
+      border-bottom: 1px solid @frey_color;
+      box-shadow: 1px 1px 10px @frey_color;
+    }
+  }
+}

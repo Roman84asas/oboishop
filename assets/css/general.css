@@ -600,7 +600,6 @@ body {
 }
 .site-content {
   flex: 1;
-  display: flex;
 }
 header {
   display: block;
