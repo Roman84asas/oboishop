@@ -1,0 +1,23 @@
+.content_search {
+  display: flex;
+  overflow: hidden;
+}
+.content_search .search_page {
+  width: 83%;
+}
+@media (max-width: 870px) {
+  .content_search {
+    flex-direction: column;
+  }
+  .content_search .search_page {
+    width: 100%;
+    margin: 0 10px;
+    overflow-x: hidden;
+  }
+  .content_search .sidebar {
+    width: 100%;
+    border-bottom: 1px solid #ccccd3;
+    box-shadow: 1px 1px 10px #ccccd3;
+  }
+}
+/*# sourceMappingURL=search.css.map */

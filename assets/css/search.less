@@ -1,0 +1,31 @@
+@font-merri: 'Merriweather', serif;;
+@font-robo: 'Roboto', sans-serif;
+@bagr_color: #a39e8b;
+@text_color: #ff0fa0;
+@active_color: #f18902;
+@frey_color: #ccccd3;
+@font_color: #4b4b4b;
+
+.content_search {
+  display: flex;
+  overflow: hidden;
+  .search_page {
+    width: 83%;
+  }
+}
+
+@media (max-width: 870px) {
+  .content_search {
+    flex-direction: column;
+    .search_page {
+      width: 100%;
+      margin: 0 10px;
+      overflow-x: hidden;
+    }
+    .sidebar {
+      width: 100%;
+      border-bottom: 1px solid @frey_color;
+      box-shadow: 1px 1px 10px @frey_color;
+    }
+  }
+}

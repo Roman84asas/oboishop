@@ -26,6 +26,9 @@ function oboishop_scripts() {
 	if(is_single( )){
 		wp_enqueue_style( 'page-skid', get_template_directory_uri() . '/assets/css/skid.css', array());
 	}
+	if(is_search( )){
+		wp_enqueue_style( 'page-search', get_template_directory_uri() . '/assets/css/search.css', array());
+	}
     wp_enqueue_style( 'font-icon', get_template_directory_uri() . '/assets/css/all.min.css', array());
     wp_enqueue_style( 'owlcarousel', get_template_directory_uri() . '/libs/owl.carousel/dist/assets/owl.carousel.min.css', array());
     wp_enqueue_style( 'owlcarousel2', get_template_directory_uri() . '/libs/owl.carousel/dist/assets/owl.theme.default.min.css', array());
