@@ -1585,9 +1585,10 @@ footer.site-footer .footer .logo_sect_footer .logo-footer a {
   color: white;
 }
 footer.site-footer .footer .logo_sect_footer .logo-footer a img {
-  max-height: 80px;
+  max-height: 100px;
   width: auto;
-  border-radius: 4px;
+  box-shadow: 1px 1px 10px #8d96a0;
+  border-radius: 7px;
 }
 footer.site-footer .footer .logo_sect_footer .social-link {
   height: 50%;

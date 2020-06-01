@@ -17,15 +17,9 @@
         <div class="footer wrapper">
             <div class="logo_sect_footer">
                 <div class="logo-footer">
-                    <?php
-                    // Get all entered urls from the database
-                    $logo = carbon_get_theme_option( 'obo_logo' );
-                    if ( $logo) {
-                        echo '<a href="' . esc_url( home_url( '/' ) ) . '" >' . wp_get_attachment_image( $logo, 'full' ) . '</a>';
-                    } else {
-                        echo '<a href="' . esc_url( home_url( '/' ) ) . '" >SHOP</a>';
-                    }
-                    ?>
+                    <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">
+                        <img src="/wp-content/themes/oboishop/assets/img/map3.png" alt="">
+                    </a>
                 </div>
                 <div class="social-link">
                     <?php

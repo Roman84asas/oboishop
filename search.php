@@ -15,7 +15,7 @@ get_header();
 	<section id="primary" class="search_page wrapper">
 
 		<?php if ( have_posts() ) : ?>
-			<h2 class="page-title">
+			<h2 class="page_title">
 				<?php
 				/* translators: %s: search query. */
 				printf( esc_html__( 'Резальтат поиска по запросу: %s', 'oboishop' ), '<span>' . get_search_query() . '</span>' );
@@ -27,28 +27,42 @@ get_header();
 			while ( have_posts() ) :
 				the_post();
 				$item = get_post(get_the_ID());
+				$imgUrl = get_the_post_thumbnail_url();
 				?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                    <div class="left_sect_search">
+                        <a href="<?php echo esc_url(get_the_permalink()); ?>" class="main-kb-img" >
+	                        <?php if(!empty($imgUrl)){?>
+                                <img src="<?php echo esc_url($imgUrl); ?>" alt="">
+                            <?php } else {?>
+                                <span>Без фото</span>
+                            <?php } ?>
+                        </a>
+                    </div>
+                    <div class="right_sect_search">
+	                    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-					<?php oboishop_post_thumbnail(); ?>
-
-					<div class="entry-summary">
-						<?php the_excerpt(); ?>
-					</div>
-					<div class="col-sm-6">
-						<a href="<?php echo get_the_permalink(); ?>" class="main-kb-item-title"><?php echo $item->post_title; ?></a>
-					</div>
+                        <div class="entry-summary">
+	                        <?php echo wp_trim_words( $item->post_excerpt, 25, " ..."); ?>
+                        </div>
+	                    <a href="<?php echo esc_url(get_the_permalink()); ?>" class="main-kb-item-title">
+                            Перейти
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
 
 				</article>
 			<?php endwhile;
 
 			the_posts_navigation();
 
-		else :
+		else : ?>
 
-			get_template_part( 'template-parts/content', 'none' );
+			<h2 class="page_title"><?php esc_html_e( 'Ничего не найдено', 'oboishop' ); ?></h2>
+            <p>Упс <span>:(</span> что-то пошло не так или по Вашему запросу ничего не найдено. Попробуйте ещё раз.</p>
+			<?php
+			get_search_form();
 
 		endif;
 		?>

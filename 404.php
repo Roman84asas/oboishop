@@ -10,16 +10,14 @@
 defined('ABSPATH') || exit;
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/section-info', 'page' ); ?>
-
-    <section class="content-shop">
-        <?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
-        <section class="all-no-found">
-           <div class="content_not_found">
-               <h2>404</h2>
-               <p>Страница не найдена!</p>
-           </div>
-        </section>
+    <section class="all-no-found">
+	    <?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
+        <div class="content_not_found">
+            <h2>404</h2>
+            <p>Страница не найдена!</p>
+        </div>
     </section>
+
+
 
 <?php get_footer();
