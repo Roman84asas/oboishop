@@ -62,6 +62,55 @@
                 ) );
                 ?>
             </div>
+            <div class="col-lg-3">
+                <div class="f-item-2">
+                    <div class="f-in">
+                        <h4 class="orange_dot">Новые статьи</h4>
+                        <div class="new-content-mod">
+		                    <?php
+
+		                    wp_reset_postdata();
+
+
+		                    $args = array(
+			                    'post_type' => "article",
+			                    'posts_per_page' => 3,
+			                    'orderby' => 'date',
+			                    'order' => 'DESC'
+		                    );
+
+		                    $news = new WP_Query( $args );
+		                    ?>
+
+		                    <?php while($news->have_posts()) :
+			                    $news->the_post(); ?>
+
+                                <a href="<?php echo get_the_permalink(); ?>" class="new-item">
+				                    <?php
+				                    $img = get_the_post_thumbnail_url();
+				                    if(empty($img)){ ?>
+                                        <img src="/wp-content/themes/oboishop/assets/img/logo.png" alt="" class="new-block-img-empty">
+				                    <?php }else{?>
+                                        <img src="<?php echo $img; ?>" alt="">
+				                    <?php } ?>
+                                    <div class="new-block">
+                                        <p>
+						                    <?php the_title(); ?>
+                                        </p>
+                                        <div class="date"><i class="icon icon-new1"></i>
+                                            <span><?php echo get_the_date("d.m.Y"); ?></span></div>
+                                    </div>
+                                </a>
+		                    <?php  endwhile; ?>
+
+		                    <?php
+		                    wp_reset_postdata();
+		                    ?>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
             <div class="footer-info">
                 <div class="info-my">

@@ -8,6 +8,7 @@ if ( !defined('ABSPATH') ) {
 function oboishop_scripts() {
     wp_enqueue_style( 'general', get_template_directory_uri() . '/assets/css/general.css', array());
     wp_enqueue_style( 'home', get_template_directory_uri() . '/assets/css/home.css', array());
+    wp_enqueue_style( 'footer', get_template_directory_uri() . '/assets/css/footer.css', array());
 	if(is_page( 340 )){
 		wp_enqueue_style( 'page-about', get_template_directory_uri() . '/assets/css/about.css', array());
 	}
