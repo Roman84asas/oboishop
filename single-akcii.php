@@ -53,10 +53,12 @@ get_header(); ?>
 			</div>
 		<?php }
 		$categories = get_the_terms( $post->ID, 'kat_akcii' );
-		 foreach ($categories as $categorie) {
-			 $link_kat = return_kat($categorie->slug);
-			 echo $link_kat;
-		 }
+		if (!empty($categories)) {
+			foreach ($categories as $categorie) {
+				$link_kat = return_kat($categorie->slug);
+				echo $link_kat;
+			}
+        }
 		?>
 
 	<?php endwhile;  endif;  ?>

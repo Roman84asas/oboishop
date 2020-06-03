@@ -9,7 +9,7 @@ function return_kat($kat) {
 	} elseif ($kat == 'light') {
 		$returnKat = '<a href="/product-category/светильники/" class="main-kb-btn">Перейти в магазин</a>';
 	} elseif ($kat == 'all_prod') {
-		$returnKat = '<a href="/product-category/светильники/" class="main-kb-btn">Перейти в магазин</a>';
+		$returnKat = '<a href="/product-category/сопутствующие-товары/" class="main-kb-btn">Перейти в магазин</a>';
 	}
 	return $returnKat;
 }

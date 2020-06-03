@@ -9,10 +9,10 @@ defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
 
-    <section class="content-shop wrapper-content">
+    <section class="content-shop">
         <?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
 
-        <section class="all-show-info">
+        <section class="all-show-info  wrapper-content">
             <div class="row-all-calculator">
                 <div class="title-calc">
                     <h3>Чтобы узнать, сколько рулонов вам понадобится, используйте наш калькулятор расчета обоев по площади.</h3>

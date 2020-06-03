@@ -1653,14 +1653,6 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
   justify-content: center;
   align-items: center;
 }
-.content-shop .all-show-info .products_home {
-  margin-left: 10%;
-  margin-top: 4%;
-}
-.content-shop .all-show-info .products {
-  display: flex;
-  flex-flow: wrap;
-}
 .sidebar {
   width: 17%;
   border-right: 1px solid #ccccd3;
