@@ -23,18 +23,23 @@ do_action( 'woocommerce_archive_description' );
 ?>
 	<section class="content-shop">
 		<?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
-		<section class="all-show-info">
+		<section class="all_products">
 			<?php if ( woocommerce_product_loop() ) {
-				remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_output_all_notices', 10 );
-				remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
-			/**
+				remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_output_all_notices', 10 ); ?>
+				<div class="search_and_download">
+					<?php
+					woocommerce_result_count();
+					woocommerce_catalog_ordering();
+					?>
+                </div>
+			<?php /**
 			* Hook: woocommerce_before_shop_loop.
 			*
 			* @hooked woocommerce_output_all_notices - 10
 			* @hooked woocommerce_result_count - 20
 			* @hooked woocommerce_catalog_ordering - 30
 			*/
-			do_action( 'woocommerce_before_shop_loop' );
+			//do_action( 'woocommerce_before_shop_loop' );
 
 			woocommerce_product_loop_start();
 

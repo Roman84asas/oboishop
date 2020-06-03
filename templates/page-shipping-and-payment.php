@@ -5,9 +5,7 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
-    <section class="content-shop">
-        <?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
-        <section class="all-show-info-dost">
+        <section class="all-show-info-dost wrapper">
             <div class="dost_info">
                 <h2>Доставка по Москве и МО</h2>
                 <p>Обычная доставка в пределах МКАД осуществляется бесплатно при заказе на сумму 20 000 рублей и выше на все типы товаров!</p>
@@ -51,6 +49,5 @@ get_header(); ?>
                 </div>
             </div>
         </section>
-    </section>
 
 <?php get_footer();
