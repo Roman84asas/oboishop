@@ -48,7 +48,6 @@
 
                 </div>
             </div>
-
             <div class="bottom-nav">
                 <?php
                 wp_nav_menu( array(
@@ -65,7 +64,7 @@
             <div class="col-lg-3">
                 <div class="f-item-2">
                     <div class="f-in">
-                        <h4 class="orange_dot">Новые статьи</h4>
+                        <h4 class="orange_dot"><a href="/article/">Новые статьи</a></h4>
                         <div class="new-content-mod">
 		                    <?php
 
@@ -111,7 +110,6 @@
                 </div>
 
             </div>
-
             <div class="footer-info">
                 <div class="info-my">
                     <div class="number-phone">
