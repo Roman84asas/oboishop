@@ -18,7 +18,7 @@
   text-align: center;
 }
 .content_search .search_page .page_title span {
-  color: #f57c00;
+  color: #f18902;
 }
 .content_search .search_page article {
   margin: 25px 15px;
@@ -82,7 +82,7 @@
   text-transform: uppercase;
   font-weight: 300;
   line-height: 21px;
-  color: #f57c00;
+  color: #f18902;
   padding: 10px 25px;
   margin-top: 35px;
   margin-bottom: 10px;
@@ -104,8 +104,8 @@
 .content_search .search_page article .right_sect_search .main-kb-item-title:hover {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  background-color: #f57c00;
-  box-shadow: 1px 1px 10px #f57c00;
+  background-color: #f18902;
+  box-shadow: 1px 1px 10px #f18902;
   color: white;
 }
 .content_search .search_page article .right_sect_search .main-kb-item-title:hover i {
@@ -121,7 +121,7 @@
   text-align: center;
 }
 .content_search .search_page p span {
-  color: #f57c00;
+  color: #f18902;
 }
 .content_search .search_page .search-form {
   position: relative;

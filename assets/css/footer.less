@@ -123,6 +123,11 @@ footer.site-footer {
             font-weight: 400;
             a {
               color: inherit;
+              transition: .3s ease-in-out;
+              &:hover {
+                transition: ease-in-out .3s;
+                color: @active_color;
+              }
             }
             &:after {
               position: absolute;

@@ -111,6 +111,11 @@ footer.site-footer .footer .col-lg-3 .f-item-2 .f-in .orange_dot {
 }
 footer.site-footer .footer .col-lg-3 .f-item-2 .f-in .orange_dot a {
   color: inherit;
+  transition: 0.3s ease-in-out;
+}
+footer.site-footer .footer .col-lg-3 .f-item-2 .f-in .orange_dot a:hover {
+  transition: ease-in-out 0.3s;
+  color: #f18902;
 }
 footer.site-footer .footer .col-lg-3 .f-item-2 .f-in .orange_dot:after {
   position: absolute;

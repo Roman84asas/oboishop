@@ -6,15 +6,8 @@ get_header(); ?>
 	    <h2>Акции и скидки</h2>
 	    <div class="cards_for_akcii">
 		    <?php
-		    $args = array(
-			    'post_type' => 'akcii',
-			    'posts_per_page' => 12,
-			    "orderby" => "date",
-			    "order" => "DESC"
-		    );
-		    $loop = new WP_Query( $args );
-		    if ( $loop->have_posts() ) {
-			    while ( $loop->have_posts() ) : $loop->the_post();?>
+		    if ( have_posts() ) {
+			    while ( have_posts() ) : the_post();?>
 				    <div class="card_akcii">
 					    <div class="img_akcii">
 						    <?php
@@ -45,6 +38,34 @@ get_header(); ?>
 		    wp_reset_postdata();
 		    ?>
 	    </div>
+	    <?php global $wp_query;
+	    if($wp_query->max_num_pages > 1) {
+		    ?>
+            <div class="pagination">
+                <div class="left_arrow">
+				    <?php
+				    if(get_previous_posts_link()){
+					    echo get_previous_posts_link('<i class="fa fa-angle-left" aria-hidden="true"></i>');
+				    } else {
+					    echo '<i class="fa fa-angle-left" aria-hidden="true"></i>';
+				    } ?>
+                </div>
+
+                <div class="paginate_items">
+				    <?php oboi_page_links(); ?>
+                </div>
+
+                <div class="right_arrow">
+				    <?php
+				    if(get_next_posts_link()){
+					    echo  get_next_posts_link('<i class="fa fa-angle-right" aria-hidden="true"></i>');
+				    } else {
+					    echo  '<i class="fa fa-angle-right" aria-hidden="true"></i>';
+				    } ?>
+                </div>
+            </div>
+
+	    <?php } ?>
     </section>
 
 <?php
