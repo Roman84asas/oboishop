@@ -13,6 +13,9 @@ function oboishop_scripts() {
 	if(is_page( 340 )){
 		wp_enqueue_style( 'page-about', get_template_directory_uri() . '/assets/css/about.css', array());
 	}
+	if(is_page( 197 )){
+		wp_enqueue_style( 'page-calc', get_template_directory_uri() . '/assets/css/calc.css', array());
+	}
 	if(is_page( 355 )){
 		wp_enqueue_style( 'page-contact', get_template_directory_uri() . '/assets/css/contact.css', array());
 	}
