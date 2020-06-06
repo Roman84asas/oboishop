@@ -22,6 +22,7 @@
 }
 .single_product .content-area .site-main .product .woocommerce-product-gallery .flex-viewport .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a .wp-post-image:hover {
   max-width: 450px;
+  height: auto;
 }
 .single_product .content-area .site-main .product .woocommerce-product-gallery .flex-viewport .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image .zoomImg {
   display: none;
