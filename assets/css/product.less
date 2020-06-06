@@ -1,0 +1,61 @@
+@font-merri: 'Merriweather', serif;;
+@font-robo: 'Roboto', sans-serif;
+
+@bagr_color: #a39e8b;
+@text_color: #ff0fa0;
+@active_color: #f57c00;
+@frey_color: #ccccd3;
+@font_color: #4b4b4b;
+
+.single_product {
+  width: 83%;
+  .content-area {
+    .site-main {
+      width: 100%;
+      padding: 50px 15px;
+      .product {
+        max-width: 1150px;
+        margin: 0 auto;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        .woocommerce-product-gallery {
+          width: 50%;
+          .flex-viewport {
+            .woocommerce-product-gallery__wrapper {
+              .woocommerce-product-gallery__image {
+                a {
+                  .wp-post-image {
+                    height: 350px;
+                    width: auto;
+                    &:hover {
+                      max-width: 450px;
+                    }
+                  }
+                }
+                .zoomImg {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        .summary {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 870px) {
+  .single_product {
+    width: 100%;
+    .woocommerce-product-gallery {
+      width: 100%;
+    }
+    .summary {
+      width: 100%;
+    }
+  }
+}

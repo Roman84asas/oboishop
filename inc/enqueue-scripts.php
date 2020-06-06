@@ -31,6 +31,7 @@ function oboishop_scripts() {
 	}
 	if(is_single( )){
 		wp_enqueue_style( 'page-skid', get_template_directory_uri() . '/assets/css/skid.css', array());
+		wp_enqueue_style( 'page-product', get_template_directory_uri() . '/assets/css/product.css', array());
 	}
 	if(is_search( )){
 		wp_enqueue_style( 'page-search', get_template_directory_uri() . '/assets/css/search.css', array());

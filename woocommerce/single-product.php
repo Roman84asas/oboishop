@@ -20,8 +20,9 @@ defined( 'ABSPATH' ) || exit;
 get_header( ); ?>
 	<section class="content-shop">
 		<?php get_template_part( 'template-parts/section-sidebar', 'page' ); ?>
-		<section class="all-show-product">
+		<section class="single_product">
 			<?php
+			remove_action( 'woocommerce_before_main_content' , 'woocommerce_breadcrumb', 20 );
 			/**
 			 * woocommerce_before_main_content hook.
 			 *
