@@ -16,16 +16,16 @@
 .single_product .content-area .site-main .product .woocommerce-product-gallery {
   width: 50%;
 }
-.single_product .content-area .site-main .product .woocommerce-product-gallery .flex-viewport .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a .wp-post-image {
-  height: 350px;
+.single_product .content-area .site-main .product .woocommerce-product-gallery .flex-viewport .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a {
+  max-height: 350px;
   width: auto;
 }
-.single_product .content-area .site-main .product .woocommerce-product-gallery .flex-viewport .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a .wp-post-image:hover {
-  max-width: 450px;
-  height: auto;
+.single_product .content-area .site-main .product .woocommerce-product-gallery .flex-viewport .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a img {
+  max-height: 350px;
+  width: auto;
 }
 .single_product .content-area .site-main .product .woocommerce-product-gallery .flex-viewport .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image .zoomImg {
-  display: none;
+  display: none !important;
 }
 .single_product .content-area .site-main .product .summary {
   width: 50%;

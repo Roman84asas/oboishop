@@ -26,17 +26,15 @@
             .woocommerce-product-gallery__wrapper {
               .woocommerce-product-gallery__image {
                 a {
-                  .wp-post-image {
-                    height: 350px;
+                  max-height: 350px;
+                  width: auto;
+                  img {
+                    max-height: 350px;
                     width: auto;
-                    &:hover {
-                      max-width: 450px;
-                      height: auto;
-                    }
                   }
                 }
                 .zoomImg {
-                  display: none;
+                  display: none !important;
                 }
               }
             }
