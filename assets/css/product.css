@@ -184,6 +184,10 @@
 .single_product .content-area .site-main .product .summary .product_meta {
   display: none;
 }
+.single_product .content-area .site-main .product .woocommerce-tabs {
+  padding-bottom: 70px;
+  margin-top: 40px;
+}
 @media (max-width: 870px) {
   .single_product {
     width: 100%;
