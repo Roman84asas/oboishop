@@ -1,0 +1,59 @@
+@font-merri: 'Merriweather', serif;;
+@font-robo: 'Roboto', sans-serif;
+
+@bagr_color: #a39e8b;
+@text_color: #ff0fa0;
+@active_color: #f57c00;
+@frey_color: #ccccd3;
+@font_color: #4b4b4b;
+
+.content-cart {
+  .woocommerce {
+    .cart-empty {
+      color: #7f8890;
+      font-size: 36px;
+      font-weight: 300;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 35px;
+      background-color: #f4f5f7;
+    }
+    .korzina-content {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        height: 230px;
+        width: auto;
+      }
+      .btn-orgkorzina {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: inline-block;
+        color: @active_color;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        border: 1px solid @active_color;
+        -webkit-border-radius: 9px;
+        border-radius: 9px;
+        text-decoration: none;
+        outline: 0;
+        padding: 10px 31px;
+        -webkit-transition: .3s all;
+        -o-transition: .3s all;
+        transition: .3s all;
+        &:hover {
+          color: white;
+          background-color: @active_color;
+          box-shadow: 1px 1px 10px @active_color;
+          -webkit-transition: .3s all;
+          -o-transition: .3s all;
+          transition: .3s all;
+        }
+      }
+    }
+  }
+}

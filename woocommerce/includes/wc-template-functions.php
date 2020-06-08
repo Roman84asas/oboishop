@@ -1837,12 +1837,8 @@ if ( ! function_exists( 'woocommerce_review_display_gravatar' ) ) {
 	 * @return void
 	 */
 	function woocommerce_review_display_gravatar( $comment ) {
+        echo get_avatar( $comment, apply_filters( 'woocommerce_review_gravatar_size', '60' ), '' );
 
-	    if (!empty($ava)) {
-            echo get_avatar( $comment, apply_filters( 'woocommerce_review_gravatar_size', '60' ), '' );
-        } else {
-            echo get_avatar('mm');
-        }
 	}
 }
 

@@ -1,0 +1,47 @@
+.content-cart .woocommerce .cart-empty {
+  color: #7f8890;
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 35px;
+  background-color: #f4f5f7;
+}
+.content-cart .woocommerce .korzina-content {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-cart .woocommerce .korzina-content img {
+  height: 230px;
+  width: auto;
+}
+.content-cart .woocommerce .korzina-content .btn-orgkorzina {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: inline-block;
+  color: #f57c00;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #f57c00;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  text-decoration: none;
+  outline: 0;
+  padding: 10px 31px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.content-cart .woocommerce .korzina-content .btn-orgkorzina:hover {
+  color: white;
+  background-color: #f57c00;
+  box-shadow: 1px 1px 10px #f57c00;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+/*# sourceMappingURL=cart.css.map */
