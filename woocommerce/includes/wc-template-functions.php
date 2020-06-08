@@ -1837,7 +1837,12 @@ if ( ! function_exists( 'woocommerce_review_display_gravatar' ) ) {
 	 * @return void
 	 */
 	function woocommerce_review_display_gravatar( $comment ) {
-		echo get_avatar( $comment, apply_filters( 'woocommerce_review_gravatar_size', '60' ), '' );
+
+	    if (!empty($ava)) {
+            echo get_avatar( $comment, apply_filters( 'woocommerce_review_gravatar_size', '60' ), '' );
+        } else {
+            echo get_avatar('mm');
+        }
 	}
 }
 
@@ -1885,8 +1890,8 @@ if ( ! function_exists( 'woocommerce_output_related_products' ) ) {
 	function woocommerce_output_related_products() {
 
 		$args = array(
-			'posts_per_page' => 4,
-			'columns'        => 4,
+			'posts_per_page' => 3,
+			'columns'        => 3,
 			'orderby'        => 'rand', // @codingStandardsIgnoreLine.
 		);
 

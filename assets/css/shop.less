@@ -86,6 +86,25 @@
           border-radius: 10px;
           border: 1px solid #8d96a0;
         }
+        .star-rating {
+          overflow: inherit;
+          text-align: center;
+          width: 100%;
+          &:before {
+            content: none;
+          }
+          span {
+            color: @font_color;
+            font-size: 13px;
+            padding-top: 1.8em;
+            margin-bottom: 15px;
+            &:before {
+              color: @active_color;
+              left: 35%;
+              font-size: 16px;
+            }
+          }
+        }
         .woocommerce-loop-product__title {
           color: @font_color;
           margin-top: 20px;

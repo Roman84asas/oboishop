@@ -32,8 +32,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 * @hooked woocommerce_review_display_gravatar - 10
 		 */
 		do_action( 'woocommerce_review_before', $comment );
-		?>
 
+       ?>
 		<div class="comment-text">
 
 			<?php
