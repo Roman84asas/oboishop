@@ -44,6 +44,7 @@
 }
 .single_product .content-area .site-main .product .woocommerce-product-gallery .flex-control-nav {
   display: flex;
+  justify-content: center;
 }
 .single_product .content-area .site-main .product .woocommerce-product-gallery .flex-control-nav li {
   display: flex;
