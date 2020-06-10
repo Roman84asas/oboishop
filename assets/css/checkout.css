@@ -1,0 +1,73 @@
+.content-checkout .woocommerce .woocommerce-form-login-toggle .woocommerce-info {
+  width: 100%;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+  min-height: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  color: #4b4b4b;
+  font-size: 16px;
+  border-radius: 9px;
+}
+.content-checkout .woocommerce .woocommerce-form-login-toggle .woocommerce-info a {
+  color: #f57c00;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.content-checkout .woocommerce .woocommerce-form-coupon-toggle .woocommerce-info {
+  width: 100%;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+  min-height: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  color: #4b4b4b;
+  font-size: 16px;
+  border-radius: 9px;
+}
+.content-checkout .woocommerce .woocommerce-form-coupon-toggle .woocommerce-info a {
+  color: #f57c00;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.content-checkout .woocommerce .woocommerce-checkout .woocommerce-NoticeGroup-checkout .woocommerce-error {
+  background-color: inherit;
+}
+.content-checkout .woocommerce .woocommerce-checkout .woocommerce-NoticeGroup-checkout .woocommerce-error li {
+  max-width: 360px;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  min-height: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  color: red;
+  font-size: 16px;
+  border-radius: 9px;
+}
+.content-checkout .woocommerce .woocommerce-checkout .woocommerce-NoticeGroup-checkout .woocommerce-error li a {
+  color: #f57c00;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=checkout.css.map */

@@ -22,3 +22,12 @@ function oboi_page_links() {
 
 	echo paginate_links($pagination);
 }
+
+/**
+ * Always redirect user to "Edit Account" page after login.
+ *
+ * @return string Target URL
+ */
+add_filter( 'woocommerce_login_redirect', function() {
+    return wc_customer_edit_account_url();
+} );

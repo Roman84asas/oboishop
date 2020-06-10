@@ -1615,4 +1615,27 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
     box-shadow: 1px 1px 10px #ccccd3;
   }
 }
+.woocommerce-info {
+  width: 100%;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+  min-height: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  color: #4b4b4b;
+  font-size: 16px;
+  border-radius: 9px;
+}
+.woocommerce-info a {
+  color: #f18902;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 /*# sourceMappingURL=general.css.map */

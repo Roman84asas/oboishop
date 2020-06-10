@@ -2,6 +2,7 @@
 /**
  * The template for cart
  */
+defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
