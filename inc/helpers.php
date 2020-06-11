@@ -31,3 +31,12 @@ function oboi_page_links() {
 add_filter( 'woocommerce_login_redirect', function() {
     return wc_customer_edit_account_url();
 } );
+
+add_action('wp_logout','auto_redirect_after_logout');
+
+function auto_redirect_after_logout(){
+
+    wp_redirect( home_url() );
+    exit();
+
+}
