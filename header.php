@@ -69,7 +69,6 @@
 									<?php } ?>
                                 </div>
                             </div>
-
                         </div>
                         <div class="sections_otd">
                             <div class="calcul">
@@ -84,7 +83,6 @@
                                 </form>
                             </div>
                         </div>
-
                         <div class="lk_and_files">
                             <div class="myself_cab" title="Личный кабинет">
                                 <i class="icon_login"></i>
@@ -157,11 +155,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
     <div class="header_mnu">
         <div class="wrapper">
             <div class="container_fluid">
@@ -186,17 +182,34 @@
 							<?php oboishop_woocommerce_cart_link() ?>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
-</header><!-- #masthead -->
-    <div class="form-popup">
+</header>
+<div class="top_menu" id="top_menu">
+    <div class="wrapper">
+        <div class="menu_categ">
+            <div class="burger" role="navigation" id="navToggle"></div>
+            <span>Каталог товаров</span>
+        </div>
+        <div class="search-secn">
+            <form class="search_form" action="/">
+                <input type="text" name="s" placeholder="Поиск" autocomplete="off"
+                       <?php if(isset($_GET['s'])){?>value="<?php echo $_GET['s']; ?>"<?php } ?>>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="calcul">
+            <i class="fas fa-calculator"></i>
+            <a href="<?php echo esc_url( home_url( '/calculator/' ) )?>" class="sect-art">Калькулятор обоев</a>
+        </div>
+        <div class="basket_m">
+            <?php oboishop_woocommerce_cart_link() ?>
+        </div>
+    </div>
+</div>
+<div class="form-popup"    >
     <div class="form">
         <i class="far fa-times-circle"></i>
         <div class="form-footer">
