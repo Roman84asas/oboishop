@@ -41,8 +41,10 @@ function wc_fields_for_prod() {
     $get_color_temp_K  = get_field('color_temp_K');
     $get_all_power_W   = get_field('all_power_W');
 
-
-    if(empty($img)){ ?>
-
+    if($get_tovar){ ?>
+        <li class="custom_field">
+            <div class="custom_title">Код товара:</div>
+            <div class="custom_body"><?php echo $get_tovar; ?></div>
+        </li>
     <?php }
 }
