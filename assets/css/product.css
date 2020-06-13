@@ -20,7 +20,6 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-bottom: 45px;
 }
 .single_product .content-area .site-main .product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
@@ -58,6 +57,7 @@
   height: 75px;
   width: auto;
   opacity: 0.3;
+  box-shadow: 1px 1px 10px #8d96a0;
 }
 .single_product .content-area .site-main .product .woocommerce-product-gallery .flex-control-nav li .flex-active {
   content: "";
@@ -99,6 +99,31 @@
   font-size: 30px;
   color: #f57c00;
   text-decoration: none;
+}
+.single_product .content-area .site-main .product .summary .item__det-custom {
+  margin-bottom: 25px;
+}
+.single_product .content-area .site-main .product .summary .item__det-custom ul {
+  max-width: 340px;
+  box-shadow: 1px 1px 10px #b0bcca;
+}
+.single_product .content-area .site-main .product .summary .item__det-custom ul .custom_field {
+  padding: 6px 6px 6px 12px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4b4b4b;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+.single_product .content-area .site-main .product .summary .item__det-custom ul .custom_field .custom_title {
+  width: 50%;
+  font-weight: 700;
+}
+.single_product .content-area .site-main .product .summary .item__det-custom ul .custom_field .custom_body {
+  width: 50%;
+}
+.single_product .content-area .site-main .product .summary .item__det-custom ul .custom_field:nth-child(2n+1) {
+  background: white none repeat scroll 0 0;
 }
 .single_product .content-area .site-main .product .summary .woocommerce-product-details__short-description p {
   color: #7f8890;

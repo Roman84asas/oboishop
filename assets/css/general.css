@@ -1790,41 +1790,41 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
   padding-left: 30px;
   padding-right: 5px;
 }
-.sidebar h3 {
+.sidebar .catalog-sidebar h3 {
   font-size: 25px;
   margin-top: 65px;
   margin-bottom: 45px;
   color: #4b4b4b;
 }
-.sidebar .homepage-category {
+.sidebar .catalog-sidebar .homepage-category {
   display: flex;
   flex-direction: column;
   margin-bottom: 45px;
 }
-.sidebar .homepage-category .main-cat-item {
+.sidebar .catalog-sidebar .homepage-category .main-cat-item {
   margin-bottom: 15px;
 }
-.sidebar .homepage-category .main-cat-item a {
+.sidebar .catalog-sidebar .homepage-category .main-cat-item a {
   display: flex;
   align-items: center;
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
 }
-.sidebar .homepage-category .main-cat-item a:hover {
+.sidebar .catalog-sidebar .homepage-category .main-cat-item a:hover {
   border-bottom: 2px solid #f18902;
   -webkit-transition: all 0.3s ease-in-out;
 }
-.sidebar .homepage-category .main-cat-item a:before {
+.sidebar .catalog-sidebar .homepage-category .main-cat-item a:before {
   content: url("../img/arrow-1.png");
   position: absolute;
   left: -25px;
 }
-.sidebar .homepage-category .main-cat-item a h4 {
+.sidebar .catalog-sidebar .homepage-category .main-cat-item a h4 {
   margin-bottom: 0;
   color: black;
   -webkit-transition: all 0.3s ease-in-out;
 }
-.sidebar .homepage-category .main-cat-item a h4:hover {
+.sidebar .catalog-sidebar .homepage-category .main-cat-item a h4:hover {
   color: #aab1b7;
   -webkit-transition: all 0.3s ease-in-out;
 }

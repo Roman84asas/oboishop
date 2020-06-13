@@ -1335,44 +1335,46 @@ header {
   align-items: center;
   padding-left: 30px;
   padding-right: 5px;
-  h3 {
-     font-size: 25px;
-     margin-top: 65px;
-     margin-bottom: 45px;
-     color: @font_color;
-   }
-  .homepage-category {
-     display: flex;
-     flex-direction: column;
-     margin-bottom: 45px;
-     .main-cat-item {
-       margin-bottom: 15px;
-       a {
-         display: flex;
-         align-items: center;
-         position: relative;
-         -webkit-transition: all .3s ease-in-out;
-         &:hover {
-           border-bottom: 2px solid @active_color;
-           -webkit-transition: all .3s ease-in-out;
-         }
-         &:before {
-           content: url("../img/arrow-1.png");
-           position: absolute;
-           left: -25px;
-         }
-         h4 {
-           margin-bottom: 0;
-           color: black;
-           -webkit-transition: all .3s ease-in-out;
-           &:hover {
-             color: @bagr_color;
-             -webkit-transition: all .3s ease-in-out;
-           }
-         }
-       }
-     }
-   }
+  .catalog-sidebar {
+    h3 {
+      font-size: 25px;
+      margin-top: 65px;
+      margin-bottom: 45px;
+      color: @font_color;
+    }
+    .homepage-category {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 45px;
+      .main-cat-item {
+        margin-bottom: 15px;
+        a {
+          display: flex;
+          align-items: center;
+          position: relative;
+          -webkit-transition: all .3s ease-in-out;
+          &:hover {
+            border-bottom: 2px solid @active_color;
+            -webkit-transition: all .3s ease-in-out;
+          }
+          &:before {
+            content: url("../img/arrow-1.png");
+            position: absolute;
+            left: -25px;
+          }
+          h4 {
+            margin-bottom: 0;
+            color: black;
+            -webkit-transition: all .3s ease-in-out;
+            &:hover {
+              color: @bagr_color;
+              -webkit-transition: all .3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
  }
 @media (max-width: 870px) {
   .content-shop {
