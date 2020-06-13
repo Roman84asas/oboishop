@@ -28,6 +28,7 @@ defined( 'ABSPATH' ) || exit;
                 echo "</li>\n";
             }
             ?>
+
         </ul>
     </div>
 </section>
