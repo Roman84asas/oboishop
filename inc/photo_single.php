@@ -1,4 +1,5 @@
 <?php
+defined( 'ABSPATH' ) || exit;
 function photo_single() {
 	$first  = get_field('foto_1');
 	$second = get_field('foto_2');

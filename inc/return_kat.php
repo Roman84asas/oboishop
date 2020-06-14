@@ -1,5 +1,5 @@
 <?php
-
+defined( 'ABSPATH' ) || exit;
 function return_kat($kat) {
 	$returnKat = '';
 	if ($kat == 'lamin') {

@@ -12,6 +12,8 @@
  *
  * @return void
  */
+defined( 'ABSPATH' ) || exit;
+
 function oboishop_woocommerce_scripts() {
 	wp_enqueue_style( 'oboishop-woocommerce-style', get_template_directory_uri() . '/woocommerce.css' );
 

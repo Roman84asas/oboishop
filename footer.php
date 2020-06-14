@@ -8,7 +8,7 @@
  *
  * @package oboishop
  */
-
+defined( 'ABSPATH' ) || exit;
 ?>
 
 	</div><!-- #content -->

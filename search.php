@@ -6,7 +6,7 @@
  *
  * @package oboishop
  */
-
+defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 <div class="content_search">
