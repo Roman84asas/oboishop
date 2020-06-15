@@ -206,13 +206,33 @@
                         $woo_cat_name = $woo_cat->name;
                         $woo_cat_slug = $woo_cat->slug;
                         $category_thumbnail_id = get_term_meta($woo_cat_id, 'thumbnail_id', true);
+                        $child_cat_tax = get_terms('product_cat', [ 'parent'=>$woo_cat_id ]);
+
+                        //get_vd($child_cat_tax);
 
                         echo '<li class="main-cat-item">';
                         echo '<a href="' . get_term_link( $woo_cat_id, 'product_cat' ) . '"><h4>' . $woo_cat_name . '</h4></a>';
-                        echo "</li>\n";
+                        echo '<ul class="prime_ul">';
+                        foreach ($child_cat_tax as $child) {
+                            //get_vd($child);
+                            $term = get_term_by( 'id', $child->term_id, "product_cat" );
+                            $child_cat_tax_pod = get_terms('product_cat', [ 'parent'=>$child->term_id ]);
+                            echo '<li class="pod_main-cat-item">';
+                            echo '<a href="' . get_term_link( $term->term_id, $term->taxonomy ) . '">' . $term->name . '</a>';
+                            echo '<ul class="first_ul">';
+                            foreach ($child_cat_tax_pod as $children) {
+                                //get_vd($child);
+                                $term = get_term_by( 'id', $children->term_id, "product_cat" );
+                                $child_cat_tax_pod = get_terms('product_cat', [ 'parent'=>$child->term_id ]);
+                                echo '<li class="pod_main-cat-item"><a href="' . get_term_link( $term->term_id, $term->taxonomy ) . '">' . $term->name . '</a></li>';
+                            }
+                            echo '</ul>';
+                            echo "</li>";
+                        }
+                        echo '</ul>';
+                        echo "</li>";
                     }
                     ?>
-
                 </ul>
             </div>
         </div>

@@ -886,6 +886,7 @@ header {
       border-radius: 15px;
       border: 1px solid #8d96a0;
       cursor: pointer;
+      position: relative;
       span {
         color: @font_color;
         font-size: 22px;
@@ -945,6 +946,101 @@ header {
           transform: rotate(-135deg);
           background: #eee;
           width: 110%;
+        }
+      }
+      .catalog-menu {
+        left: -1px;
+        position: absolute;
+        top: 44px;
+        display: none;
+        z-index: 999;
+        background-color: white;
+        .homepage-category {
+          border-bottom: 1px solid #aeaeae;
+          position: relative;
+          li {
+            width: 264px;
+            position: static;
+            font-size: 16px;
+            line-height: 19px;
+            height: 2.5rem;
+            a {
+              border: 1px solid #aeaeae;
+              color: #425b60;
+              display: block;
+              font-family: @font-robo;
+              font-size: 16px;
+              padding: 10px 34px 10px 13px;
+              text-decoration: none;
+              border-bottom: none;
+              h4 {
+                margin-bottom: 0;
+              }
+              &:hover {
+                h4 {
+                  color: @active_color;
+                }
+              }
+            }
+            .prime_ul {
+              display: none;
+              position: absolute;
+              left: 263px;
+              top: 0;
+              background: transparent;
+              width: 275px;
+              border-top: 1px solid #aeaeae;
+              li {
+                position: static;
+                border-right: 1px solid #aeaeae;
+                border-left: 1px solid #aeaeae;
+                font-size: 16px;
+                line-height: 19px;
+                a {
+                  background: white;
+                  position: relative;
+                  color: #425b60;
+                  display: block;
+                  font-size: 18px;
+                  padding: 11px 34px 8px 17px;
+                  text-decoration: none;
+                  border-bottom: 1px solid #aeaeae;
+                  &:hover {
+                    color: @active_color;
+                  }
+                }
+                .first_ul {
+                  display: none;
+                  position: absolute;
+                  left: 263px;
+                  top: -1px;
+                  background: transparent;
+                  width: 275px;
+                  border-top: 1px solid #aeaeae;
+                  li {
+                    position: static;
+                    border-right: 1px solid #aeaeae;
+                    border-left: 1px solid #aeaeae;
+                    font-size: 16px;
+                    line-height: 19px;
+                    a {
+                      background: white;
+                      position: relative;
+                      color: #425b60;
+                      display: block;
+                      font-size: 18px;
+                      padding: 11px 34px 8px 17px;
+                      text-decoration: none;
+                      border-bottom: 1px solid #aeaeae;
+                      &:hover {
+                        color: @active_color;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
