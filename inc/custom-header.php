@@ -16,6 +16,8 @@
  *
  * @uses oboishop_header_style()
  */
+defined( 'ABSPATH' ) || exit;
+
 function oboishop_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'oboishop_custom_header_args', array(
 		'default-image'          => '',

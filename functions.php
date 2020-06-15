@@ -1,4 +1,6 @@
 <?php
+defined( 'ABSPATH' ) || exit;
+
 add_action('after_setup_theme', 'crb_load');
 function crb_load() {
     load_template(get_template_directory().'/inc/carbon-fields/vendor/autoload.php');

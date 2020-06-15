@@ -11,6 +11,7 @@ oboishop_woocommerce_header_cart();
 }
 ?>
  */
+defined( 'ABSPATH' ) || exit;
 
 if ( ! function_exists( 'oboishop_woocommerce_cart_link_fragment' ) ) {
     /**

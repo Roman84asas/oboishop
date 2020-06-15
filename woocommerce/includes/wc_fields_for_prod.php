@@ -1,5 +1,5 @@
 <?php
-
+defined( 'ABSPATH' ) || exit;
 function wc_fields_for_prod() {
     $get_tovar         = get_field('tovar');
     $get_articul       = get_field('articul');

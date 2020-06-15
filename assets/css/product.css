@@ -483,6 +483,46 @@
 .single_product .content-area .site-main .product .woocommerce-tabs #tab-reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-comment textarea {
   min-height: 100px;
 }
+.single_product .content-area .site-main .product .woocommerce-tabs #tab-reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-author {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.single_product .content-area .site-main .product .woocommerce-tabs #tab-reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-author label {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Merriweather', serif;
+  color: #8d96a0;
+  margin-bottom: 10px;
+}
+.single_product .content-area .site-main .product .woocommerce-tabs #tab-reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-author label span {
+  color: #ff8a00;
+  margin-left: 10px;
+}
+.single_product .content-area .site-main .product .woocommerce-tabs #tab-reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-author textarea {
+  min-height: 100px;
+}
+.single_product .content-area .site-main .product .woocommerce-tabs #tab-reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-email {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.single_product .content-area .site-main .product .woocommerce-tabs #tab-reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-email label {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Merriweather', serif;
+  color: #8d96a0;
+  margin-bottom: 10px;
+}
+.single_product .content-area .site-main .product .woocommerce-tabs #tab-reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-email label span {
+  color: #ff8a00;
+  margin-left: 10px;
+}
+.single_product .content-area .site-main .product .woocommerce-tabs #tab-reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-email textarea {
+  min-height: 100px;
+}
 .single_product .content-area .site-main .product .woocommerce-tabs #tab-reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .form-submit .submit {
   height: auto;
   border: 1px solid #f57c00;

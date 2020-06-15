@@ -1,4 +1,5 @@
 <?php
+defined( 'ABSPATH' ) || exit;
 
 add_action('init', 'my_custom_init_vocation');
 function my_custom_init_vocation(){
