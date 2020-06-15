@@ -1,7 +1,6 @@
 jQuery(function($) {
     $(window).scroll(function(){
         let www = $(this).width();
-        console.log(www);
         if ($(this).scrollTop() > 207 && $(this).width() > 902) {
             $('#top_menu').css('display', 'block');
         } else if ($(this).scrollTop() > 233 && $(this).width() > 610) {

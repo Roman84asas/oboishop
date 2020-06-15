@@ -1434,11 +1434,11 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
   position: relative;
 }
 .top_menu .wrapper .menu_categ .catalog-menu .homepage-category li {
-  width: 264px;
+  width: 265px;
   position: static;
   font-size: 16px;
   line-height: 19px;
-  height: 2.5rem;
+  min-height: 2.5rem;
 }
 .top_menu .wrapper .menu_categ .catalog-menu .homepage-category li a {
   border: 1px solid #aeaeae;
@@ -1462,7 +1462,7 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
   left: 263px;
   top: 0;
   background: transparent;
-  width: 275px;
+  width: 263px;
   border-top: 1px solid #aeaeae;
 }
 .top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li {
@@ -1488,10 +1488,10 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
 .top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li .first_ul {
   display: none;
   position: absolute;
-  left: 263px;
+  left: 264px;
   top: -1px;
   background: transparent;
-  width: 275px;
+  width: 263px;
   border-top: 1px solid #aeaeae;
 }
 .top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li .first_ul li {
@@ -1636,6 +1636,14 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
 .top_menu .wrapper .basket_m .cart-contents i {
   font-size: 25px;
   color: #f18902;
+}
+@media (max-width: 825px) {
+  .top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul {
+    position: unset;
+  }
+  .top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li .first_ul {
+    position: unset;
+  }
 }
 @media (max-width: 480px) {
   .top_menu .wrapper {
