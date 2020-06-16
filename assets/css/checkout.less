@@ -243,6 +243,39 @@
           width: fit-content;
           padding: 10px;
           margin: 15px 0;
+          .woocommerce-shipping-fields {
+            .shipping_address {
+              .woocommerce-shipping-fields__field-wrapper {
+                display: flex;
+                flex-direction: column;
+                .form-row {
+                  display: flex;
+                  flex-direction: column;
+                  label {
+                    font-size: 16px;
+                    color: @font_color;
+                    font-family: @font-robo;
+                    margin-bottom: 5px;
+                  }
+                  .woocommerce-input-wrapper {
+                    strong {
+                      font-size: 16px;
+                      color: @font_color;
+                      font-family: @font-robo;
+                      margin-bottom: 5px;
+                    }
+                    .input-text {
+                      width: 320px;
+                      min-height: 2rem;
+                      border: 1px solid @font_color;
+                      border-radius: 7px;
+                      box-shadow: 1px 1px 10px #8d96a0;
+                    }
+                  }
+                }
+              }
+            }
+          }
           .woocommerce-additional-fields {
             h3 {
               font-family: 'Merriweather', serif;

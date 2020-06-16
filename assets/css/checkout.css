@@ -208,6 +208,33 @@
   padding: 10px;
   margin: 15px 0;
 }
+.content-checkout .woocommerce .woocommerce-checkout .col2-set .col-2 .woocommerce-shipping-fields .shipping_address .woocommerce-shipping-fields__field-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.content-checkout .woocommerce .woocommerce-checkout .col2-set .col-2 .woocommerce-shipping-fields .shipping_address .woocommerce-shipping-fields__field-wrapper .form-row {
+  display: flex;
+  flex-direction: column;
+}
+.content-checkout .woocommerce .woocommerce-checkout .col2-set .col-2 .woocommerce-shipping-fields .shipping_address .woocommerce-shipping-fields__field-wrapper .form-row label {
+  font-size: 16px;
+  color: #4b4b4b;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+}
+.content-checkout .woocommerce .woocommerce-checkout .col2-set .col-2 .woocommerce-shipping-fields .shipping_address .woocommerce-shipping-fields__field-wrapper .form-row .woocommerce-input-wrapper strong {
+  font-size: 16px;
+  color: #4b4b4b;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+}
+.content-checkout .woocommerce .woocommerce-checkout .col2-set .col-2 .woocommerce-shipping-fields .shipping_address .woocommerce-shipping-fields__field-wrapper .form-row .woocommerce-input-wrapper .input-text {
+  width: 320px;
+  min-height: 2rem;
+  border: 1px solid #4b4b4b;
+  border-radius: 7px;
+  box-shadow: 1px 1px 10px #8d96a0;
+}
 .content-checkout .woocommerce .woocommerce-checkout .col2-set .col-2 .woocommerce-additional-fields h3 {
   font-family: 'Merriweather', serif;
   color: #263139;
