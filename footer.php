@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
             <div class="logo_sect_footer">
                 <div class="logo-footer">
                     <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">
-                        <img src="/wp-content/themes/oboishop/assets/img/map3.png" alt="">
+                        <img src="/wp-content/themes/oboishop/assets/img/map3.png" alt="Магазин Обои плюс на карте">
                     </a>
                 </div>
                 <div class="social-link">
@@ -88,9 +88,9 @@ defined( 'ABSPATH' ) || exit;
 				                    <?php
 				                    $img = get_the_post_thumbnail_url();
 				                    if(empty($img)){ ?>
-                                        <img src="/wp-content/themes/oboishop/assets/img/logo.png" alt="" class="new-block-img-empty">
+                                        <img src="/wp-content/themes/oboishop/assets/img/logo.png" alt="Лучшие обои - Обои плюс" class="new-block-img-empty">
 				                    <?php }else{?>
-                                        <img src="<?php echo $img; ?>" alt="">
+                                        <img src="<?php echo $img; ?>" alt="Лучшие обои - Обои плюс">
 				                    <?php } ?>
                                     <div class="new-block">
                                         <p>
