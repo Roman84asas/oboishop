@@ -114,6 +114,6 @@ if (isset($_REQUEST["Clsend"])) {
                 </div>
             </div>
         </div>
-        <div class="contact-map"><img src="/wp-content/themes/oboishop/assets/img/map.png"></div>
+        <div class="contact-map"><img src="/wp-content/themes/oboishop/assets/img/map.png" alt="Карта координатов Обои плюс"></div>
     </div>
 <?php get_footer();

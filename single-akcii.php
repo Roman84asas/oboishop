@@ -12,7 +12,7 @@ get_header(); ?>
 			<?php
 			$imgUrl = get_the_post_thumbnail_url();
 			if($imgUrl) { ?>
-				<img src="<? echo $imgUrl;?>" alt="">
+				<img src="<? echo $imgUrl;?>" alt="Акции Обои плюс">
 			<?php }
 			if(has_excerpt()) { ?>
 				<div class="excerpt">
@@ -33,12 +33,12 @@ get_header(); ?>
 		list($count_image, $arr_url_image) = photo_single();
 		if ($count_image == 1) { ?>
 			<div class="img_block">
-				<img src="<?php echo esc_url($arr_url_image[0]); ?>" alt="">
+				<img src="<?php echo esc_url($arr_url_image[0]); ?>" alt="Фото акционной продукции в Обои плюс">
 			</div>
 		<?php } elseif ($count_image == 2) { ?>
 			<div class="slide">
 			<?php foreach ($arr_url_image as $url_image) { ?>
-				<img src="<?php echo esc_url($url_image); ?>" alt="">
+				<img src="<?php echo esc_url($url_image); ?>" alt="Фото акционной продукции в Обои плюс">
 			<?php } ?>
 			</div>
 		<?php } ?>

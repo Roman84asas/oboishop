@@ -13,7 +13,7 @@ get_header(); ?>
 					<?php
 					$imgUrl = get_the_post_thumbnail_url();
 					if($imgUrl) { ?>
-						<img src="<? echo $imgUrl;?>" alt="">
+						<img src="<? echo $imgUrl;?>" alt="Вокансии в Обои плюс">
 					<?php }
 					if(has_excerpt()) { ?>
 						<div class="excerpt">

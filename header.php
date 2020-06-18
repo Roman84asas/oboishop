@@ -125,7 +125,7 @@
                             </a>
                             <div class="top_callback">
                                 <h3>Обратный звонок</h3>
-                                <img src="/wp-content/themes/oboishop/assets/img/callback-img.png" alt="">
+                                <img src="/wp-content/themes/oboishop/assets/img/callback-img.png" alt="Звонок Обои плюс">
                                 <p>
                                     Введите свой номер телефона <br> и мы перезвоним вам
                                 </p>

@@ -15,7 +15,7 @@ get_header(); ?>
                 </p>
             </div>
             <div class="col-md-6">
-                <img src="/wp-content/themes/oboishop/assets/img/about-img.png"></img>
+                <img src="/wp-content/themes/oboishop/assets/img/about-img.png" alt="Обои плюс для интерьера."></img>
             </div>
         </div>
         <div class="about-map">
@@ -29,7 +29,7 @@ get_header(); ?>
             <div>
                 <div class="our-developments__item">
                     <div class="our-developments__img">
-                        <img src="/wp-content/themes/oboishop/assets/img/price.png"></img>
+                        <img src="/wp-content/themes/oboishop/assets/img/price.png" alt="Обои плюс с лучшими ценами"></img>
                     </div>
                     <p>
                         Нет наценки розничного магазина
@@ -37,7 +37,7 @@ get_header(); ?>
                 </div>
                 <div class="our-developments__item">
                     <div class="our-developments__img">
-                        <img src="/wp-content/themes/oboishop/assets/img/consultant.png"></img>
+                        <img src="/wp-content/themes/oboishop/assets/img/consultant.png" alt="Лучшие консультанты Обои плюс"></img>
                     </div>
                     <p>
                         Профессиональные консультанты
@@ -45,7 +45,7 @@ get_header(); ?>
                 </div>
                 <div class="our-developments__item">
                     <div class="our-developments__img">
-                        <img src="/wp-content/themes/oboishop/assets/img/delivery.png"></img>
+                        <img src="/wp-content/themes/oboishop/assets/img/delivery.png" alt="Доставка товаров Обои плюс"></img>
                     </div>
                     <p>
                         Быстрая доставка Вашего товара
@@ -53,7 +53,7 @@ get_header(); ?>
                 </div>
                 <div class="our-developments__item">
                     <div class="our-developments__img">
-                        <img src="/wp-content/themes/oboishop/assets/img/product.png"></img>
+                        <img src="/wp-content/themes/oboishop/assets/img/product.png" alt="Знак качества - Обои пляс"></img>
                     </div>
                     <p>
                         Качественная продукция наших поставщиков
@@ -66,15 +66,15 @@ get_header(); ?>
             <p>В ассортименте нашего магазина представлены</p>
             <div>
                 <div class="item">
-                    <img src="/wp-content/themes/oboishop/assets/img/Rasch.png" alt="">
+                    <img src="/wp-content/themes/oboishop/assets/img/Rasch.png" alt="Обои в магазине Обои плюс">
                     <p>Обои фирмы Rasch - крупнейшего немецкого производителя, известного своим качеством и стилем.</p>
                 </div>
                 <div class="item">
-                    <img src="/wp-content/themes/oboishop/assets/img/kronotex.jpg" alt="">
+                    <img src="/wp-content/themes/oboishop/assets/img/kronotex.jpg" alt="Ламинат в магазине Обои плюс">
                     <p>Ламинат Кronotex, Tarkett - придаст Вашему помещению комфорт и тепло.</p>
                 </div>
                 <div class="item">
-                    <img src="/wp-content/themes/oboishop/assets/img/Tarkett.png" alt="">
+                    <img src="/wp-content/themes/oboishop/assets/img/Tarkett.png" alt="Светильники в магазине Обои плюс">
                     <p>Светильники новейших коллекций станут неотъемлемой частью Вашего интерьера.</p>
                 </div>
             </div>

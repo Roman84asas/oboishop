@@ -23,7 +23,7 @@ if (isset($_REQUEST["send"])) {
 
 
 <div class="questions" id="questions">
-	<img src="/wp-content/themes/oboishop/assets/img/man.jpg">
+	<img src="/wp-content/themes/oboishop/assets/img/man.jpg" alt="Менеджер Обои плюс">
 	<div class="questions-text">
 		<h3>Остались вопросы?</h3>
 		<p>

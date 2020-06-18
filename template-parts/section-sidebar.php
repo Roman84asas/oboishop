@@ -54,7 +54,7 @@ defined( 'ABSPATH' ) || exit;
                             <?php
                             $img = get_the_post_thumbnail_url();
                             if(empty($img)){ ?>
-                                <img src="/wp-content/themes/oboishop/assets/img/logo.png" alt="" class="new-block-img-empty">
+                                <img src="/wp-content/themes/oboishop/assets/img/logo.png" alt="Обои плюс, ламиант светильники" class="new-block-img-empty">
                             <?php }else{?>
                                 <img src="<?php echo $img; ?>" alt="">
                             <?php } ?>

@@ -209,7 +209,7 @@ get_header(); ?>
 												</ul>
 											</div>
 											<div class="tabs-buttons">
-												<a href="<?php echo esc_url( home_url( '/product-category/обои/' ) ); ?>" class="btn-orange2" style="background-color: #160bf3">
+												<a href="<?php echo esc_url( home_url( '/product-category/oboi/' ) ); ?>" class="btn-orange2" style="background-color: #160bf3">
 													Перейти в магазин
 												</a>
 												<a href="#questions" class="btn-empty" rel="m_PageScroll2id">
@@ -218,7 +218,7 @@ get_header(); ?>
 											</div>
 										</div>
 										<div class="col-sm-6">
-											<img src="/wp-content/themes/oboishop/assets/img/oboi1.png" alt="Обои">
+											<img src="/wp-content/themes/oboishop/assets/img/oboi1.png" alt="Обои в Обои плюс">
 										</div>
 									</div>
 								</div>
@@ -272,7 +272,7 @@ get_header(); ?>
 												</ul>
 											</div>
 											<div class="tabs-buttons">
-												<a href="<?php echo esc_url( home_url( '/product-category/ламинат/' ) ); ?>" class="btn btn-orange2" style="background-color: #8dc63f">
+												<a href="<?php echo esc_url( home_url( '/product-category/laminat/' ) ); ?>" class="btn btn-orange2" style="background-color: #8dc63f">
 													Перейти в магазин
 												</a>
 												<a href="#questions" class="btn btn-empty" rel="m_PageScroll2id">
@@ -281,7 +281,7 @@ get_header(); ?>
 											</div>
 										</div>
 										<div class="col-sm-6">
-											<img src="/wp-content/themes/oboishop/assets/img/lam1.png" alt="Ламинат">
+											<img src="/wp-content/themes/oboishop/assets/img/lam1.png" alt="Ламинат в Обои плюс">
 										</div>
 									</div>
 								</div>
@@ -343,7 +343,7 @@ get_header(); ?>
 												</ul>
 											</div>
 											<div class="tabs-buttons">
-												<a href="<?php echo esc_url( home_url( '/product-category/светильники/' ) ); ?>" class="btn btn-orange2" style="background-color: #f30bb1">
+												<a href="<?php echo esc_url( home_url( '/product-category/svetilnik/' ) ); ?>" class="btn btn-orange2" style="background-color: #f30bb1">
 													Перейти в магазин
 												</a>
 												<a href="#questions" class="btn btn-empty" rel="m_PageScroll2id">
@@ -352,7 +352,7 @@ get_header(); ?>
 											</div>
 										</div>
 										<div class="col-sm-6">
-											<img src="/wp-content/themes/oboishop/assets/img/light1.png" alt="Светильники">
+											<img src="/wp-content/themes/oboishop/assets/img/light1.png" alt="Светильники в Обои плюс">
 										</div>
 									</div>
 								</div>
@@ -406,7 +406,7 @@ get_header(); ?>
 												</ul>
 											</div>
 											<div class="tabs-buttons">
-												<a href="<?php echo esc_url( home_url( '/product-category/сопутствующие-товары/' ) ); ?>" class="btn btn-orange2" style="background-color: #f57c00">
+												<a href="<?php echo esc_url( home_url( '/product-category/soputstvujushie/' ) ); ?>" class="btn btn-orange2" style="background-color: #f57c00">
 													Перейти в магазин
 												</a>
 												<a href="#questions" class="btn btn-empty" rel="m_PageScroll2id">
@@ -415,7 +415,7 @@ get_header(); ?>
 											</div>
 										</div>
 										<div class="col-sm-6">
-											<img src="/wp-content/themes/oboishop/assets/img/all1.png" alt="Сопутствующие товары">
+											<img src="/wp-content/themes/oboishop/assets/img/all1.png" alt="Сопутствующие товары в Обои плюс">
 										</div>
 									</div>
 								</div>
@@ -628,7 +628,7 @@ get_header(); ?>
 												$j = $i - 1;
 												?>
                                                 <div class="main-clients-about-slide" data-count="<?php echo $j; ?>">
-                                                    <img src="/wp-content/themes/oboishop/assets/img/client<?php echo $i; ?>.png" alt="">
+                                                    <img src="/wp-content/themes/oboishop/assets/img/client<?php echo $i; ?>.png" alt="Обои плюс в соцсетях">
                                                 </div>
 											<?php } ?>
                                         </div>

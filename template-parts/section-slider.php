@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6">
-							<img src="/wp-content/themes/oboishop/assets/img/chel.png" alt="">
+							<img src="/wp-content/themes/oboishop/assets/img/chel.png" alt="Сопутствующие товары и декор">
 						</div>
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
@@ -43,7 +43,7 @@ defined( 'ABSPATH' ) || exit;
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6">
-							<img src="/wp-content/themes/oboishop/assets/img/chel1.png" alt="">
+							<img src="/wp-content/themes/oboishop/assets/img/chel1.png" alt="Лампы и светильники для Вашего дома">
 						</div>
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
@@ -71,7 +71,7 @@ defined( 'ABSPATH' ) || exit;
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6">
-							<img src="/wp-content/themes/oboishop/assets/img/chel2.png" alt="">
+							<img src="/wp-content/themes/oboishop/assets/img/chel2.png" alt="Лучший ламинат для Вас">
 						</div>
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
@@ -99,7 +99,7 @@ defined( 'ABSPATH' ) || exit;
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-6 col-sm-6">
-							<img src="/wp-content/themes/oboishop/assets/img/chel3.png" alt="">
+							<img src="/wp-content/themes/oboishop/assets/img/chel3.png" alt="Обои плюс - Лучшие обои">
 						</div>
 						<div class="col-xs-6 col-sm-6">
 							<div class="mSlider-text-cont">
