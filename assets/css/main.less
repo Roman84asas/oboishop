@@ -963,7 +963,7 @@ header {
             position: static;
             font-size: 16px;
             line-height: 19px;
-            a {
+            h4 {
               border: 1px solid #aeaeae;
               color: #425b60;
               display: block;
@@ -972,11 +972,17 @@ header {
               padding: 10px 34px 10px 13px;
               text-decoration: none;
               border-bottom: none;
-              h4 {
+              margin-bottom: 0;
+              text-transform: none;
+              a {
                 margin-bottom: 0;
+                color: inherit;
+                &:hover {
+                  text-decoration: underline;
+                }
               }
               &:hover {
-                h4 {
+                a {
                   color: @active_color;
                 }
               }
@@ -995,7 +1001,7 @@ header {
                 border-left: 1px solid #aeaeae;
                 font-size: 16px;
                 line-height: 19px;
-                a {
+                h4 {
                   background: white;
                   position: relative;
                   color: #425b60;
@@ -1004,6 +1010,13 @@ header {
                   padding: 11px 34px 8px 17px;
                   text-decoration: none;
                   border-bottom: 1px solid #aeaeae;
+                  a {
+                    margin-bottom: 0;
+                    color: inherit;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
                   &:hover {
                     color: @active_color;
                   }
@@ -1034,6 +1047,7 @@ header {
                       border-bottom: 1px solid #aeaeae;
                       &:hover {
                         color: @active_color;
+                        text-decoration: underline;
                       }
                     }
                   }

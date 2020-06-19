@@ -1439,7 +1439,7 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
   font-size: 16px;
   line-height: 19px;
 }
-.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li a {
+.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li h4 {
   border: 1px solid #aeaeae;
   color: #425b60;
   display: block;
@@ -1448,11 +1448,17 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
   padding: 10px 34px 10px 13px;
   text-decoration: none;
   border-bottom: none;
-}
-.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li a h4 {
   margin-bottom: 0;
+  text-transform: none;
 }
-.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li a:hover h4 {
+.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li h4 a {
+  margin-bottom: 0;
+  color: inherit;
+}
+.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li h4 a:hover {
+  text-decoration: underline;
+}
+.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li h4:hover a {
   color: #f18902;
 }
 .top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul {
@@ -1471,7 +1477,7 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
   font-size: 16px;
   line-height: 19px;
 }
-.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li a {
+.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li h4 {
   background: white;
   position: relative;
   color: #425b60;
@@ -1481,7 +1487,14 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
   text-decoration: none;
   border-bottom: 1px solid #aeaeae;
 }
-.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li a:hover {
+.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li h4 a {
+  margin-bottom: 0;
+  color: inherit;
+}
+.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li h4 a:hover {
+  text-decoration: underline;
+}
+.top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li h4:hover {
   color: #f18902;
 }
 .top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li .first_ul {
@@ -1513,6 +1526,7 @@ header .header_mnu .container_fluid .row .coll .basket .cart-contents i {
 }
 .top_menu .wrapper .menu_categ .catalog-menu .homepage-category li .prime_ul li .first_ul li a:hover {
   color: #f18902;
+  text-decoration: underline;
 }
 .top_menu .wrapper .search-secn .search_form {
   position: relative;

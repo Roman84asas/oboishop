@@ -126,8 +126,4 @@ jQuery(function($) {
             $(".catalog-menu").css('display', 'none');
         });
     }
-
-
-
-
 });

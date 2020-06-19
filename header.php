@@ -190,7 +190,7 @@
 <div class="top_menu" id="top_menu">
     <div class="wrapper">
         <div class="menu_categ" id="menu_categ">
-            <div class="burger" role="navigation" id="navToggle"></div>
+            <div class="burger" role="navigation" id="navToggleTop"></div>
             <span>Каталог товаров</span>
             <div class="catalog-menu">
                 <ul class="homepage-category" id="homepage-category">
@@ -211,14 +211,14 @@
                         //get_vd($child_cat_tax);
 
                         echo '<li class="main-cat-item">';
-                        echo '<a href="' . get_term_link( $woo_cat_id, 'product_cat' ) . '"><h4>' . $woo_cat_name . '</h4></a>';
+                        echo '<h4><a href="' . get_term_link( $woo_cat_id, 'product_cat' ) . '">' . $woo_cat_name . '</a></h4>';
                         echo '<ul class="prime_ul" id="prime_ul">';
                         foreach ($child_cat_tax as $child) {
                             //get_vd($child);
                             $term = get_term_by( 'id', $child->term_id, "product_cat" );
                             $child_cat_tax_pod = get_terms('product_cat', [ 'parent'=>$child->term_id ]);
                             echo '<li class="pod_main-cat-item">';
-                            echo '<a href="' . get_term_link( $term->term_id, $term->taxonomy ) . '">' . $term->name . '</a>';
+                            echo '<h4><a href="' . get_term_link( $term->term_id, $term->taxonomy ) . '">' . $term->name . '</a></h4>';
                             echo '<ul class="first_ul" id="first_ul">';
                             foreach ($child_cat_tax_pod as $children) {
                                 //get_vd($child);
