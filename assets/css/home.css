@@ -1028,7 +1028,6 @@
     -webkit-flex: 0 0 270px;
     -ms-flex: 0 0 270px;
     flex: 0 0 270px;
-    max-width: 270px;
   }
 }
 @media (max-width: 736px) {
@@ -1037,7 +1036,6 @@
     -webkit-flex: 0 0 220px;
     -ms-flex: 0 0 220px;
     flex: 0 0 220px;
-    max-width: 220px;
   }
   .main-clients-about .inner .container-fluid .row .col-md-12 .main-clients-about-full-slider .main-clients-about-full-cont .main-clients-about-full .main-clients-about-text {
     padding-left: 28px;
