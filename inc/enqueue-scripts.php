@@ -64,6 +64,7 @@ function oboishop_scripts() {
     wp_enqueue_script( 'micromodal-min', get_template_directory_uri() . '/libs/micromodal/micromodal.min.js', array(), '20151215', true );
     wp_enqueue_script( 'embla', get_template_directory_uri() . '/libs/embla/embla.js', array(), '20151215', true );
     wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/libs/owl.carousel/dist/owl.carousel.min.js', array(), '20151215', true );
+    wp_enqueue_script( 'slider', get_template_directory_uri() . '/assets/js/slider.js', array(), '20151215', true );
 
 
 

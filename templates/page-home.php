@@ -7,7 +7,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
 	<main class="content-home">
-		<?php get_template_part( 'template-parts/section-slider', 'page' ); ?>
+		<?php get_template_part( 'template-parts/home-slider', 'page' ); ?>
 
         <div class="service">
 			<div class="inner">
