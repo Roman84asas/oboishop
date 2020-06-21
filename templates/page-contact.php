@@ -115,5 +115,6 @@ if (isset($_REQUEST["Clsend"])) {
             </div>
         </div>
         <div class="contact-map"><img src="/wp-content/themes/oboishop/assets/img/map.png" alt="Карта координатов Обои плюс"></div>
+        <?php /*echo do_shortcode( '[wpgmza id="1"]' );*/?>
     </div>
 <?php get_footer();

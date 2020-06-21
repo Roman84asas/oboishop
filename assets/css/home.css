@@ -556,6 +556,13 @@
 }
 .service .inner .container-fluid .row .col-md-12 .tabs-container .stab .row .col-sm-6 img {
   width: 100%;
+  border-radius: 12px;
+  box-shadow: 1px 1px 10px #8d96a0;
+}
+.service .inner .container-fluid .row .col-md-12 .tabs-container .stab .row .col-sm-6 .light1 {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: none;
 }
 .service .inner .container-fluid .row .col-md-12 .tabs-container .active {
   display: block;

@@ -352,7 +352,7 @@ get_header(); ?>
 											</div>
 										</div>
 										<div class="col-sm-6">
-											<img src="/wp-content/themes/oboishop/assets/img/light1.png" alt="Светильники в Обои плюс">
+											<img src="/wp-content/themes/oboishop/assets/img/light1.png" alt="Светильники в Обои плюс" class="light1">
 										</div>
 									</div>
 								</div>

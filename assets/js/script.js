@@ -85,7 +85,6 @@ jQuery(function($) {
     //top menu categori
 
     let mwidth =$(window).width();
-    console.log(mwidth);
 
     if ( mwidth > 825) {
         $("#menu_categ").mouseover(function () {
