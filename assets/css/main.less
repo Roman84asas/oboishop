@@ -106,7 +106,7 @@ header {
                 }
                 .my_mail {
                   line-height: 24px;
-                  color: @frey_color;
+                  color:  @font_color;
                   span {
                     font-family: 'Roboto', sans-serif;
                     font-size: 12px;
@@ -115,7 +115,7 @@ header {
                   }
                   a {
                     font-family: 'Roboto', sans-serif;
-                    color: @frey_color;
+                    color:  @font_color;
                     font-size: 18px;
                     font-weight: 300;
                     line-height: 24px;
@@ -1714,12 +1714,10 @@ header {
       max-width: 100%;
     }
   }
-
   .embla__viewport {
     width: 100%;
     overflow: hidden;
   }
-
   .embla__main__image {
     transition: .2s all;
     height: 20vw;
@@ -1737,16 +1735,13 @@ header {
       height: 63vw;
     }
   }
-
   .embla__viewport.is-draggable {
     cursor: move;
     cursor: grab;
   }
-
   .embla__viewport.is-dragging {
     cursor: grabbing;
   }
-
   .embla__container {
     display: flex;
     will-change: transform;
@@ -1756,7 +1751,6 @@ header {
       margin-left: -7.5px;
     }
   }
-
   div.embla__slide {
     display: flex;
     justify-content: center;
@@ -1795,7 +1789,6 @@ header {
       }
     }
   }
-
   .embla__slide__inner {
     background-color: rgb(40, 44, 52);
     position: relative;
@@ -1804,7 +1797,6 @@ header {
     padding-bottom: 46%;
     font-size: 5rem;
   }
-
   .embla__slide__inner:before {
     color: white;
     font-weight: 300;
@@ -1815,11 +1807,9 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
   .embla__btns{
     position: relative;
   }
-
   .embla__button {
     position: absolute;
     z-index: 1;
@@ -1849,29 +1839,14 @@ header {
         fill: #fff;
       }
     }
-    /*@media(max-width: 1024px){
-      top: -37.5px;
-    }
-    @media(max-width: 929px){
-      top: -5vw;
-    }
-    @media(max-width: 478px){
-      top: -7vw;
-    }
-    @media(max-width: 400px){
-      top: -9vw;
-    }*/
   }
-
   .embla__button:not(:disabled) {
     cursor: pointer;
     fill: #fff;
   }
-
   .embla__button:disabled {
     opacity: 0.5;
   }
-
   .embla__button--prev {
     left: -110px;
     @media(max-width: 1150px){
@@ -1881,7 +1856,6 @@ header {
       left: -33px;
     }
   }
-
   .embla__button--next {
     right: -100px;
     @media(max-width: 1800px){
@@ -1908,5 +1882,78 @@ header {
     width: auto;
     border-radius: 7px;
     box-shadow: 1px 1px 10px #8d96a0;
+    position: relative;
+  }
+  .first {
+    color: white;
+    font-size: 20px;
+    text-transform: none;
+    position: absolute;
+    top: 10px;
+    left: 28%;
+  }
+  .second {
+    text-transform: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 20%;
+  }
+  .third {
+    text-transform: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    top: 10px;
+    left: 20%;
+  }
+  .fourth {
+    text-transform: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    top: 10px;
+    left: 20%;
+  }
+  .mSlider-more {
+    position: absolute;
+    font-family: @font-merri;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    border: 2px solid #fff;
+    -webkit-border-radius: 200px;
+    border-radius: 200px;
+    padding: 14px 29px;
+    display: inline-block;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+    bottom:5px;
+    &:focus {
+      background-color: rgba(255, 255, 255, .2);
+      color: #fff;
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, .2);
+      color: #fff;
+    }
+    i {
+      margin-left: 10px;
+    }
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .icon-m-more {
+      width: 14px;
+      height: 11px;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAYAAABPhbxiAAAAY0lEQVQoU2NkIBMw4tP3//9/B6B8PxA7MjIyfkBWi1cjSCFQ8wIgpY+umaBGXJqJ0ohNMyPQKf9JDJ8LYGeToXEhMKASSHUqA0gTyIVEaYSGLFwTURqxaSKoEZoAEmDOQw5EADPkLhlsquBAAAAAAElFTkSuQmCC)
+    }
   }
 }

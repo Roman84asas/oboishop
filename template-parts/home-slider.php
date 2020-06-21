@@ -34,33 +34,57 @@ defined( 'ABSPATH' ) || exit;
                         <?php
                         // Get all entered urls from the database
                         $image1 = carbon_get_theme_option( 'obo_image1' );
-                        $image1_url = carbon_get_theme_option( 'obo_url_image1' );
-                        echo '<a href="' . esc_url( home_url( '/'.$image1_url.'' ) ) . '" >' . wp_get_attachment_image( $image1, 'full' ) . '</a>';
-                        ?>
+                        $image1_url = carbon_get_theme_option( 'obo_url_image1' ); ?>
+                        <a href="<?php echo esc_url( home_url( '/'.$image1_url.'' ) ); ?>" >
+                            <?php echo wp_get_attachment_image( $image1, 'full' ) ?>
+                        </a>
+                        <h3 class="first">Ламинат для Вашего дома!</h3>
+                        <a href="<?php echo esc_url( home_url( '/'.$image1_url.'' ) ); ?>" class="mSlider-more">
+                            Подробнее
+                            <i class="icon icon-m-more"></i>
+                        </a>
                     </div>
                     <div class="embla__slide">
                         <?php
                         // Get all entered urls from the database
                         $image2 = carbon_get_theme_option( 'obo_image2' );
-                        $image2_url = carbon_get_theme_option( 'obo_url_image2' );
-                        echo '<a href="' . esc_url( home_url( '/'.$image2_url.'' ) ) . '" >' . wp_get_attachment_image( $image2, 'full' ) . '</a>';
-                        ?>
+                        $image2_url = carbon_get_theme_option( 'obo_url_image2' ); ?>
+                        <a href="<?php echo esc_url( home_url( '/'.$image2_url.'' ) ); ?>" >
+                            <?php echo wp_get_attachment_image( $image2, 'full' ) ?>
+                        </a>
+                        <h3 class="second">Лучшие обои по Вашему желанию!</h3>
+                        <a href="<?php echo esc_url( home_url( '/'.$image2_url.'' ) ); ?>" class="mSlider-more">
+                            Подробнее
+                            <i class="icon icon-m-more"></i>
+                        </a>
                     </div>
                     <div class="embla__slide">
                         <?php
                         // Get all entered urls from the database
                         $image3 = carbon_get_theme_option( 'obo_image3' );
-                        $image3_url = carbon_get_theme_option( 'obo_url_image3' );
-                        echo '<a href="' . esc_url( home_url( '/'.$image3_url.'' ) ) . '" >' . wp_get_attachment_image( $image3, 'full'  ) . '</a>';
-                        ?>
+                        $image3_url = carbon_get_theme_option( 'obo_url_image3' ); ?>
+                        <a href="<?php echo esc_url( home_url( '/'.$image3_url.'' ) ); ?>" >
+                            <?php echo wp_get_attachment_image( $image3, 'full' ) ?>
+                        </a>
+                        <h3 class="third">Лампы и светильники для любого интерьера!</h3>
+                        <a href="<?php echo esc_url( home_url( '/'.$image3_url.'' ) ); ?>" class="mSlider-more">
+                            Подробнее
+                            <i class="icon icon-m-more"></i>
+                        </a>
                     </div>
                     <div class="embla__slide">
                         <?php
                         // Get all entered urls from the database
                         $image4 = carbon_get_theme_option( 'obo_image4' );
-                        $image4_url = carbon_get_theme_option( 'obo_url_image4' );
-                        echo '<a href="' . esc_url( home_url( '/'.$image4_url.'' ) ) . '" >' . wp_get_attachment_image( $image4, 'full'  ) . '</a>';
-                        ?>
+                        $image4_url = carbon_get_theme_option( 'obo_url_image4' ); ?>
+                        <a href="<?php echo esc_url( home_url( '/'.$image4_url.'' ) ); ?>" >
+                            <?php echo wp_get_attachment_image( $image4, 'full' ) ?>
+                        </a>
+                        <h3 class="fourth">Аксессуары для ремонта и декора Вашего дома!</h3>
+                        <a href="<?php echo esc_url( home_url( '/'.$image4_url.'' ) ); ?>" class="mSlider-more">
+                            Подробнее
+                            <i class="icon icon-m-more"></i>
+                        </a>
                     </div>
                 </div>
             </div>

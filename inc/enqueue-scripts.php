@@ -68,7 +68,7 @@ function oboishop_scripts() {
 
 
 
-    //wp_enqueue_script( 'slider', get_template_directory_uri() . '/assets/js/slider.js', array(), '20151215', true );
+
     wp_enqueue_script( 'owlslider', get_template_directory_uri() . '/assets/js/owlslider.js', array(), '20151215', true );
     wp_enqueue_script( 'script-main', get_template_directory_uri() . '/assets/js/script.js', array(), '20151215', true );
 
