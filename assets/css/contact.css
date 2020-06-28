@@ -255,7 +255,7 @@
   transition: 0.3s all;
 }
 .contact_content .contact-map {
-  margin-top: 60px;
+  margin: 60px 3px -15px;
   box-shadow: 0 1px 15px #8d96a0;
 }
 .contact_content .contact-map img {

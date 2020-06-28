@@ -114,7 +114,8 @@ if (isset($_REQUEST["Clsend"])) {
                 </div>
             </div>
         </div>
-        <div class="contact-map"><img src="/wp-content/themes/oboishop/assets/img/map.png" alt="Карта координатов Обои плюс"></div>
-        <?php /*echo do_shortcode( '[wpgmza id="1"]' );*/?>
+        <div class="contact-map">
+            <?php echo do_shortcode( '[yamap center="55.686132,37.567087" height="500px" zoom="15" type="yandex#map" controls="typeSelector;zoomControl"][yaplacemark coord="55.686132,37.567087" icon="islands#blueShoppingIcon" color="#ff751f" name="Placemark"][/yamap]' );?>
+        </div>
     </div>
 <?php get_footer();
