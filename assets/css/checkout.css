@@ -520,6 +520,11 @@
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+.content-checkout .woocommerce .order_details {
+  font-size: 16px;
+  margin: 35px 5px;
+  line-height: 20px;
+}
 .select2-container .select2-dropdown {
   width: 340px !important;
 }
