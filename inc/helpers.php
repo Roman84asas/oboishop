@@ -11,9 +11,11 @@ function oboi_page_links() {
 		'total' => $wp_query->max_num_pages,
 		'current' => $current,
 		'show_all' => true,
-		'type' => 'list',
-		'next_text' => 'Следующие посты',
-		'prev_text' => 'Предыдущие посты'
+        'prev_text' => '&larr;',
+        'next_text' => '&rarr;',
+        'type'      => 'list',
+        'end_size'  => 3,
+        'mid_size'  => 3,
 	);
 
 	if( $wp_rewrite->using_permalinks() )

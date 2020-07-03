@@ -55,7 +55,7 @@ get_header();
 				</article>
 			<?php endwhile;
 
-			the_posts_navigation();
+			//the_posts_navigation();
 
 		else : ?>
 
@@ -66,7 +66,34 @@ get_header();
 
 		endif;
 		?>
+        <?php global $wp_query;
+        if($wp_query->max_num_pages > 1) {
+            ?>
+            <div class="pagination">
+                <div class="left_arrow">
+                    <?php
+                    if(get_previous_posts_link()){
+                        echo get_previous_posts_link('<i class="fa fa-angle-left" aria-hidden="true"></i>');
+                    } else {
+                        echo '<i class="fa fa-angle-left" aria-hidden="true"></i>';
+                    } ?>
+                </div>
 
+                <div class="paginate_items">
+                    <?php oboi_page_links(); ?>
+                </div>
+
+                <div class="right_arrow">
+                    <?php
+                    if(get_next_posts_link()){
+                        echo  get_next_posts_link('<i class="fa fa-angle-right" aria-hidden="true"></i>');
+                    } else {
+                        echo  '<i class="fa fa-angle-right" aria-hidden="true"></i>';
+                    } ?>
+                </div>
+            </div>
+
+        <?php } ?>
 
 	</section>
 </div>
