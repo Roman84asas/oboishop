@@ -21,7 +21,6 @@ get_header();
 				printf( esc_html__( 'Резальтат поиска по запросу: %s', 'oboishop' ), '<span>' . get_search_query() . '</span>' );
 				?>
 			</h2>
-
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -29,7 +28,6 @@ get_header();
 				$item = get_post(get_the_ID());
 				$imgUrl = get_the_post_thumbnail_url();
 				?>
-
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <div class="left_sect_search">
                         <a href="<?php echo esc_url(get_the_permalink()); ?>" class="main-kb-img" >
@@ -51,14 +49,9 @@ get_header();
                             <i class="fas fa-long-arrow-alt-right"></i>
                         </a>
                     </div>
-
 				</article>
 			<?php endwhile;
-
-			//the_posts_navigation();
-
 		else : ?>
-
 			<h2 class="page_title"><?php esc_html_e( 'Ничего не найдено', 'oboishop' ); ?></h2>
             <p>Упс <span>:(</span> что-то пошло не так или по Вашему запросу ничего не найдено. Попробуйте ещё раз.</p>
 			<?php
