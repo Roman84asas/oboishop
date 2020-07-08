@@ -90,7 +90,7 @@ defined( 'ABSPATH' ) || exit;
 				                    if(empty($img)){ ?>
                                         <img src="/wp-content/themes/oboishop/assets/img/logo.png" alt="Лучшие обои - Обои плюс" class="new-block-img-empty">
 				                    <?php }else{?>
-                                        <img src="<?php echo $img; ?>" alt="Лучшие обои - Обои плюс">
+                                        <img src="<?php echo $img; ?>" alt="Лучшие обои - Обои плюс" class="new-block-img-empty">
 				                    <?php } ?>
                                     <div class="new-block">
                                         <p>
